@@ -384,7 +384,7 @@
     @media screen and (min-width : 1500px){
         .tech-content .tech-select-list{
             position: absolute;
-            bottom: 16rem;
+            bottom: 18rem;
         }
         .tech-select-list .tech-select-circle{
            width: 0.9rem;

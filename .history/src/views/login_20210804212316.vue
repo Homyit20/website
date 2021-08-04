@@ -167,15 +167,6 @@ export default {
         margin-top: 4rem;
       }
     }
-    .login-input{
-      position: relative;
-      width: 15rem;
-      height: 3rem;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      margin-bottom: 0.2rem;
-    }
 
     .login-main-form input[type = "text"]{
       border: 0;
@@ -214,6 +205,15 @@ export default {
       height: 2rem;
       background: url('../assets/images/错误.png') center;
     }
+    .login-input{
+      position: relative;
+      width: 15rem;
+      height: 3rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 0.2rem;
+    }
     .login-input p{
       font-size: 1px;
       color: white;
@@ -245,28 +245,10 @@ export default {
     }
     /* 当屏幕大于1500px时 */
     @media screen and (min-width: 1500px){
-      .login-form .login-main-form{
-        width: 48rem;
-        height: 12rem;
-      }
-      .login-form .login-input{
-        width: 20rem;
-        height: 3.2rem;
-      }
       .login-form .login-main-form input[type = "text"]{
-        width: 20rem;
-        height: 3.2rem;
-      }
-      .login-main-form textarea{
-        width: 20rem;
-        height: 7.5rem;
-        border-radius: 5px;
-      }
-      .login-button input[type ="submit"]{
-        margin-top: 11.5rem;
-        width: 10rem;
-        height: 2.5rem;
-        border-radius: 4px;
+        width: 25rem;
+        height: 2.6rem;
+        background-color: brown;
       }
     }
 </style>

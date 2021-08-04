@@ -257,16 +257,5 @@ export default {
         width: 20rem;
         height: 3.2rem;
       }
-      .login-main-form textarea{
-        width: 20rem;
-        height: 7.5rem;
-        border-radius: 5px;
-      }
-      .login-button input[type ="submit"]{
-        margin-top: 11.5rem;
-        width: 10rem;
-        height: 2.5rem;
-        border-radius: 4px;
-      }
     }
 </style>

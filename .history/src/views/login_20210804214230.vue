@@ -263,7 +263,7 @@ export default {
         border-radius: 5px;
       }
       .login-button input[type ="submit"]{
-        margin-top: 11.5rem;
+        margin-top: 11.2rem;
         width: 10rem;
         height: 2.5rem;
         border-radius: 4px;
