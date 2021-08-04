@@ -367,7 +367,7 @@
     /* 小圈圈 */
     .tech-content .tech-select-list{
         position: absolute;
-        bottom: 12rem;
+        bottom: 10rem;
         width: 3.5rem;
         display: flex;
         justify-content: space-between;
@@ -376,41 +376,20 @@
         margin: 0;
         padding: 0;
     }
-    /* 当屏幕大于1500px时 */
-    @media screen and (min-width : 1500px){
-        .tech-content .tech-select-list{
-            position: absolute;
-            bottom: 18rem;
-        }
-        .tech-select-list .tech-select-circle{
-           width: 0.9rem;
-           height: 0.9rem;
-           border-radius: 50%;
-           background-color: #fff;
-           border: 1px solid #000;
-        }
-        .tech-select-list .tech-select-active{
-           width: 1.3rem;
-           height: 1.3rem;
-           border-radius: 50%;
-           background-color: #65dff5;
-           border: 1px solid #000;
-        }
+    .tech-select-circle{
+        width: 0.6rem;
+        height: 0.6rem;
+        border-radius: 50%;
+        background-color: #fff;
+        border: 1px solid #000;
     }
-        .tech-select-circle{
-          width: 0.6rem;
-          height: 0.6rem;
-          border-radius: 50%;
-          background-color: #fff;
-          border: 1px solid #000;
-        }
-        .tech-select-active{
-           width: 0.9rem;
-           height: 0.9rem;
-           border-radius: 50%;
-           background-color: #65dff5;
-           border: 1px solid #000;
-        }
+    .tech-select-active{
+        width: 0.9rem;
+        height: 0.9rem;
+        border-radius: 50%;
+        background-color: #65dff5;
+        border: 1px solid #000;
+    }
 
     /* 改变placeholder的颜色 */
 

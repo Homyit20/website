@@ -9,7 +9,7 @@
                 <li>简介</li>
                 <li><router-link to="/technique" class="nav-link-class" active-class="nav-link-active">技术</router-link></li>
                 <li>发展</li>
-                <li><router-link to="/login" class="nav-link-class" active-class="nav-link-active" >加入我们</router-link></li>
+                <li><router-link to="/login" class="nav-link-class nav-link-login">加入我们</router-link></li>
             </ul>
             <div class="nav-list-img">
                 <img src="../../assets/images/小宇航员_07.png">
@@ -34,8 +34,8 @@ export default {
       height: 3.5rem;
   }
    .nav-logo img{
-      width: 3rem;
-      height: 3rem;
+      width: 2.5rem;
+      height: 2.5rem;
       margin-top: 0.25rem;
       margin-left: 1rem;
       object-fit: cover;
@@ -64,27 +64,34 @@ export default {
       color: #65dff5;
   }
   .nav-list .nav-list-img img{
-      width: 3.5rem;
-      height: 3.5rem;
+      width: 3rem;
+      height: 3rem;
       object-fit: cover;
   }
   /* img响应式 */
   @media  screen and (max-width : 500px) {
     .nav .nav-list{
       display: flex;
-      justify-content: space-around;
+      justify-content: flex-end;
       align-items: center;
       width: 35rem;
   }
-      .nav-logo img{
-        width: 2rem;
-        height: 2rem;
-        object-fit: cover;
-      }
-      .nav .nav-list .nav-list-img img{
-        width: 3rem;
-        height: 3rem;
-        object-fit: cover;
-      }
+    .nav-logo img{
+      width: 2rem;
+      height: 2rem;
+      object-fit: cover;
+    }
+    .nav .nav-list .nav-list-img img{
+      display: none;
+    }
+    .nav .nav-link-login{
+        padding: 0 0.5rem;
+    }
+  }
+  .nav-link-login{
+      color: #000;
+      padding: 0 1rem;
+      background-color: #65dff5;
+      border-radius: 1rem;
   }
 </style>
