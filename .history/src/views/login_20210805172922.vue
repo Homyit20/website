@@ -9,13 +9,13 @@
           <form class="login-form" method="">
             <div class="login-main-form">
               <div class="login-input">
-                <input type="text" class="login-form-name" placeholder="姓名" v-model="stuName" @blur="inputjudge(name,0)">
+                <input type="text" class="login-form-name" placeholder="姓名" v-model="name" @blur="inputjudge(name,0)">
               </div>
               <div class="login-input">
-                <input type="text" class="login-form-number" placeholder="学号" v-model="stuNum" @blur="inputjudge(number,1)">
+                <input type="text" class="login-form-number" placeholder="学号" v-model="number" @blur="inputjudge(number,1)">
               </div>
               <div class="login-input">
-                <input type="text" class="login-form-class" placeholder="班级" v-model="stuClass" @blur="inputjudge(classroom,2)" >
+                <input type="text" class="login-form-class" placeholder="班级" v-model="stuclass" @blur="inputjudge(classroom,2)" >
               </div>
               <div class="login-input">
                 <input type="text" class="login-form-address" placeholder="邮箱" v-model="email" @blur="inputjudge(address,3)">
@@ -35,9 +35,9 @@ export default {
   name : 'Login',
   data(){
     return {
-      stuName : '',
-      stuNum : '',
-      stuClass : '',
+      name : '',
+      number : '',
+      stuclass : '',
       email : ''
     }
   },
@@ -57,19 +57,19 @@ export default {
     }
   },
   watch : {
-    stuName : function(){
+    name : function(){
       let logininput = document.getElementsByClassName('login-input')[0];
       logininput.classList.remove('login-error');
       logininput.classList.remove('login-finish');
       logininput.classList.add('login-vaild');
     },
-    stuNum : function(){
+    number : function(){
       let logininput = document.getElementsByClassName('login-input')[1];
       logininput.classList.remove('login-error');
       logininput.classList.remove('login-finish');
       logininput.classList.add('login-vaild');
     },
-    stuClass : function(){
+    stuclass : function(){
       let logininput = document.getElementsByClassName('login-input')[2];
       logininput.classList.remove('login-error');
       logininput.classList.remove('login-finish');
