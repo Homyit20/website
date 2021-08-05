@@ -5,22 +5,26 @@ Vue.use(VueRouter);
 
 const routes = [
     {
-        path : '/',
-        redirect : '/technique'
+        path: '/',
+        redirect: '/technique'
     },
     {
-        path : '/technique',
-        component : () => import('../views/technique.vue')
+        path: '/technique',
+        component: () => import('../views/technique.vue')
     },
     {
-        path : '/login',
-        component : () => import('../views/login.vue'),
-        children : [
+        path: '/login',
+        component: () => import('../views/login.vue'),
+        children: [
             {
-                path : '/login/contact',
-                component : () => import('../components/content/contact.vue')
+                path: '/login/contact',
+                component: () => import('../components/content/contact.vue')
             }
         ]
+    },
+    {
+        path: '/home',
+        component: () => import('../views/Home.vue'),
     }
 ]
 
