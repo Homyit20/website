@@ -1,7 +1,7 @@
 <template>
     <div class="nav">
         <div class="nav-logo">
-            <img src="../../assets/techlogin/images/logo_03.png">
+            <img src="../../assets/images/logo_03.png">
         </div>
         <div class="nav-list">
             <ul class="nav-list-ul">
@@ -12,7 +12,7 @@
                 <li><router-link to="/login" class="nav-link-class nav-link-login">加入我们</router-link></li>
             </ul>
             <div class="nav-list-img">
-                <img src="../../assets/techlogin/images/小宇航员_07.png">
+                <img src="../../assets/images/小宇航员_07.png">
             </div>
         </div>
     </div>

@@ -248,7 +248,7 @@ export default {
       .login-form .login-main-form{
         width: 48rem;
         height: 12rem;
-        margin-top: 6rem;
+        margin-top: 5rem;
       }
       .login-form .login-input{
         width: 20rem;
