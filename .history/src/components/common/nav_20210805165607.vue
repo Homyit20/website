@@ -109,10 +109,7 @@ export default {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 23rem;
-  }
-  .nav .nav-list .nav-list-ul{
-    width: 100%;
+    width: 40rem;
   }
   .nav-logo img {
     width: 2rem;
