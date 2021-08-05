@@ -15,7 +15,6 @@ const routes = [
     {
         path: '/login',
         component: () => import('../views/login.vue'),
-        redirect : '/login/loginform',
         children : [{
             path : '/login/loginform',
             component : () => import('../components/content/loginform.vue')

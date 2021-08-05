@@ -1,9 +1,6 @@
 <template>
   <div class="login-contain">
       <img class="login-background" src="../assets/techlogin/images/报名背景.png" alt="背景">
-      <router-link to="/login/loginform"/>
-      <router-link to="/login/contact" />
-      <router-view/>
   </div>
 </template>
 
