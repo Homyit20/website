@@ -13,7 +13,7 @@ module.exports = {
     devServer : {
         proxy : {
             '/api' : {
-                target : "http://localhost:8082/apply/save",
+                target : "http://localhost:8082",
                 //是否反向代理
                 changeOrigin : true,
                 secure : false,

@@ -44,7 +44,7 @@ export default {
   },
   methods :{
     logincommit(){
-      axios.post('/api/register',{
+      axios.post('/api/apply/save',{
         data : {
           stuName : this.stuName,
           stuNum : this.stuNum,
