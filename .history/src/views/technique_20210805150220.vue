@@ -2,7 +2,7 @@
     <div class="tech-contain">
         <img class="tech-background" src="../assets/techlogin/images/背景.png">
         <div class="tech-content">
-            <div class="tech-box" @touchstart.passive="touchstartdeal">
+            <div class="tech-box" @touchstart.passive="touchstartdeal" style=" touch-action: none">
               <ul class="tech-list">
                 <li class="after-details">
                     <div class="tech-after-text">
@@ -159,22 +159,22 @@
             techniqueul.addEventListener('touchend', this.touchenddeal, false);
         },
         touchmovedeal(event){
-            //当屏幕有多个touch或者页面被缩放过，就不执行move操作
-            if (event.targetTouches.length > 1 || event.scale && event.scale !== 1) return;
-            let techniqueul = document.getElementsByClassName('tech-list')[0];
+            // let techniqueul = document.getElementsByClassName('tech-list')[0];
             let touchmove = event.targetTouches[0];
             this.touchmoveX = touchmove.clientX;
             this.touchmoveY = touchmove.clientY;
             this.touchscrollX = this.touchmoveX - this.touchstartX;
             this.touchscrollY = this.touchmoveY - this.touchstartY;
+            //竖化阻止默认事件
             this.touchdirection = Math.abs(this.touchscroolX) > Math.abs(this.touchscroolY) ? 1 : 0;
-            //竖滑阻止默认事件
            //需要判断是否事件可以被取消
            if(this.touchdirection == 0 && event.cancelable){
                 event.preventDefault()
                 //默认事件是滚动
             }
-            techniqueul.style.left = techniqueul.offsetLeft + this.touchscrollX + 'px';
+            // if(this.touchdirection == 1){
+            //   techniqueul.style.left = techniqueul.offsetLeft + this.touchscrollX + 'px';
+            // }
         },
         touchenddeal(){
             let techniqueul = document.getElementsByClassName('tech-list')[0];
@@ -236,7 +236,7 @@
                 }else{
                     techniqueul.style.left = -techniquewidth*touchvalue + 'px';
                 }
-                //取消监听 放在其他页面滑动造成连动效果
+                //清除当前事件监听
                 techniqueul.removeEventListener('touchmove', this.touchmovedeal,false);
                 techniqueul.removeEventListener('touchend', this.touchenddeal, false);
             }

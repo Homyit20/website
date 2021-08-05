@@ -82,12 +82,8 @@
     created(){
         this.touchdata = {
             touchstartX : null,
-            touchstartY : null,
             touchmoveX : null,
-            touchmoveY : null,
             touchscrollX : null,
-            touchscroolY : null,
-            touchdirection : null
         }
     },
     mounted(){
@@ -153,27 +149,16 @@
             //啥叫第一个touches?
             let touchstart = e.targetTouches[0];
             this.touchstartX = touchstart.clientX;
-            this.touchstartY = touchstart.clientY;
             //监听touchmove touchend
             techniqueul.addEventListener('touchmove', this.touchmovedeal,false);
             techniqueul.addEventListener('touchend', this.touchenddeal, false);
         },
-        touchmovedeal(event){
-            //当屏幕有多个touch或者页面被缩放过，就不执行move操作
-            if (event.targetTouches.length > 1 || event.scale && event.scale !== 1) return;
+        touchmovedeal(e){
+            //这里好像还要进行很多处理
             let techniqueul = document.getElementsByClassName('tech-list')[0];
-            let touchmove = event.targetTouches[0];
+            let touchmove = e.targetTouches[0];
             this.touchmoveX = touchmove.clientX;
-            this.touchmoveY = touchmove.clientY;
             this.touchscrollX = this.touchmoveX - this.touchstartX;
-            this.touchscrollY = this.touchmoveY - this.touchstartY;
-            this.touchdirection = Math.abs(this.touchscroolX) > Math.abs(this.touchscroolY) ? 1 : 0;
-            //竖滑阻止默认事件
-           //需要判断是否事件可以被取消
-           if(this.touchdirection == 0 && event.cancelable){
-                event.preventDefault()
-                //默认事件是滚动
-            }
             techniqueul.style.left = techniqueul.offsetLeft + this.touchscrollX + 'px';
         },
         touchenddeal(){
@@ -236,9 +221,6 @@
                 }else{
                     techniqueul.style.left = -techniquewidth*touchvalue + 'px';
                 }
-                //取消监听 放在其他页面滑动造成连动效果
-                techniqueul.removeEventListener('touchmove', this.touchmovedeal,false);
-                techniqueul.removeEventListener('touchend', this.touchenddeal, false);
             }
         }
     }
@@ -296,15 +278,9 @@
       font-size: 1.1rem;
   }
 
-    /* 移动端响应式 */
+    /* 响应式 */
 
     @media screen and (max-width : 500px) {
-        html{
-            font-size: 13px;
-        }
-        .tech-box{
-          top: 1rem;
-    }
         .after-details,
         .before-details,
         .ui-details{
@@ -406,26 +382,23 @@
     }
     /* 当屏幕大于1500px时 */
     @media screen and (min-width : 1500px){
-        html{
-            font-size: 16px;
-        }
         .tech-content .tech-select-list{
             position: absolute;
             bottom: 16rem;
         }
         .tech-select-list .tech-select-circle{
-           width: 0.7rem;
-           height: 0.7rem;
+           width: 0.9rem;
+           height: 0.9rem;
            border-radius: 50%;
            background-color: #fff;
-           border: 1px solid #8da7a9;
+           border: 1px solid #937d7d;
         }
         .tech-select-list .tech-select-active{
-           width: 1.2rem;
-           height: 1.2rem;
+           width: 1.3rem;
+           height: 1.3rem;
            border-radius: 50%;
            background-color: #65dff5;
-           border: 1px solid #8da7a9;
+           border: 1px solid #937d7d;
         }
     }
         .tech-select-circle{
@@ -433,14 +406,14 @@
           height: 0.6rem;
           border-radius: 50%;
           background-color: #fff;
-          border: 1px solid #8da7a9;
+          border: 1px solid #937d7d;
         }
         .tech-select-active{
            width: 0.9rem;
            height: 0.9rem;
            border-radius: 50%;
            background-color: #65dff5;
-           border: 1px solid #8da7a9;
+           border: 1px solid #937d7d;
         }
 
     /* 改变placeholder的颜色 */

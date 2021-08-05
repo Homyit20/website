@@ -171,6 +171,7 @@
             //竖滑阻止默认事件
            //需要判断是否事件可以被取消
            if(this.touchdirection == 0 && event.cancelable){
+               console.log(2);
                 event.preventDefault()
                 //默认事件是滚动
             }

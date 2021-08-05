@@ -20,7 +20,4 @@ export default {
     height: 100vh;
     object-fit: cover;
   }
-  .login-contact p {
-    color: #000;
-  }
 </style>

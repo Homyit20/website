@@ -1,6 +1,6 @@
 <template>
   <div class="login-contain">
-      <img class="login-background" src="../assets/techlogin/images/报名背景.png" alt="背景">
+      <img class="login-background" src="../assets/techlogin/images/报名背景.png">
       <div class="login-content">
           <div class="login-join">
             <h1>JOIN HOMYIT</h1>
@@ -27,6 +27,8 @@
             </div>
           </form>
       </div>
+      <router-link to="/login/contact"></router-link>
+      <router-view></router-view>
   </div>
 </template>
 
@@ -43,7 +45,9 @@ export default {
   },
   methods :{
     contact(){
-      console.log(1);
+      this.$router.push({
+        path : '/login/contact'
+      })
     },
     inputjudge(value, id){
       let logininput = document.getElementsByClassName('login-input')[id];

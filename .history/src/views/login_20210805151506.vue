@@ -1,6 +1,6 @@
 <template>
   <div class="login-contain">
-      <img class="login-background" src="../assets/techlogin/images/报名背景.png" alt="背景">
+      <img class="login-background" src="../assets/techlogin/images/报名背景.png">
       <div class="login-content">
           <div class="login-join">
             <h1>JOIN HOMYIT</h1>
@@ -22,8 +22,8 @@
               </div>
               <textarea placeholder="你的自我介绍/意向" class="login-form-idea"></textarea>
             </div>
-            <div class="login-button">
-              <button @click="contact()">立即报名</button>
+            <div class="login-button" @click="contact()">
+              <button type="button">立即报名</button>
             </div>
           </form>
       </div>
@@ -44,6 +44,9 @@ export default {
   methods :{
     contact(){
       console.log(1);
+      this.$router.push({
+        path : '/home'
+      })
     },
     inputjudge(value, id){
       let logininput = document.getElementsByClassName('login-input')[id];

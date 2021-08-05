@@ -174,7 +174,11 @@
                 event.preventDefault()
                 //默认事件是滚动
             }
-            techniqueul.style.left = techniqueul.offsetLeft + this.touchscrollX + 'px';
+            if(this.touchdirection > 0 || 1){
+                console.log(1)
+                techniqueul.style.left = techniqueul.offsetLeft + this.touchscrollX + 'px';
+            }
+            // techniqueul.style.left = techniqueul.offsetLeft + this.touchscrollX + 'px';
         },
         touchenddeal(){
             let techniqueul = document.getElementsByClassName('tech-list')[0];

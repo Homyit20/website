@@ -26,6 +26,7 @@
         <li>
           <router-link to="/login" class="nav-link-class nav-link-login"
             >加入我们</router-link>
+            <router-link to="contact"></router-link>
         </li>
       </ul>
       <div class="nav-list-img">

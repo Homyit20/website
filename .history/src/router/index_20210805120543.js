@@ -14,7 +14,13 @@ const routes = [
     },
     {
         path: '/login',
-        component: () => import('../views/login.vue')
+        component: () => import('../views/login.vue'),
+        children: [
+            {
+                path: '/login/contact',
+                component: () => import('../components/content/contact.vue')
+            }
+        ]
     },
     {
         path: '/home',
