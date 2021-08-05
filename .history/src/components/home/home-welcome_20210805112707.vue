@@ -11,7 +11,7 @@
 </template>
 
 <script>
-// import "@/../node_modules/animate.css/animate.css";
+import "@/../node_modules/animate.css/animate.css";
 export default {
   name: "home-welcome",
   data() {
