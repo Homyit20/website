@@ -1,12 +1,17 @@
 <template>
   <div id="home-welcome">
-    <h2>Welcome To Our Studio!</h2>
-    <h1>Tt's nice to meet you</h1>
-    <button id="home-btn">TELL ME MORE</button>
+    <h2 class="animate__animated animate__fadeInDown">
+      Welcome To Our Studio!
+    </h2>
+    <h1 class="animate__animated animate__fadeInDown">Tt's nice to meet you</h1>
+    <button id="home-btn" class="animate__animated animate__fadeInDown">
+      TELL ME MORE
+    </button>
   </div>
 </template>
 
 <script>
+import "@/../node_modules/animate.css/animate.css";
 export default {
   name: "home-welcome",
   data() {
