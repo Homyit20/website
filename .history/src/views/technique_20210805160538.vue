@@ -1,6 +1,6 @@
 <template>
     <div class="tech-contain">
-        <img class="tech-background" src="../assets/techlogin/images/背景.png">
+        <img class="tech-background" src="../assets/techlogin/images/背景.png" alt="背景">
         <div class="tech-content">
             <div class="tech-box" @touchstart.passive="touchstartdeal">
               <ul class="tech-list">
@@ -19,12 +19,12 @@
                         </p>
                     </div>
                     <div class="tech-after-people">
-                        <img src="../assets/techlogin/images/宇航员1.png" class="tech-people">
+                        <img src="../assets/techlogin/images/宇航员1.png" class="tech-people" alt="宇航员">
                     </div>
                 </li>
                 <li class="before-details">
                     <div class="tech-before-people">
-                        <img src="../assets/techlogin/images/宇航员2_03.png" class="tech-people">
+                        <img src="../assets/techlogin/images/宇航员2_03.png" class="tech-people" alt="宇航员">
                     </div>
                     <div class="tech-before-text">
                         <h1>前端</h1>
@@ -52,7 +52,7 @@
                         </p>
                     </div>
                     <div class="tech-ui-people">
-                        <img src="../assets/techlogin/images/宇航员3_03.png" class="tech-people">
+                        <img src="../assets/techlogin/images/宇航员3_03.png" class="tech-people" alt="宇航员">
                     </div>
                 </li>
               </ul>

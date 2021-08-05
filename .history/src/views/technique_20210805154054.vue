@@ -171,10 +171,15 @@
             //竖滑阻止默认事件
            //需要判断是否事件可以被取消
            if(this.touchdirection == 0 && event.cancelable){
+               console.log(1)
                 event.preventDefault()
                 //默认事件是滚动
             }
-            techniqueul.style.left = techniqueul.offsetLeft + this.touchscrollX + 'px';
+            if(this.touchdirection != 0){
+                console.log(1)
+                techniqueul.style.left = techniqueul.offsetLeft + this.touchscrollX + 'px';
+            }
+            // techniqueul.style.left = techniqueul.offsetLeft + this.touchscrollX + 'px';
         },
         touchenddeal(){
             let techniqueul = document.getElementsByClassName('tech-list')[0];

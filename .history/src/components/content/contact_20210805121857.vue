@@ -1,7 +1,6 @@
 <template>
   <div class="login-contact">
-      <img src="../../assets/techlogin/images/背景.png">
-      <p>发生了些什么</p>
+      <img src="../../assets/techlogin/images/报名背景.png">
   </div>
 </template>
 
@@ -13,14 +12,8 @@ export default {
 
 <style>
   .login-contact img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     object-fit: cover;
-  }
-  .login-contact p {
-    color: #000;
   }
 </style>

@@ -168,7 +168,7 @@
             this.touchscrollX = this.touchmoveX - this.touchstartX;
             this.touchscrollY = this.touchmoveY - this.touchstartY;
             this.touchdirection = Math.abs(this.touchscroolX) > Math.abs(this.touchscroolY) ? 1 : 0;
-            //竖滑阻止默认事件
+            //竖化阻止默认事件
            //需要判断是否事件可以被取消
            if(this.touchdirection == 0 && event.cancelable){
                 event.preventDefault()

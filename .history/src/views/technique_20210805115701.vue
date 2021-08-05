@@ -82,12 +82,8 @@
     created(){
         this.touchdata = {
             touchstartX : null,
-            touchstartY : null,
             touchmoveX : null,
-            touchmoveY : null,
             touchscrollX : null,
-            touchscroolY : null,
-            touchdirection : null
         }
     },
     mounted(){
@@ -153,27 +149,16 @@
             //啥叫第一个touches?
             let touchstart = e.targetTouches[0];
             this.touchstartX = touchstart.clientX;
-            this.touchstartY = touchstart.clientY;
             //监听touchmove touchend
             techniqueul.addEventListener('touchmove', this.touchmovedeal,false);
             techniqueul.addEventListener('touchend', this.touchenddeal, false);
         },
-        touchmovedeal(event){
-            //当屏幕有多个touch或者页面被缩放过，就不执行move操作
-            if (event.targetTouches.length > 1 || event.scale && event.scale !== 1) return;
+        touchmovedeal(e){
+            //这里好像还要进行很多处理
             let techniqueul = document.getElementsByClassName('tech-list')[0];
-            let touchmove = event.targetTouches[0];
+            let touchmove = e.targetTouches[0];
             this.touchmoveX = touchmove.clientX;
-            this.touchmoveY = touchmove.clientY;
             this.touchscrollX = this.touchmoveX - this.touchstartX;
-            this.touchscrollY = this.touchmoveY - this.touchstartY;
-            this.touchdirection = Math.abs(this.touchscroolX) > Math.abs(this.touchscroolY) ? 1 : 0;
-            //竖滑阻止默认事件
-           //需要判断是否事件可以被取消
-           if(this.touchdirection == 0 && event.cancelable){
-                event.preventDefault()
-                //默认事件是滚动
-            }
             techniqueul.style.left = techniqueul.offsetLeft + this.touchscrollX + 'px';
         },
         touchenddeal(){
@@ -236,9 +221,6 @@
                 }else{
                     techniqueul.style.left = -techniquewidth*touchvalue + 'px';
                 }
-                //取消监听 放在其他页面滑动造成连动效果
-                techniqueul.removeEventListener('touchmove', this.touchmovedeal,false);
-                techniqueul.removeEventListener('touchend', this.touchenddeal, false);
             }
         }
     }
@@ -261,7 +243,7 @@
       width: 100vw;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
     }
 
     /* 介绍部分 */
@@ -302,9 +284,6 @@
         html{
             font-size: 13px;
         }
-        .tech-box{
-          top: 1rem;
-    }
         .after-details,
         .before-details,
         .ui-details{
