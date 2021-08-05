@@ -109,7 +109,7 @@ export default {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 23rem;
+    width: 22rem;
   }
   .nav .nav-list .nav-list-ul{
     width: 100%;

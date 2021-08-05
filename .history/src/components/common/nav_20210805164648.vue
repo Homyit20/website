@@ -99,20 +99,16 @@ export default {
 .nav-list-img .nav-img-code{
   position: absolute;
   top: 0;
-  width: 3rem;
-  transition: top 1s;
+  transition: all 1s;
   visibility: hidden;
 }
 /* img响应式 */
 @media screen and (max-width: 500px) {
   .nav .nav-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
-    width: 23rem;
-  }
-  .nav .nav-list .nav-list-ul{
-    width: 100%;
+    width: 35rem;
   }
   .nav-logo img {
     width: 2rem;

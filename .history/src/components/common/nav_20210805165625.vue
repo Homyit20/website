@@ -107,12 +107,9 @@ export default {
 @media screen and (max-width: 500px) {
   .nav .nav-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 23rem;
-  }
-  .nav .nav-list .nav-list-ul{
-    width: 100%;
+    width: 40rem;
   }
   .nav-logo img {
     width: 2rem;

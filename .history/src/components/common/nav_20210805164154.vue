@@ -80,47 +80,23 @@ export default {
 .nav-link-active {
   color: #65dff5;
 }
-  .nav-list-img{
-    width: 3rem;
-    height: 3rem;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-  .nav-list-img:hover .nav-img-code{
-    top: 4rem;
-    visibility: visible;
-  }
 .nav-list .nav-list-img img {
   width: 3rem;
   height: 3rem;
   object-fit: cover;
 }
-.nav-list-img .nav-img-code{
-  position: absolute;
-  top: 0;
-  width: 3rem;
-  transition: top 1s;
-  visibility: hidden;
-}
 /* img响应式 */
 @media screen and (max-width: 500px) {
   .nav .nav-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
-    width: 23rem;
-  }
-  .nav .nav-list .nav-list-ul{
-    width: 100%;
+    width: 35rem;
   }
   .nav-logo img {
     width: 2rem;
     height: 2rem;
     object-fit: cover;
-  }
-  .nav .nav-list .nav-list-img{
-    display: none;
   }
   .nav .nav-list .nav-list-img img {
     display: none;
