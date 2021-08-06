@@ -24,7 +24,7 @@ const routes = [
             path : '/login/contact',
             component : () => import('../components/content/contact.vue'),
             meta : {
-                islogin : true
+                istrue : true
             }
         }
     ]

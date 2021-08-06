@@ -4,7 +4,7 @@
             <h1>JOIN HOMYIT</h1>
             <h2>加入宏奕</h2>
           </div>
-          <form class="login-form" method="post">
+          <form class="login-form" method="">
             <div class="login-main-form">
               <div class="login-input">
                 <input type="text" class="login-form-name" placeholder="姓名" v-model="stuName" @blur="inputjudge(stuName,0)">
@@ -43,12 +43,12 @@ export default ({
   methods :{
     logincommit(){
 //      this.$cookies.set('name', 'this.stuName', '7d');想起来cookie要传到后端
-      // let formdata = {
-      //   stuName : this.stuName,
-      //   stuNum : this.stuNum,
-      //   stuClass : this.stuClass,
-      //   email : this.email
-      // }
+      let formdata = {
+        stuName : this.stuName,
+        stuNum : this.stuNum,
+        stuClass : this.stuClass,
+        email : this.email
+      }
       if(this.stuName != '' && this.stuNum != '' && this.stuClass != '' &&this.email != ''){
         this.$store.commit('judge');
         // axios.post('http://localhost:8080/api/apply/save',{

@@ -4,7 +4,7 @@
             <h1>JOIN HOMYIT</h1>
             <h2>加入宏奕</h2>
           </div>
-          <form class="login-form" method="post">
+          <form class="login-form" method="">
             <div class="login-main-form">
               <div class="login-input">
                 <input type="text" class="login-form-name" placeholder="姓名" v-model="stuName" @blur="inputjudge(stuName,0)">

@@ -43,12 +43,12 @@ export default ({
   methods :{
     logincommit(){
 //      this.$cookies.set('name', 'this.stuName', '7d');想起来cookie要传到后端
-      // let formdata = {
-      //   stuName : this.stuName,
-      //   stuNum : this.stuNum,
-      //   stuClass : this.stuClass,
-      //   email : this.email
-      // }
+      let formdata = {
+        stuName : this.stuName,
+        stuNum : this.stuNum,
+        stuClass : this.stuClass,
+        email : this.email
+      }
       if(this.stuName != '' && this.stuNum != '' && this.stuClass != '' &&this.email != ''){
         this.$store.commit('judge');
         // axios.post('http://localhost:8080/api/apply/save',{
