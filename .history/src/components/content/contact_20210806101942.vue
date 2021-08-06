@@ -34,7 +34,6 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 6%;
     z-index: 3;
   }
   .login-contact .login-contact-details h1{
@@ -45,12 +44,6 @@ export default {
   }
   .login-contact .login-contact-details img{
     width: 15rem;
-    margin-top: 11%;
   }
   /* 层级要看权重？？？ */
-  @media screen and (min-width : 1500px){
-    html{
-      font-size: 18px;
-    }
-  }
 </style>

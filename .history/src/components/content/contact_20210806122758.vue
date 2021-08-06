@@ -11,7 +11,12 @@
 
 <script>
 export default {
-  name : 'Contact'
+  name : 'Contact',
+  data(){
+    return {
+      name : 1
+    }
+  }
 }
 </script>
 

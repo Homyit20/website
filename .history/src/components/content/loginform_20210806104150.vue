@@ -29,7 +29,6 @@
 
 <script>
 import axios from 'axios'
-import qs from 'qs'
 export default ({
     name : 'Loginform',
     data(){
@@ -42,31 +41,26 @@ export default ({
   },
   methods :{
     logincommit(){
-      let formdata = qs.stringify({
-        stuName : this.stuName,
-        stuNum : this.stuNum,
-        stuClass : this.stuClass,
-        email : this.email
-      })
       if(this.stuName != '' && this.stuNum != '' && this.stuClass != '' &&this.email != ''){
-        axios.post('http://localhost:8080/api/apply/save',{
-            data : formdata
-          }).then((res) => {
-            if(res.msg == '报名成功' || res.msg == '你已经报名'){
-              alert(res.msg);
-              this.$router.push({
-                path : '/login/contact'
-              })
-            }else{
-              alert(res.msg);
-            }
-          }).catch((err) => {
-            console.log(err);
-          })
-
+        alert('报名成功')
+        this.$router.push({
+          path : '/login/contact'
+        })
       }else{
         alert("请将信息填写完整")
       }
+      axios.post('http://localhost:8080/api/apply/save',{
+        data : {
+          stuName : this.stuName,
+          stuNum : this.stuNum,
+          stuClass : this.stuClass,
+          email : this.email
+        }
+      }).then((res) => {
+        console.log(res);
+      }).catch((err) => {
+        console.log(err);
+      })
     },
     inputjudge(value, id){
       let logininput = document.getElementsByClassName('login-input')[id];

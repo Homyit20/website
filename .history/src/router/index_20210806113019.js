@@ -22,7 +22,12 @@ const routes = [
         },
         {
             path : '/login/contact',
-            component : () => import('../components/content/contact.vue')
+            component : () => import('../components/content/contact.vue'),
+            beforeRouterEnter : (to, from, next) => {
+                next((app) => {
+                    console.log(this.$store)
+                })
+            }
         }
     ]
     },

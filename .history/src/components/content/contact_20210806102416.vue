@@ -45,7 +45,7 @@ export default {
   }
   .login-contact .login-contact-details img{
     width: 15rem;
-    margin-top: 11%;
+    margin-top: 10%;
   }
   /* 层级要看权重？？？ */
   @media screen and (min-width : 1500px){

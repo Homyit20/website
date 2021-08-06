@@ -28,29 +28,18 @@ export default {
     width: 100vw;
     height: 100%;
     object-fit: cover;
-    z-index: 0;
+    z-index: -1;
   }
-  .login-contact .login-contact-details{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 6%;
-    z-index: 3;
-  }
-  .login-contact .login-contact-details h1{
+  .login-contact-details h1{
     color: #65dff5;
+    z-index: 1;
   }
   .login-contact-details p {
     color: #fff;
+    z-index: 3;
   }
   .login-contact .login-contact-details img{
     width: 15rem;
-    margin-top: 11%;
-  }
-  /* 层级要看权重？？？ */
-  @media screen and (min-width : 1500px){
-    html{
-      font-size: 18px;
-    }
+    z-index: 3;
   }
 </style>

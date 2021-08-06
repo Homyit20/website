@@ -22,7 +22,7 @@ export default {
     align-items: center;
     justify-content: center;
   }
-  .login-contact .login-contact-background{
+  .login-contact + img{
     position: absolute;
     top: 0;
     width: 100vw;
@@ -30,27 +30,16 @@ export default {
     object-fit: cover;
     z-index: 0;
   }
-  .login-contact .login-contact-details{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 6%;
-    z-index: 3;
-  }
-  .login-contact .login-contact-details h1{
+  .login-contact-details h1{
     color: #65dff5;
+    z-index: 3;
   }
   .login-contact-details p {
     color: #fff;
+    z-index: 3;
   }
   .login-contact .login-contact-details img{
-    width: 15rem;
-    margin-top: 11%;
-  }
-  /* 层级要看权重？？？ */
-  @media screen and (min-width : 1500px){
-    html{
-      font-size: 18px;
-    }
+    width: 20rem;
+    z-index: 3;
   }
 </style>

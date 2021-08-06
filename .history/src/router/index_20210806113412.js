@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import { nextTick } from 'vue/types/umd';
 
 Vue.use(VueRouter);
 
@@ -22,7 +23,10 @@ const routes = [
         },
         {
             path : '/login/contact',
-            component : () => import('../components/content/contact.vue')
+            component : () => import('../components/content/contact.vue'),
+            beforeEnter : (next) => {
+                next()
+            }
         }
     ]
     },
