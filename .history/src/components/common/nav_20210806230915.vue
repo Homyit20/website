@@ -30,6 +30,7 @@
       </ul>
       <div class="nav-list-img">
         <img src="../../assets/techlogin/images/小宇航员_07.png" />
+        <img src="../../assets/techlogin/images/二维码.png" class="nav-img-code">
       </div>
     </div>
   </div>
@@ -45,7 +46,7 @@ export default {
 .nav {
   position: absolute;
   top: 0;
-  z-index: 1;
+  z-index: -1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -89,10 +90,21 @@ export default {
     flex-direction: column;
     position: relative;
   }
+  .nav-list-img:hover .nav-img-code{
+    top: 4rem;
+    visibility: visible;
+  }
 .nav-list .nav-list-img img {
   width: 3rem;
   height: 3rem;
   object-fit: cover;
+}
+.nav-list-img .nav-img-code{
+  position: absolute;
+  top: 0;
+  width: 3rem;
+  transition: top 1s;
+  visibility: hidden;
 }
 /* img响应式 */
 @media screen and (max-width: 500px) {
