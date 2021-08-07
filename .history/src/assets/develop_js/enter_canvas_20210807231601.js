@@ -71,7 +71,7 @@ export default{
           window.requestAnimationFrame(draw)
       }
       function enddraw(){
-          ctx.strokeStyle='#000'
+          ctx.strokeStyle='#09bad9'
           ctx.lineWidth=4
           if(elem.width<800){ctx.lineWidth=2}
           ctx.strokeText('HOMYIT',W/2,H/3)
@@ -80,7 +80,7 @@ export default{
   }
     function liuxing(elem,div){
     let starCount
-    if(window.width>800){starCount=150}else{starCount=35}
+    if(window.width>800){starCount=100}else{starCount=50}
     let context = elem.getContext("2d")
     elem.width=elem.clientWidth
     // console.log(elem.width)

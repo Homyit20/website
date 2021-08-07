@@ -71,7 +71,7 @@ export default{
           window.requestAnimationFrame(draw)
       }
       function enddraw(){
-          ctx.strokeStyle='#000'
+          ctx.strokeStyle='#012f37'
           ctx.lineWidth=4
           if(elem.width<800){ctx.lineWidth=2}
           ctx.strokeText('HOMYIT',W/2,H/3)
