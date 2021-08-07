@@ -122,6 +122,5 @@ export default {
         width: 10rem;
         height: 10rem;
         background-color: aqua;
-        z-index: 1000;
       }
 </style>

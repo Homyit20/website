@@ -22,7 +22,6 @@ export default {
     },
     methods : {
       change(){
-        console.log(1)
         this.$router.push('/home')
       }
     }
@@ -122,6 +121,5 @@ export default {
         width: 10rem;
         height: 10rem;
         background-color: aqua;
-        z-index: 1000;
       }
 </style>

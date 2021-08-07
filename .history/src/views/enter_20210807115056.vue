@@ -3,7 +3,6 @@
         <canvas id="Meteor" class="enter_canvas"></canvas>
         <img src="https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/enter_宇航员.png" alt="宇航员" style="z-index:1">
         <canvas id="canvas" class="enter_canvas">你的浏览器不支持canvas</canvas>
-        <div @click="change()" class="enter-button"></div>
     </div>
 </template>
 
@@ -19,12 +18,6 @@ export default {
         // console.log(131312,document.getElementsByClassName('enter_contain')[0])
         canvas.homyit(document.getElementById('canvas'))
         canvas.changecolor(document.getElementsByClassName('star'))
-    },
-    methods : {
-      change(){
-        console.log(1)
-        this.$router.push('/home')
-      }
     }
 }
 </script>
@@ -48,7 +41,6 @@ export default {
         display: flex;
         justify-content: center;
         align-items:flex-end;
-        z-index: 100;
     }
     .star {
         position: absolute;
@@ -117,11 +109,5 @@ export default {
         100% {
           opacity: 0.2;
         }
-      }
-      .enter-button{
-        width: 10rem;
-        height: 10rem;
-        background-color: aqua;
-        z-index: 1000;
       }
 </style>
