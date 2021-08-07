@@ -6,7 +6,7 @@ Vue.use(Vuex)
 const store = new Vuex.Store({
     state : {
         success : 0,
-        isnav : false
+        isnav : true
     },
     mutations : {
         judge(state){

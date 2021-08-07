@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <NavBar v-show="$store.state.isnav"></NavBar>
+    <NavBar></NavBar>
     <router-view></router-view>
   </div>
 </template>

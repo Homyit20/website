@@ -6,17 +6,11 @@ Vue.use(Vuex)
 const store = new Vuex.Store({
     state : {
         success : 0,
-        isnav : false
+        isnav : true
     },
     mutations : {
         judge(state){
             state.success = 1
-        },
-        navview(state){
-            state.isnav = true
-        },
-        navhidden(state){
-            state.isnav = false
         }
     }
 })
