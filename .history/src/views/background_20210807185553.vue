@@ -147,7 +147,7 @@ v-leave-to{
     padding: 0 2.5rem;
     width: 45vw;
     padding-bottom: 2.5vh;
-    color: rgb(222, 224, 224);
+    color: #fff;;
     z-index: 100;
   }
   .center-content::after{
