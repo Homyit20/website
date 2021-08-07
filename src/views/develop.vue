@@ -12,7 +12,7 @@
 </template>
 
 <script>
-    import canvas from '../../assets/develop_js/develop_canvas.js'
+    import canvas from '../assets/develop_js/develop_canvas.js'
     export default{
         name:'develop',
         data(){

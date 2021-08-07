@@ -14,7 +14,7 @@ const routes = [
     },
     {
         path:'/develop',
-        component:() =>import('../components/develop/develop.vue')
+        component:() =>import('../views/develop.vue')
     },
     {
         path: '/login',

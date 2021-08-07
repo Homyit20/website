@@ -7,8 +7,8 @@
 
 <script>
 //要驼峰命名哦
-// import NavBar from "./components/common/nav.vue";
-import NavBar from "./components/enter/enter.vue"
+import NavBar from "./components/common/nav.vue";
+// import NavBar from "./components/enter/enter.vue"
 export default {
   name: "App",
   components: {

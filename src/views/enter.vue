@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import canvas from '../../assets/develop_js/enter_canvas.js'
+import canvas from '../assets/develop_js/enter_canvas.js'
 export default {
     name:'enter',
     mounted(){
