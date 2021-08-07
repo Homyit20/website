@@ -1,6 +1,5 @@
 <template>
     <div class="tech-contain">
-        <NavBar></NavBar>
         <img class="tech-background" src="../assets/techlogin/images/背景.png">
         <div class="tech-content">
             <div class="tech-box" @touchstart.passive="touchstartdeal">
@@ -68,7 +67,6 @@
 </template>
 
 <script>
-  import NavBar from '../components/common/nav.vue'
   let before = 0;
   let after = 0;
   let time = null;
@@ -79,9 +77,6 @@
         return {
             techmove : 40
         }
-    },
-    components : {
-        NavBar
     },
     //挂载变量以便对象使用
     created(){

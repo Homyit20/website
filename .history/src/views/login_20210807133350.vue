@@ -12,9 +12,7 @@
 import NavBar from '../components/common/nav.vue'
 export default {
   name : 'Login',
-  components :{
-    NavBar
-  }
+  NavBar
 }
 </script>
 

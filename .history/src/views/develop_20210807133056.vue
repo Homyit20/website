@@ -1,6 +1,6 @@
 <template>
     <div id="develop">
-        <NavBar></NavBar>
+        <Navbar></Navbar>
         <div class="develop_back"></div>
         <div class = 'develop_txt_contain'>
             <div class="develop_txt_back"></div>

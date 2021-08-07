@@ -1,6 +1,5 @@
 <template>
     <div id="develop">
-        <NavBar></NavBar>
         <div class="develop_back"></div>
         <div class = 'develop_txt_contain'>
             <div class="develop_txt_back"></div>
@@ -13,16 +12,12 @@
 </template>
 
 <script>
-    import NavBar from '../components/common/nav.vue'
     import canvas from '../assets/develop_js/develop_canvas.js'
     export default{
         name:'develop',
         data(){
             return{
             }
-        },
-        components : {
-            NavBar
         },
         mounted(){
             let elem = document.getElementById('canvas')
@@ -50,9 +45,9 @@
     padding: 0;
     color: white;
 }
-/* html{
+html{
     font-size: calc(1vw);
-} */
+}
 #develop{
     position: absolute;;
     width: 100%;

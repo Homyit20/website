@@ -1,13 +1,18 @@
 <template>
   <div id="app">
+    <NavBar v-show="$store.state.isnav"></NavBar>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
+import NavBar from "./components/common/nav.vue";
 // import NavBar from "./components/enter/enter.vue"
 export default {
-  name: "App"
+  name: "App",
+  components: {
+    NavBar,
+  },
 };
 </script>
 

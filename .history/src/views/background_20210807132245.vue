@@ -1,6 +1,5 @@
 <template>
   <div>
-    <NavBar></NavBar>
     <link href="https://cdn.jsdelivr.net/npm/animate.css@3.5.1" rel="stylesheet" type="text/css">
     <div class="big-background">
       <div class="background">
@@ -46,7 +45,6 @@
   </div>
 </template>
 <script>
-  import NavBar from '../components/common/nav.vue'
 import 'animate.css'
 export default {
     name:'background',
@@ -54,9 +52,6 @@ export default {
       return{
         show:true
       }
-    },
-    components : {
-      NavBar
     },
     methods:{
       handleClick(){
@@ -219,7 +214,7 @@ v-leave-to{
          margin-top: 0.1rem;
          margin-bottom: 0.1rem;
        }
-       .big-background button{
+       button{
          width: 15vw;
          margin-top:0.3rem ;
          font-size: 0.1vw;
@@ -257,7 +252,7 @@ v-leave-to{
          margin-top: 0.1rem;
          margin-bottom: 0.1rem;
        }
-      .big-background button{
+       button{
          width: 15vw;
          margin-top:0.3rem ;
          font-size: 0.1vw;
