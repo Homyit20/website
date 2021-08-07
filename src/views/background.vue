@@ -147,7 +147,7 @@ v-leave-to{
     position: relative;
     padding: 0 2.5rem;
     width: 45vw;
-    padding-bottom: 3vh;
+    padding-bottom: 2.5vh;
     color: rgb(222, 224, 224);
     z-index: 100;
   }
@@ -159,8 +159,8 @@ v-leave-to{
     width: 45vw;
     height: 100%;
     background: white;
-    border-radius: 5%;
-    opacity: 0.2;
+    border-radius: 3%;
+    opacity: 0.3;
     z-index: -10;
   }
   .head1{
@@ -170,9 +170,9 @@ v-leave-to{
     margin-bottom: 2vh;
   }
   .lead1{
-    font-size: 1.3rem;
-    margin-left: 2vw;
-    margin-right: 2vw;
+    font-size: 1.5rem;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
   }
   .head2{
     color: #65dff5;
@@ -183,8 +183,8 @@ v-leave-to{
     margin-bottom: 2vh;
     margin-top: 5vh;
     font-size: 1.3rem;
-    margin-left: 2vw;
-    margin-right: 2vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
   }
   .btn{
     width: 6vw;
@@ -192,10 +192,14 @@ v-leave-to{
     font-size: 1.5rem;
     margin-top: 2rem;
     background-color: #65dff5;
-    /* opacity: 0.8; */
+    opacity: 0.5;
     color:white;
     border:  solid #65dff5;
     border-radius: 5%;
+  }
+  .btn:hover{
+    background-color: #65dff5;
+    opacity: 1;
   }
 
   @media screen and (max-width : 800px){
@@ -242,32 +246,36 @@ v-leave-to{
    @media screen and (max-width : 500px){
        .center-content{
          width: 60vw;
-         height: 50vh;
+         height: 43vh;
          padding-bottom: 0;
+         bottom: 1vh;
          bottom: 5vh;
-         padding: 0 1rem;
          padding: 1rem;
        }
        .head1{
          font-size: 0.1rem;
          margin-top: 0;
+         padding-top: 0;
+         margin-top: 1vh;
          margin-bottom: 1vh;
+         /* text-align: center; */
        }
        .lead1{
          font-size: 0.1rem;
          margin-left: 0;
          margin-right: 0;
+         margin-bottom: 2vh;
        }
        .head2{
          font-size: 0.1rem;
          margin-top: 0;
-         margin-bottom: 1vh;
+         margin-bottom: 2vh;
        }
        .lead2{
          font-size: 0.01rem;
          margin-left: 0;
          margin-right: 0;
-         margin-top: 0.1rem;
+         margin-top: 0.5rem;
          margin-bottom: 0.1rem;
        }
        .btn{
