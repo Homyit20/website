@@ -19,8 +19,8 @@ export default {
     },
     mounted(){
         let img = document.getElementsByTagName('img')
-        if(document.body.clientWidth>800){img[0].width = document.body.clientWidth/2}
-      else{img[0].width=document.body.clientWidth}
+      //   if(document.body.clientWidth>800){img[0].width = document.body.clientWidth/2}
+      // else{img[0].width=document.body.clientWidth}
         // 画流星
         let elem = document.getElementById('Meteor')
         let div = document.getElementsByClassName('enter_contain')[0]
