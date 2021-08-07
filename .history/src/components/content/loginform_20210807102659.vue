@@ -59,7 +59,7 @@ export default ({
               alert(res.msg);
             }
           }).catch((err) => {
-            console.log(err.response);
+            console.log(err);
           })
       }else{
         alert('请将信息填写完整')

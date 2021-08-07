@@ -7,16 +7,16 @@
           <form class="login-form" method="">
             <div class="login-main-form">
               <div class="login-input">
-                <input type="text" class="login-form-name" placeholder="姓名" v-model="stuName" name="stuName" @blur="inputjudge(stuName,0)">
+                <input type="text" class="login-form-name" placeholder="姓名" v-model="stuName" @blur="inputjudge(stuName,0)">
               </div>
               <div class="login-input">
-                <input type="text" class="login-form-number" placeholder="学号" v-model="stuNum" name="stuNum" @blur="inputjudge(stuNum,1)">
+                <input type="text" class="login-form-number" placeholder="学号" v-model="stuNum" @blur="inputjudge(stuNum,1)">
               </div>
               <div class="login-input">
-                <input type="text" class="login-form-class" placeholder="班级" v-model="stuClass" name="stuClass" @blur="inputjudge(stuClass,2)" >
+                <input type="text" class="login-form-class" placeholder="班级" v-model="stuClass" @blur="inputjudge(stuClass,2)" >
               </div>
               <div class="login-input">
-                <input type="text" class="login-form-address" placeholder="邮箱" v-model="email" name="email" @blur="inputjudge(email,3)">
+                <input type="text" class="login-form-address" placeholder="邮箱" v-model="email" @blur="inputjudge(email,3)">
               </div>
               <textarea placeholder="你的自我介绍/意向" class="login-form-idea"></textarea>
             </div>
@@ -42,13 +42,17 @@ export default ({
   },
   methods :{
     logincommit(){
-      if(this.stuName != '' && this.stuNum != '' && this.stuClass != '' &&this.email != ''){
-        axios.post('api/apply/save',{
+     //this.$cookies.set('name', 'this.stuName', '7d');想起来cookie要传到后端
+      let formdata = JSON.stringify({
         stuName : this.stuName,
         stuNum : this.stuNum,
         stuClass : this.stuClass,
         email : this.email
-      }).then((res) => {
+      })
+      if(this.stuName != '' && this.stuNum != '' && this.stuClass != '' &&this.email != ''){
+        axios.post('api/apply/save',{
+            data : formdata
+          }).then((res) => {
             if(res.msg == '报名成功' || res.msg == '你已经报名'){
               this.$store.commit('judge');
               alert(res.msg);
@@ -59,7 +63,7 @@ export default ({
               alert(res.msg);
             }
           }).catch((err) => {
-            console.log(err.response);
+            console.log(err);
           })
       }else{
         alert('请将信息填写完整')
