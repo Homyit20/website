@@ -29,7 +29,6 @@
             canvas.draw(elem)
             canvas.back(document.getElementsByClassName('develop_back')[0])
             window.onresize=()=>{
-                
                 if(document.body.clientWidth<800){
                     console.log('small')
                     canvas.draw(elem)
