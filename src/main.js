@@ -20,6 +20,7 @@ new Vue({
 
 //报名成功或者已报名才可进入二维码页面
 router.beforeEach((to, from, next) => {
+
   if (to.meta.islogin) {
     if (store.state.success == 1) {
       next()
@@ -29,6 +30,17 @@ router.beforeEach((to, from, next) => {
       })
     }
   } else {
-    next()
+
+    if (to.meta.islogin) {
+      if (store.state.success == 1) {
+        next()
+      } else {
+        next({
+          path: from.path
+        })
+      }
+    } else {
+      next()
+    }
   }
 })

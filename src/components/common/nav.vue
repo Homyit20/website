@@ -100,8 +100,16 @@ export default {
 .nav-list .nav-list-img img {
   width: 3rem;
   height: 3rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.nav-list .nav-list-img img {
+  width: 3rem;
+  height: 3rem;
   object-fit: cover;
 }
+
 /* img响应式 */
 @media screen and (max-width: 500px) {
   .nav .nav-list {

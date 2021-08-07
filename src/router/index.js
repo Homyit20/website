@@ -15,19 +15,19 @@ const routes = [
     {
         path: '/login',
         component: () => import('../views/login.vue'),
-        redirect: '/login/loginform',
-        children: [{
-            path: '/login/loginform',
-            component: () => import('../components/content/loginform.vue')
+        redirect : '/login/loginform',
+        children : [{
+            path : '/login/loginform',
+            component : () => import('../components/content/loginform.vue')
         },
         {
-            path: '/login/contact',
-            component: () => import('../components/content/contact.vue'),
-            meta: {
-                islogin: true
+            path : '/login/contact',
+            component : () => import('../components/content/contact.vue'),
+            meta : {
+                islogin : true
             }
         }
-        ]
+    ]
     },
     {
         path: '/home',
