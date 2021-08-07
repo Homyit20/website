@@ -132,7 +132,7 @@ v-leave-to{
     padding-bottom: 3vh;
     /* height: 60%; */
     /* opacity: 0.6; */
-    color: rgb(222, 224, 224);
+    color: rgb(239, 240, 240);
     z-index: 100;
   }
   .content::after{
@@ -144,7 +144,7 @@ v-leave-to{
     height: 100%;
     background: white;
     border-radius: 5%;
-    opacity: 0.2;
+    opacity: 0.1;
     z-index: -10;
   }
   .head1{
