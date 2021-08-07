@@ -147,7 +147,7 @@ v-leave-to{
     padding: 0 2.5rem;
     width: 45vw;
     padding-bottom: 2.5vh;
-    color: #fff;
+    color: #000;
     z-index: 100;
   }
   .center-content::after{
@@ -169,7 +169,7 @@ v-leave-to{
     margin-bottom: 2vh;
   }
   .lead1{
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     margin-left: 1.5vw;
     margin-right: 1.5vw;
   }
@@ -181,7 +181,7 @@ v-leave-to{
   .lead2{
     margin-bottom: 2vh;
     margin-top: 5vh;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin-left: 1vw;
     margin-right: 1vw;
   }
@@ -191,7 +191,7 @@ v-leave-to{
     font-size: 1.5rem;
     margin-top: 2rem;
     background-color: #fff;
-    color:#000;
+    color:rgb(153, 147, 147);
     border: 1px solid #65dff5;
     border-radius: 5%;
   }
@@ -218,7 +218,7 @@ v-leave-to{
          margin-bottom: 1vh;
        }
        .lead1{
-         font-size: 0.9rem;
+         font-size: 1rem;
          margin-left: 0;
          margin-right: 0;
        }
@@ -228,7 +228,7 @@ v-leave-to{
          margin-bottom: 1vh;
        }
        .lead2{
-         font-size: 0.9rem;
+         font-size: 1rem;
          margin-left: 0;
          margin-right: 0;
          margin-top: 0.1rem;

@@ -144,6 +144,7 @@
             window.onresize = function(){
                 let techniquewidth = techniquebox.offsetWidth;
                 techniqueul.style.left = -techniquewidth*value + 'px';
+                console.log(techniquewidth)
                 if(techniquewidth >= 800){
                     this.techmove = 20;
                 }else{

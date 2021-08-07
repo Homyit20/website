@@ -147,7 +147,7 @@ v-leave-to{
     padding: 0 2.5rem;
     width: 45vw;
     padding-bottom: 2.5vh;
-    color: #fff;
+    color: rgb(222, 224, 224);
     z-index: 100;
   }
   .center-content::after{
@@ -157,7 +157,7 @@ v-leave-to{
     left: 0;
     width: 45vw;
     height: 100%;
-    background: #fff;
+    background: white;
     border-radius: 3%;
     opacity: 0.3;
     z-index: -10;
@@ -169,7 +169,7 @@ v-leave-to{
     margin-bottom: 2vh;
   }
   .lead1{
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     margin-left: 1.5vw;
     margin-right: 1.5vw;
   }
@@ -181,7 +181,7 @@ v-leave-to{
   .lead2{
     margin-bottom: 2vh;
     margin-top: 5vh;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin-left: 1vw;
     margin-right: 1vw;
   }
@@ -190,9 +190,10 @@ v-leave-to{
     /* padding-bottom: 1rem; */
     font-size: 1.5rem;
     margin-top: 2rem;
-    background-color: #fff;
-    color:#000;
-    border: 1px solid #65dff5;
+    background-color: #65dff5;
+    opacity: 0.5;
+    color:white;
+    border:  solid #65dff5;
     border-radius: 5%;
   }
   .btn:hover{
@@ -210,7 +211,7 @@ v-leave-to{
          padding: 1rem;
        }
        .center-content::after{
-         width: 60vw;
+         width: 80vw;
        }
        .head1{
          font-size: 1rem;
@@ -218,7 +219,7 @@ v-leave-to{
          margin-bottom: 1vh;
        }
        .lead1{
-         font-size: 0.9rem;
+         font-size: 1rem;
          margin-left: 0;
          margin-right: 0;
        }
@@ -228,7 +229,7 @@ v-leave-to{
          margin-bottom: 1vh;
        }
        .lead2{
-         font-size: 0.9rem;
+         font-size: 1rem;
          margin-left: 0;
          margin-right: 0;
          margin-top: 0.1rem;

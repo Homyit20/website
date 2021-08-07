@@ -218,7 +218,7 @@ v-leave-to{
          margin-bottom: 1vh;
        }
        .lead1{
-         font-size: 0.9rem;
+         font-size: 1rem;
          margin-left: 0;
          margin-right: 0;
        }
@@ -228,7 +228,7 @@ v-leave-to{
          margin-bottom: 1vh;
        }
        .lead2{
-         font-size: 0.9rem;
+         font-size: 1rem;
          margin-left: 0;
          margin-right: 0;
          margin-top: 0.1rem;
