@@ -13,33 +13,33 @@ const routes = [
         component: () => import('../views/technique.vue')
     },
     {
-        path:'/develop',
-        component:() =>import('../views/develop.vue')
+        path: '/develop',
+        component: () => import('../views/develop.vue')
     },
     {
-        path : '/enter',
-        component:() => import('../views/enter.vue') 
+        path: '/enter',
+        component: () => import('../views/enter.vue')
     },
     {
         path: '/login',
         component: () => import('../views/login.vue'),
-        redirect : '/login/loginform',
-        children : [{
-            path : '/login/loginform',
-            component : () => import('../components/content/loginform.vue')
+        redirect: '/login/loginform',
+        children: [{
+            path: '/login/loginform',
+            component: () => import('../components/content/loginform.vue')
         },
         {
-            path : '/login/contact',
-            component : () => import('../components/content/contact.vue'),
-            meta : {
-                islogin : true
+            path: '/login/contact',
+            component: () => import('../components/content/contact.vue'),
+            meta: {
+                islogin: true
             }
         }
-    ]
+        ]
     },
     {
         path: '/home',
-        component: () => import('../views/Home.vue'),
+        component: () => import('../views/home.vue'),
     }, {
         path: '/background',
         component: () => import('../views/background.vue'),

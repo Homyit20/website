@@ -55,6 +55,9 @@ export default {
   /* border-width: 0.05rem; */
   opacity: 0.6;
 }
+#home-btn:hover {
+  background-color: #65dff5;
+}
 @media screen and (max-width: 500px) {
   #home-welcome {
     text-align: center;
