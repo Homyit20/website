@@ -40,13 +40,10 @@ export default {
     justify-content: space-around;
     z-index: 200;
     height: 50%;
-    margin-bottom: 10rem;
   }
   .login-contact-details .login-details-text{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
   }
   .login-contact .login-contact-details h1{
     color: #65dff5;
