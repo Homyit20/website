@@ -4,7 +4,11 @@
       Welcome To Our Studio!
     </h2>
     <h1 class="animate__animated animate__fadeInDown">Tt's nice to meet you</h1>
-    <button id="home-btn" class="animate__animated animate__fadeInDown" @click = "go()">
+    <button
+      id="home-btn"
+      class="animate__animated animate__fadeInDown"
+      @click="go()"
+    >
       TELL ME MORE
     </button>
   </div>
@@ -16,13 +20,13 @@ export default {
   data() {
     return {};
   },
-  methods : {
-    go(){
+  methods: {
+    go() {
       this.$router.push({
-        path : '/technique'
-      })
-    }
-  }
+        path: "/background",
+      });
+    },
+  },
 };
 </script>
 <style>

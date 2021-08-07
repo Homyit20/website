@@ -1,0 +1,25 @@
+<template>
+  <div class="login-contact">
+      <img src="../../assets/techlogin/images/报名背景.png">
+      <h1>CONTACT US</h1>
+      <p>宏奕迎新群</p>
+  </div>
+</template>
+
+<script>
+export default {
+  name : 'Contact'
+}
+</script>
+
+<style>
+  .login-contact img{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+  }
+  .login-contact p {
+    color: #fff;
+  }
+</style>

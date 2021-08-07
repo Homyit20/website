@@ -2,7 +2,6 @@
   <div id="app">
     <NavBar></NavBar>
     <router-view></router-view>
-    <change-nav></change-nav>
   </div>
 </template>
 

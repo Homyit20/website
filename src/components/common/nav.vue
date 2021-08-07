@@ -13,7 +13,14 @@
             >首页</router-link
           >
         </li>
-        <li>简介</li>
+        <li>
+          <router-link
+            to="/background"
+            class="nav-link-class"
+            active-class="nav-link-active"
+            >简介</router-link
+          >
+        </li>
         <li>
           <router-link
             to="/technique"
@@ -25,12 +32,12 @@
         <li>发展</li>
         <li>
           <router-link to="/login" class="nav-link-class nav-link-login"
-            >加入我们</router-link>
+            >加入我们</router-link
+          >
         </li>
       </ul>
       <div class="nav-list-img">
         <img src="../../assets/techlogin/images/小宇航员_07.png" />
-        <img src="../../assets/techlogin/images/二维码.png" class="nav-img-code">
       </div>
     </div>
   </div>
@@ -44,6 +51,9 @@ export default {
 
 <style>
 .nav {
+  position: absolute;
+  top: 0;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -80,28 +90,17 @@ export default {
 .nav-link-active {
   color: #65dff5;
 }
-  .nav-list-img{
-    width: 3rem;
-    height: 3rem;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-  .nav-list-img:hover .nav-img-code{
-    top: 4rem;
-    visibility: visible;
-  }
+.nav-list-img {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
 .nav-list .nav-list-img img {
   width: 3rem;
   height: 3rem;
   object-fit: cover;
-}
-.nav-list-img .nav-img-code{
-  position: absolute;
-  top: 0;
-  width: 3rem;
-  transition: top 1s;
-  visibility: hidden;
 }
 /* img响应式 */
 @media screen and (max-width: 500px) {
@@ -111,7 +110,7 @@ export default {
     align-items: center;
     width: 23rem;
   }
-  .nav .nav-list .nav-list-ul{
+  .nav .nav-list .nav-list-ul {
     width: 100%;
   }
   .nav-logo img {
@@ -119,7 +118,7 @@ export default {
     height: 2rem;
     object-fit: cover;
   }
-  .nav .nav-list .nav-list-img{
+  .nav .nav-list .nav-list-img {
     display: none;
   }
   .nav .nav-list .nav-list-img img {

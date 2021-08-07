@@ -14,17 +14,32 @@ const routes = [
     },
     {
         path: '/login',
-        component: () => import('../views/login.vue')
+        component: () => import('../views/login.vue'),
+        redirect: '/login/loginform',
+        children: [{
+            path: '/login/loginform',
+            component: () => import('../components/content/loginform.vue')
+        },
+        {
+            path: '/login/contact',
+            component: () => import('../components/content/contact.vue'),
+            meta: {
+                islogin: true
+            }
+        }
+        ]
     },
     {
         path: '/home',
         component: () => import('../views/Home.vue'),
+    }, {
+        path: '/background',
+        component: () => import('../views/background.vue'),
     }
 ]
 
 const router = new VueRouter({
-    routes,
-    mode : 'history'
+    routes
 })
 
 export default router;
