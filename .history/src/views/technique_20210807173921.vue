@@ -389,10 +389,10 @@
              transform: translateY(1rem);
          }
          50%{
-             transform: translateY(-1.1rem);
+             transform: translateY(0);
          }
          100%{
-             transform: translateY(1rem);
+             transform: translateY(-1rem);
          }
      }
     /* 小圈圈 */

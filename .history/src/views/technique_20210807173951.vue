@@ -386,13 +386,13 @@
 
      @keyframes animate{
          0%{
-             transform: translateY(1rem);
+             transform: translateY(2rem);
          }
          50%{
-             transform: translateY(-1.1rem);
+             transform: translateY(-2rem);
          }
          100%{
-             transform: translateY(1rem);
+             transform: translateY(2rem);
          }
      }
     /* 小圈圈 */

@@ -385,14 +385,14 @@
      /* 动画效果 */
 
      @keyframes animate{
-         0%{
+         25%{
              transform: translateY(1rem);
          }
-         50%{
-             transform: translateY(-1.1rem);
+         50%,100%{
+             transform: translateY(0);
          }
-         100%{
-             transform: translateY(1rem);
+         75%{
+             transform: translateY(-1rem);
          }
      }
     /* 小圈圈 */

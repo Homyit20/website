@@ -11,23 +11,20 @@
 import canvas from '../assets/develop_js/enter_canvas.js'
 export default {
     name:'enter',
-    methods:{
-      change(){
-        // console.log(1)
-        this.$router.push('/home')
-      }
-    },
     mounted(){
         let img = document.getElementsByTagName('img')
         if(document.body.clientWidth>800){img[0].width = document.body.clientWidth/2}
         else{img[0].width=document.body.clientWidth}
-        // 画流星
         canvas.liuxing(document.getElementById('Meteor'),document.getElementsByClassName('enter_contain')[0])
         // console.log(131312,document.getElementsByClassName('enter_contain')[0])
-        // 画文字
         canvas.homyit(document.getElementById('canvas'))
         canvas.changecolor(document.getElementsByClassName('star'))
-}
+    },
+    methods : {
+      change(){
+        this.$router.push('/home')
+      }
+    }
 }
 </script>
 
@@ -126,16 +123,14 @@ export default {
         align-items: center;
         position: absolute;
         z-index: 100;
-        top: 50%;
-        width: 4rem;
-        height: 4rem;
+        top: 55%;
+        width: 6rem;
+        height: 6rem;
         background-color: #fff;
+        border: 3px solid rgb(151, 212, 228);
         border-radius: 50%;
         color: #65dff5;
         box-shadow: 1px 1px 2px #65dff5;
-      }
-      .enter-button:hover{
-        box-shadow: 2px 2px 10px #65dff5;
       }
       .enter-button p{
         font-size: 2rem;

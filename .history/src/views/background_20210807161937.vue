@@ -6,7 +6,7 @@
       <div class="background">
         <transition mode="out-in">
           <div v-if="show">
-            <div class="center-content">
+            <div class="content">
               <h1 class="head1">宏奕工作室（Homyit Studio）</h1>
               <p class="lead1">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;宏奕工作室成立于2013年9月，
@@ -17,11 +17,11 @@
               踏实求新”的侠客情怀，致力于为学生提供一个专业的Web
               开发修炼圣地,培养出更多就业型人才。
               </P>
-              <button class="btn" @click="handleClick">下一页</button>
+              <button @click="handleClick">下一页</button>
             </div>
           </div>
           <div v-else>
-            <div class="center-content">
+            <div class="content">
               <p class="lead2">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               专业方面,工作室主要以承接商业项目、开办技术培训参加专业竞赛、
@@ -31,14 +31,14 @@
               还有唱 K ,桌游等娱乐项目。而且工作室有免费空调、冰箱,让你在炎炎夏日有个避暑的好去处。
               </P>
               <h1 class="head2">快来加入我们吧！&nbsp;JOIN&nbsp;&nbsp;US</h1>
-                <button class="btn" @click="handleClick">上一页</button>
+              <button @click="handleClick" class="back-button">上一页</button>
             </div>
           </div>
         </transition>
-        <div class="left-star">
+        <div class="back_star">
           <img src="../assets/background/star.png">
         </div>
-        <div class="right-ast">
+        <div class="ast">
           <img src="../assets/background/ast.png">
         </div>
       </div>
@@ -47,7 +47,7 @@
 </template>
 <script>
   import NavBar from '../components/common/nav.vue'
-  import 'animate.css'
+import 'animate.css'
 export default {
     name:'background',
     data(){
@@ -87,38 +87,26 @@ export default {
       bottom: 0;
     }
     
-.left-star{
+.back_star{
   width: 20vw;
   position: absolute;
   left: 5vw;
   top: 15vh;
 }
-.left-star img{
+.back_star img{
   width: 20vw;
-  animation: rotation 3s infinite ease-in-out;
 }
-@keyframes rotation{
-         0%{
-           transform: rotate(-30deg);
-         }50%{
-           transform: rotate(30deg);
-         }
-         100%{
-           transform: rotate(-30deg);
-         }
-     }
-.right-ast{
+.ast{
   width: 20vw;
   position: absolute;
   right: 6vw;
   bottom: 22vh;
 }
-.right-ast img{
+.ast img{
   width: 10vw;
 }
-
 @media screen and (max-width: 500px) {
-  .left-star{
+  .back_star{
     top: 10vh;
   }
 }
@@ -137,7 +125,7 @@ export default {
 v-leave-to{
   opacity: 0;
 }
-.center-content{
+.content{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -146,16 +134,13 @@ v-leave-to{
     position: relative;
     padding: 0 2.5rem;
     width: 45vw;
-<<<<<<< HEAD
-    padding-bottom: 2.5vh;
-    color: rgb(222, 224, 224);
-=======
     padding-bottom: 3vh;
-    color: #fff;
->>>>>>> dfd46301b30891a58315c75d6e4b1ceb6445ae79
+    /* height: 60%; */
+    /* opacity: 0.6; */
+    color: rgb(242, 250, 250);
     z-index: 100;
   }
-  .center-content::after{
+  .content::after{
     content: '';
     position: absolute;
     top: 0;
@@ -163,8 +148,8 @@ v-leave-to{
     width: 45vw;
     height: 100%;
     background: white;
-    border-radius: 3%;
-    opacity: 0.3;
+    border-radius: 5%;
+    opacity: 0.2;
     z-index: -10;
   }
   .head1{
@@ -174,9 +159,9 @@ v-leave-to{
     margin-bottom: 2vh;
   }
   .lead1{
-    font-size: 1.5rem;
-    margin-left: 1.5vw;
-    margin-right: 1.5vw;
+    font-size: 1.3rem;
+    margin-left: 2vw;
+    margin-right: 2vw;
   }
   .head2{
     color: #65dff5;
@@ -187,27 +172,21 @@ v-leave-to{
     margin-bottom: 2vh;
     margin-top: 5vh;
     font-size: 1.3rem;
-    margin-left: 1vw;
-    margin-right: 1vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
   }
-  .btn{
+  .big-background button{
     width: 6vw;
     /* padding-bottom: 1rem; */
     font-size: 1.5rem;
     margin-top: 2rem;
     background-color: #65dff5;
-    opacity: 0.5;
+    opacity: 0.7;
     color:white;
-    border:  solid #65dff5;
-    border-radius: 5%;
-  }
-  .btn:hover{
-    background-color: #65dff5;
-    opacity: 1;
   }
 
   @media screen and (max-width : 800px){
-       .center-content{
+       .content{
          width: 60vw;
          height: 35vh;
          padding-bottom: 0;
@@ -215,7 +194,7 @@ v-leave-to{
          padding: 0 2rem;
          padding: 1rem;
        }
-       .center-content::after{
+       .content::after{
          width: 60vw;
        }
        .head1{
@@ -240,7 +219,7 @@ v-leave-to{
          margin-top: 0.1rem;
          margin-bottom: 0.1rem;
        }
-       .btn{
+       .big-background button{
          width: 15vw;
          margin-top:0.3rem ;
          font-size: 0.1vw;
@@ -248,41 +227,37 @@ v-leave-to{
    }
 
    @media screen and (max-width : 500px){
-       .center-content{
+       .content{
          width: 60vw;
-         height: 43vh;
+         height: 50vh;
          padding-bottom: 0;
-         bottom: 1vh;
          bottom: 5vh;
+         padding: 0 1rem;
          padding: 1rem;
        }
        .head1{
          font-size: 0.1rem;
          margin-top: 0;
-         padding-top: 0;
-         margin-top: 1vh;
          margin-bottom: 1vh;
-         /* text-align: center; */
        }
        .lead1{
          font-size: 0.1rem;
          margin-left: 0;
          margin-right: 0;
-         margin-bottom: 2vh;
        }
        .head2{
          font-size: 0.1rem;
          margin-top: 0;
-         margin-bottom: 2vh;
+         margin-bottom: 1vh;
        }
        .lead2{
          font-size: 0.01rem;
          margin-left: 0;
          margin-right: 0;
-         margin-top: 0.5rem;
+         margin-top: 0.1rem;
          margin-bottom: 0.1rem;
        }
-       .btn{
+      .back-button{
          width: 15vw;
          margin-top:0.3rem ;
          font-size: 0.1vw;

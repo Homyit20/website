@@ -76,15 +76,14 @@ export default{
         init()
     },
     liuxing(elem,div){
+        console.log(div)
         let starCount
         if(window.width>800){starCount=300}else{starCount=180}
         let context = elem.getContext("2d")
         elem.width=elem.clientWidth
-        // console.log(elem.width)
-        elem.height=elem.clientHeight
-        // console.log(elem.height)
-        let listen = 0
-        window.onresize=()=>{listen=1;console.log('windows改变');this.liuxing(elem,div)}
+        console.log(elem.width)
+        elem.height=1000
+        console.log(elem.height)
         function starInit(){
             for(var i = 0;i<starCount;i++){
                 let star=document.createElement("div")
@@ -165,10 +164,7 @@ export default{
           }
 
           function playRains() {
-              if(listen){
-                console.log('重新执行流星')
-                return
-              }
+            //   console.log(123123123123)
               for (let i=0;i<rainCount;i++){
                   let rain = rains[i]
                   rain.move()

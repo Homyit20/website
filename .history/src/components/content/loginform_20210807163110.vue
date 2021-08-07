@@ -274,7 +274,6 @@ export default ({
       .login-form .login-main-form input[type = "text"]{
         width: 17.5rem;
         height: 3rem;
-        border-radius: 4px;
       }
       .login-main-form textarea{
         width: 17.5rem;

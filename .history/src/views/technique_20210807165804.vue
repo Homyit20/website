@@ -343,7 +343,7 @@
   }
   .after-details .tech-after-people img{
       max-width: 15rem;
-      animation: animate 2s infinite ease-in-out;
+      animation: animate 2s infinite linear;
   }
 
 
@@ -362,7 +362,7 @@
     }
     .before-details .tech-before-people img{
       max-width: 15rem;
-      animation: animate 2s infinite ease-in-out;
+      animation: animate 2s infinite linear;
     }
 
     /* ui部分 */
@@ -379,20 +379,20 @@
     }
     .ui-details .tech-ui-people img{
       max-width: 15rem;
-      animation: animate 2s infinite ease-in-out;
+      animation: animate 2s infinite linear;
     }
 
      /* 动画效果 */
 
      @keyframes animate{
-         0%{
+         25%{
              transform: translateY(1rem);
          }
-         50%{
-             transform: translateY(-1.1rem);
+         50%,100%{
+             transform: translateY(0);
          }
-         100%{
-             transform: translateY(1rem);
+         75%{
+             transform: translateY(-1rem);
          }
      }
     /* 小圈圈 */
@@ -416,14 +416,14 @@
             top: 4rem;
         }
         .tech-box .tech-text{
-            width: 30rem;
+            width: 100rem;
         }
         .tech-content .tech-select-list{
             position: absolute;
             bottom: 16rem;
         }
         .tech-list p {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
         }
         .tech-select-list .tech-select-circle{
            width: 0.7rem;
