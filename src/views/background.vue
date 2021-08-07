@@ -34,7 +34,7 @@
             </div>
           </div>
         </transition>
-        <div class="star">
+        <div class="back_star">
           <img src="../assets/background/star.png">
         </div>
         <div class="ast">
@@ -82,13 +82,13 @@ export default {
       bottom: 0;
     }
     
-.star{
+.back_star{
   width: 20vw;
   position: absolute;
   left: 5vw;
   top: 15vh;
 }
-.star img{
+.back_star img{
   width: 20vw;
 }
 .ast{
@@ -101,7 +101,7 @@ export default {
   width: 10vw;
 }
 @media screen and (max-width: 500px) {
-  .star{
+  .back_star{
     top: 10vh;
   }
 }

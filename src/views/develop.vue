@@ -43,11 +43,10 @@
 *{
     margin: 0;
     padding: 0;
-    color: white;
 }
-html{
+/* html{
     font-size: calc(1vw);
-}
+} */
 #develop{
     position: absolute;;
     width: 100%;
@@ -75,10 +74,10 @@ html{
 .develop_txt_contain{
     position: relative;
     /* border: 3px solid red; */
-    width: 22rem;
+    width: 22vw;
     height: auto;
-    left: 5rem;
-    /* transform: translate(15rem,8rem); */
+    left: 5vw;
+    /* transform: translate(15vw,8vw); */
 
 }
 .develop_txt_back{
@@ -89,42 +88,41 @@ html{
     background-color: white;
 }
 #develop div p {
-    width: 19rem;
+    width: 19vw;
     text-align: center;
-    letter-spacing: 0.8rem;
-    font-size: 1.5rem;
+    letter-spacing: 0.8vw;
+    font-size: 1.5vw;
     color: white;
-    line-height: 2.5rem;
-    text-indent: 2rem;
+    line-height: 2.5vw;
+    text-indent: 2vw;
     margin: 0 auto;
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
+    margin-top: 2.5vw;
+    margin-bottom: 2.5vw;
     animation: develop_show 1.5s both;
     opacity: 1;
 }
-canvas{
+.develop_canvas{
     float: right;
-    margin-right: 10rem;
-
+    margin-right: 10vw;
 }
 .develop_yu{
     position: absolute;
-    right: 4rem;
+    right: 4vw;
     bottom: 0;
-    width: 15rem;
+    width: 15vw;
     height: auto;
 }
 @media only screen and (max-width: 500px) {
     .develop_txt_contain{
-        width: 60rem;
+        width: 60vw;
         left: 0;
         top: 8vh;
     }
     #develop div p{
-        width:54rem;
-        text-indent: 3rem;
-        font-size: 1.5rem;
-        line-height: 7rem;
+        width:54vw;
+        text-indent: 3vw;
+        font-size: 1.5vw;
+        line-height: 7vw;
        
     }
     
