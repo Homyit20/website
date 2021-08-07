@@ -21,9 +21,9 @@ new Vue({
 router.beforeEach((to, from, next) => {
   //判断是否显示导航
   if(to.path == '/enter' || to.path =='/login/contact'){
-    store.commit('navhidden')
+    this.$store.commmit('navhidden')
   }else{
-    store.commit('navview')
+    this.$store.commmit('navview')
   }
   //路由导航
   if (to.meta.islogin) {
