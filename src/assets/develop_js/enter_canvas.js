@@ -13,7 +13,9 @@ export default{
       elem.height=H
       ctx. textBaseline="middle"
       ctx.textAlign = "center"
-      let fontSize = elem.width*2/15
+      // let fontSize = elem.width*2/15
+      let fontSize
+      if(W>800){fontSize=W*2/15}else{fontSize=W*2/15}
       let fontFamily='Helvetica Neue, Helvetica, Arial, sans-serif';
       // init初始化
       function init(){
@@ -80,7 +82,7 @@ export default{
   }
     function liuxing(elem,div){
     let starCount
-    if(window.width>800){starCount=300}else{starCount=180}
+    if(window.width>800){starCount=200}else{starCount=100}
     let context = elem.getContext("2d")
     elem.width=elem.clientWidth
     // console.log(elem.width)
