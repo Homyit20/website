@@ -140,7 +140,7 @@ export default{
               // 8fd6e0 46a0ae 2e64e0
               line.addColorStop(0, "#fff");
               line.addColorStop(0.1, "#fff");
-              line.addColorStop(0.2,'#fff')
+              line.addColorStop(0.2,'#8fd6e0')
               line.addColorStop(1.0, "black");
               context.strokeStyle = line;
               context.moveTo(this.x, this.y);
@@ -186,7 +186,7 @@ export default{
               }
               window.requestAnimationFrame(playRains)
           }
-          let rainCount=15
+          let rainCount=20
           let rains = new Array()
         //   init()
           starInit()

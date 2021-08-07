@@ -176,7 +176,7 @@ export default ({
         display: none;
       }
       .login-form .login-button button{
-        margin-top: 80%;
+        margin-top: 60%;
       }
     }
 

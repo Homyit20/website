@@ -157,7 +157,7 @@ export default ({
          margin-top: 3.5rem;
        }
       .login-content{
-        margin-top : 2rem;
+        margin-top : 3rem;
       }
       .login-form .login-main-form{
         display: flex;
@@ -166,7 +166,7 @@ export default ({
         align-items: center;
         width: 16rem;
         height: 15rem;
-        margin-top: 2rem;
+        margin-top: 6rem;
       }
       .login-form .login-main-form input[type = "text"]{
         width: 15rem;
@@ -176,7 +176,7 @@ export default ({
         display: none;
       }
       .login-form .login-button button{
-        margin-top: 80%;
+        margin-top: 10rem;
       }
     }
 
