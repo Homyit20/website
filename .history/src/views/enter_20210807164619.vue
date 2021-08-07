@@ -131,9 +131,6 @@ export default {
         color: #65dff5;
         box-shadow: 1px 1px 2px #65dff5;
       }
-      .enter-button:hover{
-        box-shadow: 2px 2px 10px #65dff5;
-      }
       .enter-button p{
         font-size: 2rem;
       }

@@ -3,7 +3,7 @@
         <canvas id="Meteor" class="enter_canvas"></canvas>
         <img src="https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/enter_宇航员.png" alt="宇航员" style="z-index:1">
         <canvas id="canvas" class="enter_canvas">你的浏览器不支持canvas</canvas>
-        <div @click="change()" class="enter-button"><p>enter</p></div>
+        <div @click="change()" class="enter-button"></div>
     </div>
 </template>
 
@@ -22,6 +22,7 @@ export default {
     },
     methods : {
       change(){
+        console.log(1)
         this.$router.push('/home')
       }
     }
@@ -47,7 +48,7 @@ export default {
         display: flex;
         justify-content: center;
         align-items:flex-end;
-        z-index: 1;
+        z-index: 100;
     }
     .star {
         position: absolute;
@@ -118,23 +119,9 @@ export default {
         }
       }
       .enter-button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        z-index: 100;
-        top: 50%;
-        width: 4rem;
-        height: 4rem;
-        background-color: #fff;
+        width: 8rem;
+        height: 8rem;
+        border: 1px solid #fff;
         border-radius: 50%;
-        color: #65dff5;
-        box-shadow: 1px 1px 2px #65dff5;
-      }
-      .enter-button:hover{
-        box-shadow: 2px 2px 10px #65dff5;
-      }
-      .enter-button p{
-        font-size: 2rem;
       }
 </style>

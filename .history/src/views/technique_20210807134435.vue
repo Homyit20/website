@@ -6,7 +6,7 @@
             <div class="tech-box" @touchstart.passive="touchstartdeal">
               <ul class="tech-list">
                 <li class="after-details">
-                    <div class="tech-after-text tech-text">
+                    <div class="tech-after-text">
                         <h1>后端</h1>
                         <p>
                             后端开发的重点在于算法设计、
@@ -27,7 +27,7 @@
                     <div class="tech-before-people">
                         <img src="../assets/techlogin/images/宇航员2_03.png" class="tech-people">
                     </div>
-                    <div class="tech-before-text tech-text">
+                    <div class="tech-before-text">
                         <h1>前端</h1>
                         <p>
                             前端主要使用 HTML、CSS、JavaScript等
@@ -40,7 +40,7 @@
                     </div>
                 </li>
                 <li class="ui-details">
-                    <div class="tech-ui-text tech-text">
+                    <div class="tech-ui-text">
                         <h1>UI</h1>
                         <p>
                             UI负责软件界面的美术设计、创意工作
@@ -270,7 +270,6 @@
     }
 
     /* 介绍部分 */
-    /* 没有这个盒子包裹 怎么ul回跑呢 */
     .tech-box{
         position: relative;
         width: 100vw;
@@ -278,6 +277,7 @@
         overflow: hidden;
         top: 2rem;
     }
+    /* 没有这个盒子包裹 怎么ul回跑呢 */
   .tech-content .tech-list{
       position: absolute;
       left: 0;
@@ -305,6 +305,9 @@
     /* 移动端响应式 */
 
     @media screen and (max-width : 500px) {
+        html{
+            font-size: 13px;
+        }
         .tech-box{
           top: 5rem;
     }
@@ -317,7 +320,7 @@
             width: 100vw;
         }
         .tech-list p {
-            font-size: 0.9rem;
+            font-size: 1rem;
         }
         .tech-people{
             width: 10rem;
@@ -409,21 +412,12 @@
     }
     /* 当屏幕大于1500px时 */
     @media screen and (min-width : 1500px){
-        html{
+        /* html{
             font-size: 16px;
-        }
-       .tech-box{
-            top: 4rem;
-        }
-        .tech-box .tech-text{
-            width: 30rem;
-        }
+        } */
         .tech-content .tech-select-list{
             position: absolute;
             bottom: 16rem;
-        }
-        .tech-list p {
-            font-size: 1.3rem;
         }
         .tech-select-list .tech-select-circle{
            width: 0.7rem;

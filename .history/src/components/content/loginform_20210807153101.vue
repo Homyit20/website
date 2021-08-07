@@ -16,7 +16,7 @@
                 <input type="text" class="login-form-class" placeholder="班级" v-model="stuClass" @blur="inputjudge(stuClass,2)" >
               </div>
               <div class="login-input">
-                <input type="text" class="login-form-address" placeholder="请输入正确的qq邮箱" v-model="email" @blur="inputjudge(email,3)">
+                <input type="text" class="login-form-address" placeholder="邮箱" v-model="email" @blur="inputjudge(email,3)">
               </div>
               <textarea placeholder="你的自我介绍/意向" class="login-form-idea" v-model="introduce"></textarea>
             </div>
@@ -176,7 +176,7 @@ export default ({
         display: none;
       }
       .login-form .login-button button{
-        margin-top: 6rem;
+        margin-top: 4rem;
       }
     }
 
@@ -259,26 +259,22 @@ export default ({
     }
     /* 当屏幕大于1500px时 */
     @media screen and (min-width: 1500px){
-      html{
-        font-size: 16px;
-      }
       .login-form .login-main-form{
-        width: 46rem;
-        height: 11rem;
+        width: 48rem;
+        height: 12rem;
         margin-top: 6rem;
       }
       .login-form .login-input{
-        width: 17.5rem;
-        height: 3rem;
+        width: 20rem;
+        height: 3.2rem;
       }
       .login-form .login-main-form input[type = "text"]{
-        width: 17.5rem;
-        height: 3rem;
-        border-radius: 4px;
+        width: 20rem;
+        height: 3.2rem;
       }
       .login-main-form textarea{
-        width: 17.5rem;
-        height: 6.5rem;
+        width: 20rem;
+        height: 7.5rem;
         border-radius: 5px;
       }
       .login-button button{

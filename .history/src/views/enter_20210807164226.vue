@@ -121,18 +121,13 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
-        position: absolute;
-        z-index: 100;
-        top: 50%;
-        width: 4rem;
-        height: 4rem;
+        width: 6rem;
+        height: 6rem;
         background-color: #fff;
+        border: 3px solid rgb(151, 212, 228);
         border-radius: 50%;
         color: #65dff5;
         box-shadow: 1px 1px 2px #65dff5;
-      }
-      .enter-button:hover{
-        box-shadow: 2px 2px 10px #65dff5;
       }
       .enter-button p{
         font-size: 2rem;

@@ -423,7 +423,7 @@
             bottom: 16rem;
         }
         .tech-list p {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
         }
         .tech-select-list .tech-select-circle{
            width: 0.7rem;

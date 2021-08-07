@@ -416,14 +416,14 @@
             top: 4rem;
         }
         .tech-box .tech-text{
-            width: 30rem;
+            width: 100rem;
         }
         .tech-content .tech-select-list{
             position: absolute;
             bottom: 16rem;
         }
         .tech-list p {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
         }
         .tech-select-list .tech-select-circle{
            width: 0.7rem;

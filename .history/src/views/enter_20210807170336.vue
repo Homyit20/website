@@ -130,9 +130,18 @@ export default {
         border-radius: 50%;
         color: #65dff5;
         box-shadow: 1px 1px 2px #65dff5;
+        animation: rotation 2s infinite;
       }
-      .enter-button:hover{
-        box-shadow: 2px 2px 10px #65dff5;
+      @keyframes rotation {
+        10%{
+          rotateX: 30deg;
+        }
+        50%{
+          rotateY: 30deg;
+        }
+        75%{
+          rotateX: 30deg;
+        }
       }
       .enter-button p{
         font-size: 2rem;
