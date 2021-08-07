@@ -6,7 +6,6 @@ import store from './store'
 // import axios from 'axios'
 // import VueAxios from 'vue-axios'
 import 'animate.css/animate.min.css'
-import '../src/assets/changeNav/download/fonts/iconfont.css'
 // Vue.use(VueCookies)
 // Vue.use(VueAxios, axios);
 
