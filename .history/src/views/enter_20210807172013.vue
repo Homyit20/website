@@ -27,6 +27,12 @@ export default {
         // 画文字
         canvas.homyit(document.getElementById('canvas'))
         canvas.changecolor(document.getElementsByClassName('star'))
+    },
+    methods : {
+      change(){
+        this.$router.push('/home')
+      }
+    }
 }
 }
 </script>
