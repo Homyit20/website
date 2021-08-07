@@ -46,12 +46,8 @@
   </div>
 </template>
 <script>
-<<<<<<< HEAD
-// import 'animate.css'
-=======
   import NavBar from '../components/common/nav.vue'
-import 'animate.css'
->>>>>>> 55dd3c75547b7946cf2bd29f6f7568951e38ead0
+  import 'animate.css'
 export default {
     name:'background',
     data(){
@@ -190,11 +186,7 @@ v-leave-to{
     margin-left: 2vw;
     margin-right: 2vw;
   }
-<<<<<<< HEAD
   .btn{
-=======
-  .big-background button{
->>>>>>> 55dd3c75547b7946cf2bd29f6f7568951e38ead0
     width: 6vw;
     /* padding-bottom: 1rem; */
     font-size: 1.5rem;
@@ -240,11 +232,7 @@ v-leave-to{
          margin-top: 0.1rem;
          margin-bottom: 0.1rem;
        }
-<<<<<<< HEAD
        .btn{
-=======
-       .big-background button{
->>>>>>> 55dd3c75547b7946cf2bd29f6f7568951e38ead0
          width: 15vw;
          margin-top:0.3rem ;
          font-size: 0.1vw;
@@ -282,11 +270,7 @@ v-leave-to{
          margin-top: 0.1rem;
          margin-bottom: 0.1rem;
        }
-<<<<<<< HEAD
        .btn{
-=======
-      .big-background button{
->>>>>>> 55dd3c75547b7946cf2bd29f6f7568951e38ead0
          width: 15vw;
          margin-top:0.3rem ;
          font-size: 0.1vw;
