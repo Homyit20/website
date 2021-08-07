@@ -27,9 +27,9 @@ export default {
         // console.log(131312,document.getElementsByClassName('enter_contain')[0])
         // 画文字
         let txt=document.getElementById('canvas')
-        let changecolor=document.getElementsByClassName('star')
+        // let changecolor=document.getElementsByClassName('star')
         canvas.enter_canvas(txt,elem,div,img)
-        canvas.changecolor(changecolor)
+        // canvas.changecolor(changecolor)
 }
 }
 </script>
