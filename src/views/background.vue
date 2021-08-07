@@ -143,8 +143,6 @@ v-leave-to{
     padding: 0 2.5rem;
     width: 45vw;
     padding-bottom: 3vh;
-    /* height: 60%; */
-    /* opacity: 0.6; */
     color: rgb(222, 224, 224);
     z-index: 100;
   }
