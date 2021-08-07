@@ -95,16 +95,16 @@ export default {
 }
 .left-star img{
   width: 20vw;
-  animation: rotation 3s infinite linear;
+  animation: animate 2s infinite linear;
 }
-@keyframes rotation{
+@keyframes animate{
          0%{
-           transform: rotate(-30deg);
+           transform: rotate(0deg);
          }50%{
-           transform: rotate(30deg);
+           transform: rotate(45deg);
          }
          100%{
-           transform: rotate(-30deg);
+           transform: rotate(0deg);
          }
      }
 .right-ast{

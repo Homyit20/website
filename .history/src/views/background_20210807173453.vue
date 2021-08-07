@@ -95,9 +95,9 @@ export default {
 }
 .left-star img{
   width: 20vw;
-  animation: rotation 3s infinite linear;
+  animation: animate 3s infinite linear;
 }
-@keyframes rotation{
+@keyframes animate{
          0%{
            transform: rotate(-30deg);
          }50%{
