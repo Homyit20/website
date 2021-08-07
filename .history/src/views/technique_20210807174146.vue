@@ -343,7 +343,7 @@
   }
   .after-details .tech-after-people img{
       max-width: 15rem;
-      animation: animate 2s infinite ease-in-out;
+      animation: animate 3s infinite ease-in-out;
   }
 
 
@@ -379,7 +379,7 @@
     }
     .ui-details .tech-ui-people img{
       max-width: 15rem;
-      animation: animate 2s infinite ease-in-out;
+      animation: animate 4s infinite ease-in-out;
     }
 
      /* 动画效果 */
@@ -389,7 +389,7 @@
              transform: translateY(1rem);
          }
          50%{
-             transform: translateY(-1.1rem);
+             transform: translateY(-1.5rem);
          }
          100%{
              transform: translateY(1rem);
