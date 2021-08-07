@@ -189,9 +189,6 @@ v-leave-to{
          padding: 0 2rem;
          padding: 1rem;
        }
-       .content::after{
-         width: 60vw;
-       }
        .head1{
          font-size: 1rem;
          margin-top: 0;

@@ -270,7 +270,6 @@
         width: 100vw;
         min-height: 30rem;
         overflow: hidden;
-        top: 2rem;
     }
     /* 没有这个盒子包裹 怎么ul回跑呢 */
   .tech-content .tech-list{
