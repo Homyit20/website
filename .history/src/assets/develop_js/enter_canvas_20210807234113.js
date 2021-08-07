@@ -15,7 +15,7 @@ export default{
       ctx.textAlign = "center"
       // let fontSize = elem.width*2/15
       let fontSize
-      if(W>800){fontSize=W*2/15}else{fontSize=W*3.6/15}
+      if(W>800){fontSize=W*2/15}else{fontSize=W*3/15}
       let fontFamily='Helvetica Neue, Helvetica, Arial, sans-serif';
       // init初始化
       function init(){
@@ -74,7 +74,7 @@ export default{
       }
       function enddraw(){
           ctx.strokeStyle='#08cdf0'
-          ctx.lineWidth=2.8
+          ctx.lineWidth=4
           if(elem.width<800){ctx.lineWidth=2}
           ctx.strokeText('HOMYIT',W/2,H/3)
       }

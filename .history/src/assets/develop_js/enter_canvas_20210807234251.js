@@ -74,7 +74,7 @@ export default{
       }
       function enddraw(){
           ctx.strokeStyle='#08cdf0'
-          ctx.lineWidth=2.8
+          ctx.lineWidth=3
           if(elem.width<800){ctx.lineWidth=2}
           ctx.strokeText('HOMYIT',W/2,H/3)
       }
