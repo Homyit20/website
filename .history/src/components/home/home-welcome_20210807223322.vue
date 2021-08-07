@@ -54,7 +54,6 @@ export default {
   font-family: "Adobe 黑体 Std";
   /* border-width: 0.05rem; */
   opacity: 0.6;
-  cursor: pointer;
 }
 #home-btn:hover {
   background-color: #65dff5;
@@ -80,6 +79,7 @@ export default {
     font-weight: 700;
     font-family: "Adobe 黑体 Std";
     opacity: 0.6;
+    cursor: pointer;
   }
 }
 </style>

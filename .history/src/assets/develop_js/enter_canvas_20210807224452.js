@@ -71,8 +71,8 @@ export default{
           window.requestAnimationFrame(draw)
       }
       function enddraw(){
-          ctx.strokeStyle='#09bad9'
-          ctx.lineWidth=4
+          ctx.strokeStyle='#a2dfea'
+          ctx.lineWidth=7
           if(elem.width<800){ctx.lineWidth=2}
           ctx.strokeText('HOMYIT',W/2,H/3)
       }
@@ -188,7 +188,7 @@ export default{
           }
           window.requestAnimationFrame(playRains)
       }
-      let rainCount=15
+      let rainCount=20
       let rains = new Array()
     //   init()
       starInit()

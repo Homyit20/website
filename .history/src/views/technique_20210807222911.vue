@@ -404,6 +404,7 @@
         list-style: none;
         margin: 0;
         padding: 0;
+        cursor: pointer;
     }
     /* 当屏幕大于1500px时 */
     @media screen and (min-width : 1500px){
@@ -444,7 +445,6 @@
           border-radius: 50%;
           background-color: #fff;
           border: 1px solid #8da7a9;
-          cursor: pointer;
         }
         .tech-select-active{
            width: 0.9rem;

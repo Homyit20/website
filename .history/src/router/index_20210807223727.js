@@ -40,7 +40,7 @@ const routes = [
             path: '/login/loginform',
             component: () => import('../components/content/loginform.vue'),
             meta : {
-                title : 'login'
+                title : 'loginform'
             }
         },
         {

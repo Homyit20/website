@@ -429,6 +429,7 @@
            border-radius: 50%;
            background-color: #fff;
            border: 1px solid #8da7a9;
+           cursor: pointer;
         }
         .tech-select-list .tech-select-active{
            width: 1.2rem;
@@ -444,7 +445,6 @@
           border-radius: 50%;
           background-color: #fff;
           border: 1px solid #8da7a9;
-          cursor: pointer;
         }
         .tech-select-active{
            width: 0.9rem;
