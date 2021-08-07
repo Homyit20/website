@@ -45,6 +45,6 @@ router.beforeEach((to, from, next) => {
 })
 
 //成功进入路由后 title改变
-router.afterEach((to, form) => {
+router.afterEach((to) => {
   document.title = to.meta.title;
 })
