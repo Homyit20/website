@@ -13,7 +13,14 @@
             >首页</router-link
           >
         </li>
-        <li>简介</li>
+        <li>
+          <router-link
+            to="/background"
+            class="nav-link-class"
+            active-class="nav-link-active"
+            >简介</router-link
+          >
+        </li>
         <li>
           <router-link
             to="/technique"
@@ -25,7 +32,8 @@
         <li>发展</li>
         <li>
           <router-link to="/login" class="nav-link-class nav-link-login"
-            >加入我们</router-link>
+            >加入我们</router-link
+          >
         </li>
       </ul>
       <div class="nav-list-img">
@@ -82,18 +90,26 @@ export default {
 .nav-link-active {
   color: #65dff5;
 }
-  .nav-list-img{
-    width: 3rem;
-    height: 3rem;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
+.nav-list-img {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.nav-list .nav-list-img img {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
 .nav-list .nav-list-img img {
   width: 3rem;
   height: 3rem;
   object-fit: cover;
 }
+
 /* img响应式 */
 @media screen and (max-width: 500px) {
   .nav .nav-list {
@@ -102,7 +118,7 @@ export default {
     align-items: center;
     width: 23rem;
   }
-  .nav .nav-list .nav-list-ul{
+  .nav .nav-list .nav-list-ul {
     width: 100%;
   }
   .nav-logo img {
@@ -110,7 +126,7 @@ export default {
     height: 2rem;
     object-fit: cover;
   }
-  .nav .nav-list .nav-list-img{
+  .nav .nav-list .nav-list-img {
     display: none;
   }
   .nav .nav-list .nav-list-img img {
