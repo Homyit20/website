@@ -48,12 +48,6 @@
 html{
     font-size: calc(1vw);
 }
-h1{
-    color: red;
-    left: 100px;
-    top: 100px;
-    display: block;
-}
 #develop{
     position: absolute;;
     width: 100%;
