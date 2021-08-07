@@ -39,7 +39,7 @@ const routes = [
     },
     {
         path: '/home',
-        component: () => import('../views/home.vue'),
+        component: () => import('../views/Home.vue'),
     }, {
         path: '/background',
         component: () => import('../views/background.vue'),
