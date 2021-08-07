@@ -3,7 +3,7 @@
         <canvas id="Meteor" class="enter_canvas"></canvas>
         <img src="https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/enter_宇航员.png" alt="宇航员" style="z-index:1">
         <canvas id="canvas" class="enter_canvas">你的浏览器不支持canvas</canvas>
-        <div @click="change()" class="enter-button"></div>
+        <div @click="change()" class="enter-button"><p>enter</p></div>
     </div>
 </template>
 
@@ -53,7 +53,7 @@ export default {
         display: flex;
         justify-content: center;
         align-items:flex-end;
-        z-index: 100;
+        z-index: 1;
     }
     .star {
         position: absolute;
