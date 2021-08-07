@@ -186,7 +186,7 @@ export default{
               }
               window.requestAnimationFrame(playRains)
           }
-          let rainCount=15
+          let rainCount=20
           let rains = new Array()
         //   init()
           starInit()
