@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <NavBar></NavBar>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
@@ -22,13 +21,11 @@
 
 <script>
 import HomeWelcome from "../components/home/home-welcome.vue";
-import NavBar from "../components/common/nav.vue"
 
 export default {
   name: "Home",
   components: {
     HomeWelcome,
-    NavBar
   },
 };
 </script>

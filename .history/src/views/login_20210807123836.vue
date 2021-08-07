@@ -1,6 +1,5 @@
 <template>
   <div class="login-contain">
-    <NavBar></NavBar>
       <img class="login-background" src="../assets/techlogin/images/报名背景.png" alt="背景">
       <router-link to="/login/loginform"/>
       <router-link to="/login/contact" />
@@ -9,12 +8,8 @@
 </template>
 
 <script>
-import NavBar from '../components/common/nav.vue'
 export default {
   name : 'Login',
-  components :{
-    NavBar
-  }
 }
 </script>
 

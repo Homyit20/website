@@ -1,12 +1,12 @@
 <template>
   <div>
-    <NavBar></NavBar>
+    <NarBar></NarBar>
     <link href="https://cdn.jsdelivr.net/npm/animate.css@3.5.1" rel="stylesheet" type="text/css">
     <div class="big-background">
       <div class="background">
         <transition mode="out-in">
           <div v-if="show">
-            <div class="center-content">
+            <div class="content">
               <h1 class="head1">宏奕工作室（Homyit Studio）</h1>
               <p class="lead1">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;宏奕工作室成立于2013年9月，
@@ -17,11 +17,11 @@
               踏实求新”的侠客情怀，致力于为学生提供一个专业的Web
               开发修炼圣地,培养出更多就业型人才。
               </P>
-              <button class="btn" @click="handleClick">下一页</button>
+              <button @click="handleClick">下一页</button>
             </div>
           </div>
           <div v-else>
-            <div class="center-content">
+            <div class="content">
               <p class="lead2">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               专业方面,工作室主要以承接商业项目、开办技术培训参加专业竞赛、
@@ -31,14 +31,14 @@
               还有唱 K ,桌游等娱乐项目。而且工作室有免费空调、冰箱,让你在炎炎夏日有个避暑的好去处。
               </P>
               <h1 class="head2">快来加入我们吧！&nbsp;JOIN&nbsp;&nbsp;US</h1>
-                <button class="btn" @click="handleClick">上一页</button>
+              <button @click="handleClick">上一页</button>
             </div>
           </div>
         </transition>
-        <div class="left-star">
+        <div class="star">
           <img src="../assets/background/star.png">
         </div>
-        <div class="right-ast">
+        <div class="ast">
           <img src="../assets/background/ast.png">
         </div>
       </div>
@@ -46,12 +46,8 @@
   </div>
 </template>
 <script>
-<<<<<<< HEAD
-// import 'animate.css'
-=======
   import NavBar from '../components/common/nav.vue'
 import 'animate.css'
->>>>>>> 55dd3c75547b7946cf2bd29f6f7568951e38ead0
 export default {
     name:'background',
     data(){
@@ -91,39 +87,26 @@ export default {
       bottom: 0;
     }
     
-.left-star{
+.big-background .star{
   width: 20vw;
   position: absolute;
   left: 5vw;
   top: 15vh;
 }
-.left-star img{
+.big-background .star img{
   width: 20vw;
-  animation: animate 2s infinite linear;
 }
-@keyframes animate{
-         25%{
-             transform: translateY(1rem);
-         }
-         50%,100%{
-             transform: translateY(0);
-         }
-         75%{
-             transform: translateY(-1rem);
-         }
-     }
-.right-ast{
+.ast{
   width: 20vw;
   position: absolute;
   right: 6vw;
   bottom: 22vh;
 }
-.right-ast img{
+.ast img{
   width: 10vw;
 }
-
 @media screen and (max-width: 500px) {
-  .left-star{
+  .star{
     top: 10vh;
   }
 }
@@ -142,7 +125,7 @@ export default {
 v-leave-to{
   opacity: 0;
 }
-.center-content{
+.content{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -152,10 +135,12 @@ v-leave-to{
     padding: 0 2.5rem;
     width: 45vw;
     padding-bottom: 3vh;
+    /* height: 60%; */
+    /* opacity: 0.6; */
     color: rgb(222, 224, 224);
     z-index: 100;
   }
-  .center-content::after{
+  .content::after{
     content: '';
     position: absolute;
     top: 0;
@@ -190,24 +175,18 @@ v-leave-to{
     margin-left: 2vw;
     margin-right: 2vw;
   }
-<<<<<<< HEAD
-  .btn{
-=======
   .big-background button{
->>>>>>> 55dd3c75547b7946cf2bd29f6f7568951e38ead0
     width: 6vw;
     /* padding-bottom: 1rem; */
     font-size: 1.5rem;
     margin-top: 2rem;
     background-color: #65dff5;
-    /* opacity: 0.8; */
+    opacity: 0.7;
     color:white;
-    border:  solid #65dff5;
-    border-radius: 5%;
   }
 
   @media screen and (max-width : 800px){
-       .center-content{
+       .content{
          width: 60vw;
          height: 35vh;
          padding-bottom: 0;
@@ -215,7 +194,7 @@ v-leave-to{
          padding: 0 2rem;
          padding: 1rem;
        }
-       .center-content::after{
+       .content::after{
          width: 60vw;
        }
        .head1{
@@ -240,11 +219,7 @@ v-leave-to{
          margin-top: 0.1rem;
          margin-bottom: 0.1rem;
        }
-<<<<<<< HEAD
-       .btn{
-=======
        .big-background button{
->>>>>>> 55dd3c75547b7946cf2bd29f6f7568951e38ead0
          width: 15vw;
          margin-top:0.3rem ;
          font-size: 0.1vw;
@@ -252,7 +227,7 @@ v-leave-to{
    }
 
    @media screen and (max-width : 500px){
-       .center-content{
+       .content{
          width: 60vw;
          height: 50vh;
          padding-bottom: 0;
@@ -282,11 +257,7 @@ v-leave-to{
          margin-top: 0.1rem;
          margin-bottom: 0.1rem;
        }
-<<<<<<< HEAD
-       .btn{
-=======
       .big-background button{
->>>>>>> 55dd3c75547b7946cf2bd29f6f7568951e38ead0
          width: 15vw;
          margin-top:0.3rem ;
          font-size: 0.1vw;

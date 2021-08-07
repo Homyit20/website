@@ -11,6 +11,12 @@ const store = new Vuex.Store({
     mutations : {
         judge(state){
             state.success = 1
+        },
+        navview(state){
+            state.isnav = true
+        },
+        navhidden(state){
+            state.isnav = false
         }
     }
 })
