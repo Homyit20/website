@@ -72,6 +72,7 @@ export default ({
       if(value != ''){
         logininput.classList.remove('login-vaild');
         logininput.classList.add('login-finish');
+        if((id===3 && !/^[\da-zA-Z]+@\w+\.\w+$/.test(value)) || (id===1 && !/^\d{12}$/.test(value))){logininput.classList.add('login-error');}
       }else{
         logininput.classList.remove('login-vaild');
         logininput.classList.add('login-error');

@@ -1,5 +1,5 @@
 export default{
-  enter_canvas(txt,elem,div){
+  enter_canvas(txt,elem,div,img){
     let listen = 0
     function homyit(txt){
       let elem = txt
@@ -203,18 +203,18 @@ export default{
       },2000)
 
 }
-    // function theimg(img) {
-    //   if(document.body.clientWidth>800){img[0].width = document.body.clientWidth/2}
-    //   else{img[0].width=document.body.clientWidth}
-    // }
-    // theimg(img)
+    function theimg(img) {
+      if(document.body.clientWidth>800){img[0].width = document.body.clientWidth/2}
+      else{img[0].width=document.body.clientWidth}
+    }
+    theimg(img)
     homyit(txt)
     liuxing(elem,div)
     window.onresize=()=>{{
       listen = 1
       homyit(txt)
       liuxing(elem,div)
-      // theimg(img)
+      theimg(img)
     }}
   },
     changecolor(elem){

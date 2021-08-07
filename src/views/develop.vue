@@ -4,7 +4,7 @@
         <div class="develop_back"></div>
         <div class = 'develop_txt_contain'>
             <div class="develop_txt_back"></div>
-            <p>宏益工作室从2013年创建到如今涌现处众多优秀的宏奕人他们分布在全国各地，致力于WEB开发，他们入职阿里，腾讯，字节跳动等众多知名互联网公司，为互联网发展做出了许多贡献.</p>
+            <p>宏奕工作室从2013年王宏凯创建，到现在，已经涌现处众多优秀的宏奕人,他们分布在全国各地，致力于WEB开发，他们入职阿里巴巴、腾讯、字节跳动等众多知名互联网公司，为互联网发展做出了许多贡献.</p>
         </div>
         <img src="https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/develop_宇航员.png" alt="Not Found" class="develop_yu">
         <!-- <img src="../assets/develop_imgs/develop_star.png" alt="Noe Found" class="develop_star"> -->
@@ -91,12 +91,13 @@
     height: 100%;
     opacity: 0.26;
     background-color: white;
+    border-radius: 20px;
 }
 #develop div p {
     width: 19vw;
     text-align: center;
     letter-spacing: 0.8vw;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     color: white;
     line-height: 2.5vw;
     text-indent: 2vw;
