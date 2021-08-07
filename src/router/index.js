@@ -13,6 +13,10 @@ const routes = [
         component: () => import('../views/technique.vue')
     },
     {
+        path:'/develop',
+        component:() =>import('../components/develop/develop.vue')
+    },
+    {
         path: '/login',
         component: () => import('../views/login.vue'),
         redirect : '/login/loginform',

@@ -29,7 +29,14 @@
             >技术</router-link
           >
         </li>
-        <li>发展</li>
+        <li>
+          <router-link
+            to="/develop"
+            class="nav-link-class"
+            active-class="nav-link-active"
+            >发展</router-link
+          >
+        </li>
         <li>
           <router-link to="/login" class="nav-link-class nav-link-login"
             >加入我们</router-link
