@@ -42,13 +42,17 @@ export default ({
   },
   methods :{
     logincommit(){
-      if(this.stuName != '' && this.stuNum != '' && this.stuClass != '' &&this.email != ''){
-        axios.post('api/apply/save',{
+     //this.$cookies.set('name', 'this.stuName', '7d');想起来cookie要传到后端
+      let formdata = JSON.stringify({
         stuName : this.stuName,
         stuNum : this.stuNum,
         stuClass : this.stuClass,
         email : this.email
-      }).then((res) => {
+      })
+      if(this.stuName != '' && this.stuNum != '' && this.stuClass != '' &&this.email != ''){
+        axios.post('api/apply/save',{
+            data : formdata
+          }).then((res) => {
             if(res.msg == '报名成功' || res.msg == '你已经报名'){
               this.$store.commit('judge');
               alert(res.msg);
@@ -59,7 +63,7 @@ export default ({
               alert(res.msg);
             }
           }).catch((err) => {
-            console.log(err.response);
+            console.log(err);
           })
       }else{
         alert('请将信息填写完整')

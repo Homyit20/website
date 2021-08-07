@@ -140,7 +140,7 @@ v-leave-to{
     position: absolute;
     top: 0;
     left: 0;
-    width: 45vw;
+    width: 30rem;
     height: 100%;
     background: white;
     border-radius: 5%;
@@ -188,9 +188,6 @@ v-leave-to{
          bottom: 3vh;
          padding: 0 2rem;
          padding: 1rem;
-       }
-       .content::after{
-         width: 60vw;
        }
        .head1{
          font-size: 1rem;

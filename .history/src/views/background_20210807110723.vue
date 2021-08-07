@@ -131,21 +131,12 @@ v-leave-to{
     width: 45vw;
     padding-bottom: 3vh;
     /* height: 60%; */
-    /* opacity: 0.6; */
-    color: #000;
-    z-index: 100;
-  }
-  .content::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 45vw;
-    height: 100%;
     background: white;
-    border-radius: 5%;
     opacity: 0.6;
-    z-index: -10;
+    color: #000;
+    border-radius: 5%;
+    position: relative;
+    z-index: 100;
   }
   .head1{
     color: #65dff5;
@@ -188,9 +179,6 @@ v-leave-to{
          bottom: 3vh;
          padding: 0 2rem;
          padding: 1rem;
-       }
-       .content::after{
-         width: 60vw;
        }
        .head1{
          font-size: 1rem;

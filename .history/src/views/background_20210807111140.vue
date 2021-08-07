@@ -133,6 +133,7 @@ v-leave-to{
     /* height: 60%; */
     /* opacity: 0.6; */
     color: #000;
+    border-radius: 5%;
     z-index: 100;
   }
   .content::after{
@@ -143,7 +144,6 @@ v-leave-to{
     width: 45vw;
     height: 100%;
     background: white;
-    border-radius: 5%;
     opacity: 0.6;
     z-index: -10;
   }
@@ -188,9 +188,6 @@ v-leave-to{
          bottom: 3vh;
          padding: 0 2rem;
          padding: 1rem;
-       }
-       .content::after{
-         width: 60vw;
        }
        .head1{
          font-size: 1rem;
