@@ -44,13 +44,14 @@ export default ({
   methods :{
     logincommit(){
       if(this.stuName != '' && this.stuNum != '' && this.stuClass != '' &&this.email != ''){
-        axios.post('api/apply/save',{
-        stuName : this.stuName,
-        stuNum : this.stuNum,
-        stuClass : this.stuClass,
-        email : this.email,
-        introduce : this.introduce
+        axios.post('http://localhost:8080/api/register',{
+        'name' : this.stuName,
+        'number' : this.stuNum,
+        'classs' : this.stuClass,
+        'mail' : this.email,
+        'introduction' : this.introduce
       }).then((res) => {
+            console.log(res.data)
             if(res.data.msg == '报名成功' || res.data.msg == '你已经报名'){
               this.$store.commit('judge');
               alert(res.data.msg);

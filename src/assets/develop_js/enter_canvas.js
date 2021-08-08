@@ -75,8 +75,20 @@ export default{
       function enddraw(){
           ctx.strokeStyle='#09bad9'
           ctx.lineWidth=4
-          if(elem.width<800){ctx.lineWidth=2}
+          ctx.shadowBlur = 4;
+          let p = 1
+          if(elem.width<800){ctx.lineWidth=1;ctx.shadowBlur=1;p=0.1}
+          ctx.shadowOffsetX = 1*p;
+          ctx.shadowOffsetY = 1*p;
+          ctx.shadowColor = '#09bad9';
+          
           ctx.strokeText('HOMYIT',W/2,H/3)
+
+          ctx.shadowOffsetX = -1*p;
+          ctx.shadowOffsetY = -1*p;
+          ctx.shadowColor = '#09bad9';
+          ctx.strokeText('HOMYIT',W/2,H/3)
+
       }
       init()
   }
@@ -109,7 +121,7 @@ export default{
         this.x = Math.random() * elem.clientWidth+300;
         this.y = Math.random() * elem.clientHeight-300;
         this.length = Math.ceil(Math.random() * 80 + 150);
-        this.angle = 30;
+        this.angle = 30+parseInt(Math.random()*10);
         this.cos = Math.cos((this.angle * 3.14) / 180);
         this.sin = Math.sin((this.angle * 3.14) / 180);
         this.width = this.length * this.cos;
@@ -207,7 +219,9 @@ export default{
 }
     function theimg(img) {
       if(document.body.clientWidth>800){img[0].width = document.body.clientWidth/2}
-      else{img[0].width=document.body.clientWidth}
+      else{img[0].width=document.body.clientWidth;}
+      if(document.body.clientWidth<500){img[0].src='https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/%E5%AE%87%E8%88%AA%E5%91%98.png'}
+      else(img[0].src='https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/enter_宇航员.png')
     }
     theimg(img)
     homyit(txt)
