@@ -1,9 +1,13 @@
 <template>
     <div class='enter_contain'>
         <canvas id="Meteor" class="enter_canvas"></canvas>
-        <img src="https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/enter_宇航员.png" alt="宇航员" style="z-index:1">
+        
         <canvas id="canvas" class="enter_canvas">你的浏览器不支持canvas</canvas>
-        <div @click="change()" class="enter-button"><p>enter</p></div>
+        <div class="enter_button_contain">
+          <div @click="change()" class="enter_button" style="color:white"></div>
+          <img @click="change()" src="https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/enter_宇航员.png" alt="宇航员" style="z-index:1" class="enter_img">
+        </div>
+        
     </div>
 </template>
 
@@ -13,7 +17,7 @@ export default {
     name:'enter',
     methods:{
       change(){
-        // console.log(1)
+        console.log(1)
         this.$router.push('/home')
       }
     },
@@ -123,11 +127,45 @@ export default {
           opacity: 0.2;
         }
       }
-      .enter-button{
+      .enter_button{
+        position: relative;
+        width: 5vw;
+        height: 5vw;
+        left: calc(50% - 3vw);
+        top: 0;
+        border-radius: 3vw;
+        /* background-color:rgb(130, 164, 167); */
+        border: 1px solid white;
+        box-shadow: 0 0 10px 0 white;
+        z-index: 1;
+        /* opacity: 0.3; */
+      }
+      .enter_button::after{
+        content: '';
         position: absolute;
-        width: 10rem;
-        height: 10rem;
-        background-color: aqua;
-        z-index: 1000;
+        width: 2vw;
+        height: 2vw;
+        border-left: 0.2vw solid white;
+        border-bottom: 0.2vw solid white;
+        transform: rotate(-46deg);
+        left: 1.3vw;
+        top: 1vw;
+      }
+      .enter_button:hover {
+        animation: EnterButton 1s ;
+        animation-fill-mode: forwards;
+      }
+      @keyframes EnterButton{
+        0%{
+            /* box-shadow: 0 0 0 0 #9ddaec inset */
+            background-color: transparent;
+            /* 0 0 10 0 white ; */
+            
+        }
+         100%{
+            /* box-shadow: 0 0 0 3vw red inset */
+            background-color: gray
+            /* 0 0 10 0 white ; */
+        }
       }
 </style>

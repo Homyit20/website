@@ -25,6 +25,7 @@
             NavBar
         },
         mounted(){
+            
             let elem = document.getElementById('canvas')
             canvas.draw(elem)
             canvas.back(document.getElementsByClassName('develop_back')[0])
@@ -127,7 +128,7 @@
     #develop div p{
         width:54vw;
         text-indent: 3vw;
-        font-size: 1.5vw;
+        font-size: 1.7vw;
         line-height: 7vw;
        
     }

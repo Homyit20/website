@@ -43,7 +43,7 @@ export default ({
   },
   methods :{
     logincommit(){
-      if(this.stuName != '' && this.stuNum != '' && this.stuClass != '' &&this.email != ''){
+      if(this.stuName != '' && this.stuNum != '' && this.stuClass != '' &&this.email != '' && /^[\da-zA-Z]+@\w+\.\w+$/.test(this.email) && /^\d{12}$/.test(this.stuNum)){
         axios.post('http://localhost:8080/api/register',{
         'name' : this.stuName,
         'number' : this.stuNum,
@@ -52,16 +52,19 @@ export default ({
         'introduction' : this.introduce
       }).then((res) => {
             console.log(res.data)
-            if(res.data.msg == '报名成功' || res.data.msg == '你已经报名'){
+            if(res.data.msg == 'success' || res.data.msg == '此学号已经报名'){
               this.$store.commit('judge');
-              alert(res.data.msg);
+              // alert(res.data.msg);
               this.$router.push({
                 path : '/login/contact'
               })
             }else{
-              alert(res.data.msg);
+              // 失败要执行的函数
+              ()=>{}
             }
           }).catch((err) => {
+            // 失败要执行的函数
+            ()=>{}
             console.log(err.response);
           })
       }else{
