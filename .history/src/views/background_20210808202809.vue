@@ -162,7 +162,7 @@ v-leave-to{
     text-align: center;
     position: relative;
     width: 45vw;
-    height: 52vh;
+    height: 20rem;
     padding-bottom: 2.5vh;
     color: #fff;
     z-index: 100;
@@ -190,7 +190,6 @@ v-leave-to{
     margin-left: 1.5vw;
     margin-right: 1.5vw;
     width: 80%;
-    letter-spacing: 0.2rem;
   }
   .head2{
     color: #65dff5;
@@ -204,7 +203,6 @@ v-leave-to{
     margin-left: 1vw;
     margin-right: 1vw;
     width: 80%;
-    letter-spacing: 0.2rem;
   }
   .btn{
     width: 6vw;
@@ -272,7 +270,7 @@ v-leave-to{
          margin-right: 0;
          margin-bottom: 2vh;
          width: 100%;
-         letter-spacing: 0.2rem;
+         letter-spacing: 0.8rem;
        }
        .head2{
          font-size: 0.1rem;
@@ -286,7 +284,7 @@ v-leave-to{
          margin-top: 0.5rem;
          margin-bottom: 0.1rem;
          width: 100%;
-         letter-spacing: 0.2rem;
+         letter-spacing: 0.8rem;
        }
        .btn{
          width: 15vw;

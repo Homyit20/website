@@ -25,7 +25,6 @@
             NavBar
         },
         mounted(){
-            
             let elem = document.getElementById('canvas')
             canvas.draw(elem)
             canvas.back(document.getElementsByClassName('develop_back')[0])
@@ -118,11 +117,6 @@
     bottom: 0;
     width: 15vw;
     height: auto;
-}
-@media screen and (min-width : 1500px){
-    #develop div p{
-        font-size: 1.3rem;
-    }
 }
 @media only screen and (max-width: 500px) {
     .develop_txt_contain{

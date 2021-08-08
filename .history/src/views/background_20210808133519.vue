@@ -88,13 +88,13 @@ export default {
     }
     
 .left-star{
-  width: 14vw;
+  width: 20vw;
   position: absolute;
   left: 5vw;
-  top: 12vh;
+  top: 15vh;
 }
 .left-star img{
-  width: 14vw;
+  width: 20vw;
   animation: rotation 3s infinite ease-in-out;
 }
 @keyframes rotation{
@@ -119,24 +119,17 @@ export default {
 
 @media screen and (max-width: 500px) {
   .left-star{
-    top: 6vh;
+    top: 10vh;
   }
   .background .center-content{
     padding: 0;
     width: 80vw;
-    height: 38vh;
-    padding: 0 1rem;
+    height: 30vh;
   }
   .background .center-content::after{
     width: 80vw;
     padding: 0;
     height: 100%;
-  }
-  .left-star img{
-    width: 7rem;
-  }
-  .right-ast img{
-    width: 5rem;
   }
 }
 
@@ -162,7 +155,7 @@ v-leave-to{
     text-align: center;
     position: relative;
     width: 45vw;
-    height: 52vh;
+    height: 30vh;
     padding-bottom: 2.5vh;
     color: #fff;
     z-index: 100;
@@ -175,7 +168,7 @@ v-leave-to{
     width: 45vw;
     height: 100%;
     background: #fff;
-    border-radius: 5px;
+    border-radius: 3%;
     opacity: 0.3;
     z-index: -10;
   }
@@ -189,8 +182,6 @@ v-leave-to{
     font-size: 1.1rem;
     margin-left: 1.5vw;
     margin-right: 1.5vw;
-    width: 80%;
-    letter-spacing: 0.2rem;
   }
   .head2{
     color: #65dff5;
@@ -203,8 +194,6 @@ v-leave-to{
     font-size: 1.1rem;
     margin-left: 1vw;
     margin-right: 1vw;
-    width: 80%;
-    letter-spacing: 0.2rem;
   }
   .btn{
     width: 6vw;
@@ -222,6 +211,17 @@ v-leave-to{
   }
 
   @media screen and (max-width : 800px){
+       .center-content{
+         width: 60vw;
+         height: 35vh;
+         padding-bottom: 0;
+         bottom: 3vh;
+         padding: 0 2rem;
+         padding: 1rem;
+       }
+       .center-content::after{
+         width: 60vw;
+       }
        .head1{
          font-size: 1rem;
          margin-top: 0;
@@ -253,9 +253,11 @@ v-leave-to{
 
    @media screen and (max-width : 500px){
        .center-content{
-         height: 50vh;
+         width: 60vw;
+         height: 43vh;
          padding-bottom: 0;
-         bottom: 4rem;
+         bottom: 1vh;
+         bottom: 5vh;
          padding: 1rem;
        }
        .head1{
@@ -271,8 +273,6 @@ v-leave-to{
          margin-left: 0;
          margin-right: 0;
          margin-bottom: 2vh;
-         width: 100%;
-         letter-spacing: 0.2rem;
        }
        .head2{
          font-size: 0.1rem;
@@ -285,8 +285,6 @@ v-leave-to{
          margin-right: 0;
          margin-top: 0.5rem;
          margin-bottom: 0.1rem;
-         width: 100%;
-         letter-spacing: 0.2rem;
        }
        .btn{
          width: 15vw;
@@ -294,11 +292,4 @@ v-leave-to{
          font-size: 0.1vw;
        }
    }
-    @media screen and (min-width : 1500px){
-      .background .lead1,
-      .background .lead2{
-        font-size: 1.3rem;
-        width: 90%;
-      }
-    }
 </style>

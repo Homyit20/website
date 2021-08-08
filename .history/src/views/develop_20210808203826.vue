@@ -25,7 +25,6 @@
             NavBar
         },
         mounted(){
-            
             let elem = document.getElementById('canvas')
             canvas.draw(elem)
             canvas.back(document.getElementsByClassName('develop_back')[0])
@@ -98,7 +97,7 @@
     width: 19vw;
     text-align: center;
     letter-spacing: 0.8vw;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     color: white;
     line-height: 2.5vw;
     text-indent: 2vw;
@@ -119,11 +118,6 @@
     width: 15vw;
     height: auto;
 }
-@media screen and (min-width : 1500px){
-    #develop div p{
-        font-size: 1.3rem;
-    }
-}
 @media only screen and (max-width: 500px) {
     .develop_txt_contain{
         width: 60vw;
@@ -134,7 +128,6 @@
         width:54vw;
         text-indent: 3vw;
         font-size: 0.9rem;
-        letter-spacing: 0.2rem;
         line-height: 7vw;
        
     }

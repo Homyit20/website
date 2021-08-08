@@ -25,7 +25,6 @@
             NavBar
         },
         mounted(){
-            
             let elem = document.getElementById('canvas')
             canvas.draw(elem)
             canvas.back(document.getElementsByClassName('develop_back')[0])
@@ -119,7 +118,7 @@
     width: 15vw;
     height: auto;
 }
-@media screen and (min-width : 1500px){
+@media screen and (max-width : 1500px){
     #develop div p{
         font-size: 1.3rem;
     }

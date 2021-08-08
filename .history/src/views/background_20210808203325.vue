@@ -162,7 +162,7 @@ v-leave-to{
     text-align: center;
     position: relative;
     width: 45vw;
-    height: 52vh;
+    height: 20rem;
     padding-bottom: 2.5vh;
     color: #fff;
     z-index: 100;
@@ -299,6 +299,7 @@ v-leave-to{
       .background .lead2{
         font-size: 1.3rem;
         width: 90%;
+        height: 50vh;
       }
     }
 </style>

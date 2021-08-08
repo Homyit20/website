@@ -57,7 +57,7 @@
                 </li>
               </ul>
             </div>
-            <ul class="tech-select-list" style="width:7rem">
+            <ul class="tech-select-list">
                 <li class="tech-select-circle tech-select-active" @click='scroll(0)'></li>
                 <li class="tech-select-circle" @click='scroll(1)'></li>
                 <li class="tech-select-circle" @click='scroll(2)'></li>
@@ -189,7 +189,7 @@
             let techniqueli = document.getElementsByClassName('tech-select-circle');
             if(this.touchscrollX < 0){
                 //小于20滑动
-                if(this.touchscrollX < -30){
+                if(this.touchscrollX < -40){
                     //touchvalue值改变之前，移除前一个圈圈的样式，同步before
                     touchvalue = after
                     techniqueli[touchvalue].classList.remove('tech-select-active');
@@ -217,7 +217,7 @@
             }
             if(this.touchscrollX > 0 ){
                 //大于20滑动
-                if(this.touchscrollX > 30){
+                if(this.touchscrollX > 40){
                     //点完后滑动后 touch value before同步
                     touchvalue = after
                     techniqueli[touchvalue].classList.remove('tech-select-active');
@@ -421,14 +421,14 @@
         }
         .tech-content .tech-select-list{
             position: absolute;
-            bottom: 22%;
+            bottom: 16rem;
         }
         .tech-list p {
             font-size: 1.3rem;
         }
         .tech-select-list .tech-select-circle{
-           width: 1rem;
-           height: 1rem;
+           width: 0.7rem;
+           height: 0.7rem;
            border-radius: 50%;
            background-color: #fff;
            border: 1px solid #8da7a9;

@@ -25,7 +25,6 @@
             NavBar
         },
         mounted(){
-            
             let elem = document.getElementById('canvas')
             canvas.draw(elem)
             canvas.back(document.getElementsByClassName('develop_back')[0])
