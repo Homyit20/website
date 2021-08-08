@@ -97,7 +97,7 @@
     width: 19vw;
     text-align: center;
     letter-spacing: 0.8vw;
-    font-size: 1.1rem;
+    font-size: 1.4vw;
     color: white;
     line-height: 2.5vw;
     text-indent: 2vw;
@@ -106,6 +106,12 @@
     margin-bottom: 2.5vw;
     animation: develop_show 1.5s both;
     opacity: 1;
+}
+@media screen and (max-width : 500px){
+    #develop div p{
+        width: 40rem;
+        font-size: 0.9rem;
+    }
 }
 .develop_canvas{
     float: right;
@@ -118,11 +124,6 @@
     width: 15vw;
     height: auto;
 }
-@media screen and (max-width : 1500px){
-    #develop div p{
-        font-size: 1.3rem;
-    }
-}
 @media only screen and (max-width: 500px) {
     .develop_txt_contain{
         width: 60vw;
@@ -133,7 +134,6 @@
         width:54vw;
         text-indent: 3vw;
         font-size: 0.9rem;
-        letter-spacing: 0.2rem;
         line-height: 7vw;
        
     }

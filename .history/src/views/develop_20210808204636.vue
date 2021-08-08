@@ -118,11 +118,6 @@
     width: 15vw;
     height: auto;
 }
-@media screen and (max-width : 1500px){
-    #develop div p{
-        font-size: 1.3rem;
-    }
-}
 @media only screen and (max-width: 500px) {
     .develop_txt_contain{
         width: 60vw;

@@ -304,7 +304,7 @@
 
     @media screen and (max-width : 500px) {
         .tech-box{
-          top: 9vh;
+          top: 10vh;
     }
         .after-details,
         .before-details,

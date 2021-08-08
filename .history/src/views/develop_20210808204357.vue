@@ -97,7 +97,7 @@
     width: 19vw;
     text-align: center;
     letter-spacing: 0.8vw;
-    font-size: 1.1rem;
+    font-size: 1.4vw;
     color: white;
     line-height: 2.5vw;
     text-indent: 2vw;
@@ -117,11 +117,6 @@
     bottom: 0;
     width: 15vw;
     height: auto;
-}
-@media screen and (max-width : 1500px){
-    #develop div p{
-        font-size: 1.3rem;
-    }
 }
 @media only screen and (max-width: 500px) {
     .develop_txt_contain{

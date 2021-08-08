@@ -94,7 +94,7 @@ export default{
   }
     function liuxing(elem,div){
     let starCount
-    if(window.width>800){starCount=170}else{starCount=100}
+    if(window.width>800){starCount=170}else{starCount=50}
     let context = elem.getContext("2d")
     elem.width=elem.clientWidth
     // console.log(elem.width)

@@ -124,7 +124,7 @@ export default {
   .background .center-content{
     padding: 0;
     width: 80vw;
-    height: 38vh;
+    height: 15rem;
     padding: 0 1rem;
   }
   .background .center-content::after{
@@ -162,7 +162,7 @@ v-leave-to{
     text-align: center;
     position: relative;
     width: 45vw;
-    height: 52vh;
+    height: 20rem;
     padding-bottom: 2.5vh;
     color: #fff;
     z-index: 100;
@@ -190,7 +190,6 @@ v-leave-to{
     margin-left: 1.5vw;
     margin-right: 1.5vw;
     width: 80%;
-    letter-spacing: 0.2rem;
   }
   .head2{
     color: #65dff5;
@@ -204,7 +203,6 @@ v-leave-to{
     margin-left: 1vw;
     margin-right: 1vw;
     width: 80%;
-    letter-spacing: 0.2rem;
   }
   .btn{
     width: 6vw;
@@ -222,6 +220,17 @@ v-leave-to{
   }
 
   @media screen and (max-width : 800px){
+       .center-content{
+         width: 60vw;
+         height: 35vh;
+         padding-bottom: 0;
+         bottom: 3vh;
+         padding: 0 2rem;
+         padding: 1rem;
+       }
+       .center-content::after{
+         width: 60vw;
+       }
        .head1{
          font-size: 1rem;
          margin-top: 0;
@@ -264,6 +273,7 @@ v-leave-to{
          padding-top: 0;
          margin-top: 1vh;
          margin-bottom: 1vh;
+         letter-spacing: 0.8vw;
          /* text-align: center; */
        }
        .lead1{
@@ -272,7 +282,7 @@ v-leave-to{
          margin-right: 0;
          margin-bottom: 2vh;
          width: 100%;
-         letter-spacing: 0.2rem;
+         letter-spacing: 0.8vw;
        }
        .head2{
          font-size: 0.1rem;
@@ -286,7 +296,7 @@ v-leave-to{
          margin-top: 0.5rem;
          margin-bottom: 0.1rem;
          width: 100%;
-         letter-spacing: 0.2rem;
+         letter-spacing: 0.8vw;
        }
        .btn{
          width: 15vw;
