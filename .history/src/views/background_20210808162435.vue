@@ -119,7 +119,7 @@ export default {
 
 @media screen and (max-width: 500px) {
   .left-star{
-    top: 6vh;
+    top: 10vh;
   }
   .background .center-content{
     padding: 0;
@@ -133,7 +133,7 @@ export default {
     height: 100%;
   }
   .left-star img{
-    width: 7rem;
+    width: 8rem;
   }
   .right-ast img{
     width: 5rem;
@@ -166,6 +166,7 @@ v-leave-to{
     padding-bottom: 2.5vh;
     color: #fff;
     z-index: 100;
+    bottom: 4vh;
   }
   .center-content::after{
     content: '';
@@ -175,7 +176,7 @@ v-leave-to{
     width: 45vw;
     height: 100%;
     background: #fff;
-    border-radius: 5px;
+    border-radius: 3%;
     opacity: 0.3;
     z-index: -10;
   }
@@ -265,7 +266,8 @@ v-leave-to{
          width: 60vw;
          height: 43vh;
          padding-bottom: 0;
-         bottom: 4rem;
+         bottom: 1vh;
+         bottom: 5vh;
          padding: 1rem;
        }
        .head1{
@@ -281,12 +283,12 @@ v-leave-to{
          margin-left: 0;
          margin-right: 0;
          margin-bottom: 2vh;
-         width: 100%;
        }
        .head2{
          font-size: 0.1rem;
          margin-top: 0;
          margin-bottom: 2vh;
+         width: 100%;
        }
        .lead2{
          font-size: 0.01rem;
@@ -294,7 +296,6 @@ v-leave-to{
          margin-right: 0;
          margin-top: 0.5rem;
          margin-bottom: 0.1rem;
-         width: 100%;
        }
        .btn{
          width: 15vw;
@@ -306,7 +307,6 @@ v-leave-to{
       .background .lead1,
       .background .lead2{
         font-size: 1.3rem;
-        width: 90%;
       }
     }
 </style>

@@ -265,7 +265,7 @@ v-leave-to{
          width: 60vw;
          height: 43vh;
          padding-bottom: 0;
-         bottom: 4rem;
+         bottom: 5rem;
          padding: 1rem;
        }
        .head1{

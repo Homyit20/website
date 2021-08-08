@@ -119,7 +119,7 @@ export default {
 
 @media screen and (max-width: 500px) {
   .left-star{
-    top: 6vh;
+    top: 10vh;
   }
   .background .center-content{
     padding: 0;
@@ -133,7 +133,7 @@ export default {
     height: 100%;
   }
   .left-star img{
-    width: 7rem;
+    width: 8rem;
   }
   .right-ast img{
     width: 5rem;
@@ -166,6 +166,7 @@ v-leave-to{
     padding-bottom: 2.5vh;
     color: #fff;
     z-index: 100;
+    bottom: 4vh;
   }
   .center-content::after{
     content: '';
@@ -175,7 +176,7 @@ v-leave-to{
     width: 45vw;
     height: 100%;
     background: #fff;
-    border-radius: 5px;
+    border-radius: 3px;
     opacity: 0.3;
     z-index: -10;
   }
@@ -265,7 +266,8 @@ v-leave-to{
          width: 60vw;
          height: 43vh;
          padding-bottom: 0;
-         bottom: 4rem;
+         bottom: 1vh;
+         bottom: 5vh;
          padding: 1rem;
        }
        .head1{

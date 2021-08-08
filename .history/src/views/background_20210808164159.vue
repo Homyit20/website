@@ -119,7 +119,7 @@ export default {
 
 @media screen and (max-width: 500px) {
   .left-star{
-    top: 6vh;
+    top: 5vh;
   }
   .background .center-content{
     padding: 0;
@@ -133,7 +133,7 @@ export default {
     height: 100%;
   }
   .left-star img{
-    width: 7rem;
+    width: 8rem;
   }
   .right-ast img{
     width: 5rem;
