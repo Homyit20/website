@@ -15,20 +15,42 @@
       width="100%"
       height="100%"
     />
-   
+    <img
+      src="../assets/home/moon.png"
+      alt=""
+      width="80rem"
+      height="80rem"
+      id="home-moon"
+    />
+
     <home-welcome></home-welcome>
   </div>
 </template>
 
 <script>
 import HomeWelcome from "../components/home/home-welcome.vue";
-import NavBar from "../components/common/nav.vue"
+import NavBar from "../components/common/nav.vue";
 
 export default {
   name: "Home",
   components: {
     HomeWelcome,
-    NavBar
+    NavBar,
+  },
+  date() {
+    return {
+      flag: false,
+      screenWidth: "",
+      screenHeight: "",
+    };
+  },
+  mounted() {
+    this.screenWidth = document.body.clientWidth;
+    this.screenHeight = document.body.clientHeight;
+    if (this.screenWidth < 500) {
+      console.log(this.screenWidth);
+      this.flag = true;
+    }
   },
 };
 </script>
@@ -49,5 +71,23 @@ export default {
   height: 100vh;
   object-fit: cover;
   z-index: -100;
+}
+#home-moon {
+  opacity: 0;
+}
+@media screen and (max-width: 500px) {
+  #home-img {
+    top: 0;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: -100;
+  }
+  #home-moon {
+    opacity: 1;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+  }
 }
 </style>
