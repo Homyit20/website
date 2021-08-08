@@ -97,7 +97,7 @@
     width: 19vw;
     text-align: center;
     letter-spacing: 0.8vw;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: white;
     line-height: 2.5vw;
     text-indent: 2vw;
@@ -118,7 +118,7 @@
     width: 15vw;
     height: auto;
 }
-@media screen and (min-width : 1500px){
+@media screen and (max-width : 1500px){
     #develop div p{
         font-size: 1.3rem;
     }

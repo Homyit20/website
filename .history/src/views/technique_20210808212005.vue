@@ -422,6 +422,7 @@
         .tech-content .tech-select-list{
             position: absolute;
             bottom: 22%;
+            z-index: 1000;
         }
         .tech-list p {
             font-size: 1.3rem;
