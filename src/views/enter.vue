@@ -1,13 +1,11 @@
 <template>
     <div class='enter_contain'>
         <canvas id="Meteor" class="enter_canvas"></canvas>
-        
         <canvas id="canvas" class="enter_canvas">你的浏览器不支持canvas</canvas>
-        <div class="enter_button_contain">
+        <div class="enter_button_contain" style="z-index:1;">
           <div @click="change()" class="enter_button" style="color:white"></div>
           <img @click="change()" src="https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/enter_宇航员.png" alt="宇航员" style="z-index:1" class="enter_img">
         </div>
-        
     </div>
 </template>
 
@@ -133,12 +131,10 @@ export default {
         height: 5vw;
         left: calc(50% - 3vw);
         top: 0;
-        border-radius: 3vw;
-        /* background-color:rgb(130, 164, 167); */
+        border-radius: 50%;
         border: 1px solid white;
         box-shadow: 0 0 10px 0 white;
         z-index: 1;
-        /* opacity: 0.3; */
       }
       .enter_button::after{
         content: '';
@@ -166,6 +162,18 @@ export default {
             /* box-shadow: 0 0 0 3vw red inset */
             background-color: gray
             /* 0 0 10 0 white ; */
+        }
+      }
+      @media only screen and (max-width: 800px) {
+        .enter_button{
+          width: 7vh;
+          height: 7vh;
+        }
+        .enter_button::after{
+          width: 3vh;
+          height: 3vh;
+          left: 1.5vh;
+          top: 1vh;
         }
       }
 </style>
