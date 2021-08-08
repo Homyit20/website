@@ -163,8 +163,6 @@
         },
         touchmovedeal(event){
             //当屏幕有多个touch或者页面被缩放过，就不执行move操作
-            let techniquebox = document.getElementsByClassName('after-details')[0];
-            let techniquewidth = techniquebox.offsetWidth;
             if (event.targetTouches.length > 1 || event.scale && event.scale !== 1) return;
             let techniqueul = document.getElementsByClassName('tech-list')[0];
             let touchmove = event.targetTouches[0];
@@ -175,9 +173,8 @@
             this.touchdirection = Math.abs(this.touchscrollX) > Math.abs(this.touchscrollY) ? 1 : 0;
             //竖滑阻止默认事件
            //需要判断是否事件可以被取消
-            if(this.touchdirection == 0 && event.cancelable){
+           if(this.touchdirection == 0 && event.cancelable){
                 event.preventDefault()
-                techniqueul.style.left = -techniquewidth*touchvalue + 'px';
                 //默认事件是滚动
             }
             techniqueul.style.left = techniqueul.offsetLeft + this.touchscrollX + 'px';
@@ -189,7 +186,7 @@
             let techniqueli = document.getElementsByClassName('tech-select-circle');
             if(this.touchscrollX < 0){
                 //小于20滑动
-                if(this.touchscrollX < -30){
+                if(this.touchscrollX < -20){
                     //touchvalue值改变之前，移除前一个圈圈的样式，同步before
                     touchvalue = after
                     techniqueli[touchvalue].classList.remove('tech-select-active');
@@ -217,7 +214,7 @@
             }
             if(this.touchscrollX > 0 ){
                 //大于20滑动
-                if(this.touchscrollX > 30){
+                if(this.touchscrollX > 20){
                     //点完后滑动后 touch value before同步
                     touchvalue = after
                     techniqueli[touchvalue].classList.remove('tech-select-active');
@@ -421,7 +418,7 @@
         }
         .tech-content .tech-select-list{
             position: absolute;
-            bottom: 22%;
+            bottom: 16rem;
         }
         .tech-list p {
             font-size: 1.3rem;
