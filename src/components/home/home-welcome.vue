@@ -9,7 +9,7 @@
       class="animate__animated animate__fadeInDown"
       @click="go()"
     >
-      TELL ME MORE
+      Fly to Homyit
     </button>
   </div>
 </template>
@@ -47,13 +47,14 @@ export default {
 }
 #home-btn {
   margin: 10%;
-  width: 40%;
+  width: 35%;
   color: #444343;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
   font-family: "Adobe 黑体 Std";
   /* border-width: 0.05rem; */
   opacity: 0.6;
+  border-radius: 5px;
 }
 #home-btn:hover {
   background-color: #65dff5;
@@ -72,13 +73,14 @@ export default {
     font-size: 3rem;
   }
   #home-btn {
-    margin: 10%;
-    width: 40%;
+    margin: 15%;
+    width: 50%;
     color: #444343;
-    font-size: 0.5rem;
+    font-size: 1.2rem;
     font-weight: 700;
     font-family: "Adobe 黑体 Std";
     opacity: 0.6;
+    border-radius: 5px;
   }
 }
 </style>
