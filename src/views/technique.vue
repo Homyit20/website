@@ -57,7 +57,7 @@
                 </li>
               </ul>
             </div>
-            <ul class="tech-select-list">
+            <ul class="tech-select-list" style="width:7rem">
                 <li class="tech-select-circle tech-select-active" @click='scroll(0)'></li>
                 <li class="tech-select-circle" @click='scroll(1)'></li>
                 <li class="tech-select-circle" @click='scroll(2)'></li>
@@ -427,8 +427,8 @@
             font-size: 1.3rem;
         }
         .tech-select-list .tech-select-circle{
-           width: 0.7rem;
-           height: 0.7rem;
+           width: 1rem;
+           height: 1rem;
            border-radius: 50%;
            background-color: #fff;
            border: 1px solid #8da7a9;
