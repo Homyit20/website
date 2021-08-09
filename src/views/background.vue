@@ -31,7 +31,7 @@
               还有唱 K ,桌游等娱乐项目。而且工作室有免费空调、冰箱,让你在炎炎夏日有个避暑的好去处。
               </P>
               <div class="back-two-head">
-                <h1 class="head2">快来加入我们吧</h1>
+                <h2 class="head2">快来加入我们吧!</h2>
                 <div class="back-head-box" @click="toJoin">
                   <h2>JOIN US</h2>
                 </div>
@@ -100,7 +100,7 @@ export default {
 .left-star{
   width: 14vw;
   position: absolute;
-  left: 5vw;
+  left: 8vw;
   top: 12vh;
 }
 .left-star img{
@@ -155,8 +155,8 @@ v-leave-to{
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 36rem;
-    height: 23rem;
+    width: 40rem;
+    height: 26rem;
     padding-bottom: 2.5vh;
     color: #fff;
     z-index: 100;
@@ -166,7 +166,7 @@ v-leave-to{
     position: absolute;
     top: 0;
     left: 0;
-    width: 36rem;
+    width: 40rem;
     height: 100%;
     background: #fff;
     border-radius: 5px;
@@ -224,10 +224,10 @@ v-leave-to{
     width: 90%;
   }
   .back-head-box{
-    padding: 0.3rem;
+    padding: 0.2rem;
     background-color: #65dff5;
     color: #fff;
-    border-radius: 5rem;
+    border-radius: 2rem;
   }
   /* @media screen and (max-width : 1100px){
        .head1{
@@ -348,7 +348,7 @@ v-leave-to{
          /* margin-bottom: 0.4rem; */
        }
        .back-head-box h2{
-         font-size: 1.1rem;
+         font-size: 1rem;
        }
    }
     @media screen and (min-width : 1500px){
