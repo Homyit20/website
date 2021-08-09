@@ -44,10 +44,14 @@ export default ({
   },
   methods :{
     logincommit(){
-       //前端判断
-      if(this.stuName != '' && this.stuClass != ''&& this.stuNum != ''&& this.email != ''){
-        if(/^[\da-zA-Z]+@\w+\.\w+$/.test(this.email) && /^\d{12}$/.test(this.stuNum)){
-          axios.post('http://localhost:8080/api/register',{
+       
+      if(this.stuName != '' && this.stuClass != ''&& /^[\da-zA-Z]+@\w+\.\w+$/.test(this.email) && /^\d{12}$/.test(this.stuNum)){
+        // console.log('成功执行logincommit')
+
+         this.$router.push({
+                path : '/login/contact'
+              })
+        axios.post('http://localhost:8080/api/register',{
         'name' : this.stuName,
         'number' : this.stuNum,
         'classs' : this.stuClass,
@@ -71,9 +75,6 @@ export default ({
             // console.log(123)
             // console.log(err.response);
           })
-        }else{
-          alert('学号/邮箱填写错误')
-        }
       }else{
         alert('请将信息填写完整')
       }

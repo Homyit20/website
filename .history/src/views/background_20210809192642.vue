@@ -209,7 +209,7 @@ v-leave-to{
     text-shadow: 1px 1px 2px #000;
   }
   .btn{
-    width: 6rem;
+    width: 6vw;
     /* padding-bottom: 1rem; */
     font-size: 1.5rem;
     margin-top: 2rem;
@@ -261,7 +261,7 @@ v-leave-to{
          padding: 1rem;
        }
        .head1{
-         font-size: 1.2rem;
+         font-size: 0.1rem;
          margin-top: 0;
          padding-top: 0;
          margin-top: 1vh;
@@ -269,7 +269,7 @@ v-leave-to{
          /* text-align: center; */
        }
        .lead1{
-         font-size: 0.8rem;
+         font-size: 0.1rem;
          margin-left: 0;
          margin-right: 0;
          margin-bottom: 2vh;
@@ -277,12 +277,12 @@ v-leave-to{
          letter-spacing: 0.2rem;
        }
        .head2{
-         font-size: 1.2rem;
+         font-size: 0.1rem;
          margin-top: 0;
          margin-bottom: 2vh;
        }
        .lead2{
-         font-size: 0.8rem;
+         font-size: 0.01rem;
          margin-left: 0;
          margin-right: 0;
          margin-top: 0.5rem;

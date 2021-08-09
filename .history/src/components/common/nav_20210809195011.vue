@@ -1,7 +1,7 @@
 <template>
   <div class="nav">
     <div class="nav-logo" @click="toHome">
-      <img src="../../assets/techlogin/images/logo_03.png"/>
+      <img src="../../assets/techlogin/images/logo_03.png" />
     </div>
     <div class="nav-list">
       <ul class="nav-list-ul">
@@ -58,11 +58,9 @@ export default {
   name: "navbar",
   methods : {
     toHome(){
-      if(this.$route.path != '/home'){
-        this.$router.push({
-          path : '/home'
-        })
-      }
+      this.$router.push({
+        path : '/home'
+      })
     }
   }
 };

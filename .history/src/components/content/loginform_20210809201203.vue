@@ -45,7 +45,7 @@ export default ({
   methods :{
     logincommit(){
        //前端判断
-      if(this.stuName != '' && this.stuClass != ''&& this.stuNum != ''&& this.email != ''){
+      if(this.stuName != '' && this.stuClass != ''&& this.classs != ''&& this.email != ''){
         if(/^[\da-zA-Z]+@\w+\.\w+$/.test(this.email) && /^\d{12}$/.test(this.stuNum)){
           axios.post('http://localhost:8080/api/register',{
         'name' : this.stuName,

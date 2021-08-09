@@ -261,7 +261,7 @@ v-leave-to{
          padding: 1rem;
        }
        .head1{
-         font-size: 1.2rem;
+         font-size: 1.3rem;
          margin-top: 0;
          padding-top: 0;
          margin-top: 1vh;
@@ -269,7 +269,7 @@ v-leave-to{
          /* text-align: center; */
        }
        .lead1{
-         font-size: 0.8rem;
+         font-size: 0.9rem;
          margin-left: 0;
          margin-right: 0;
          margin-bottom: 2vh;
@@ -277,12 +277,12 @@ v-leave-to{
          letter-spacing: 0.2rem;
        }
        .head2{
-         font-size: 1.2rem;
+         font-size: 1.3rem;
          margin-top: 0;
          margin-bottom: 2vh;
        }
        .lead2{
-         font-size: 0.8rem;
+         font-size: 0.9rem;
          margin-left: 0;
          margin-right: 0;
          margin-top: 0.5rem;
