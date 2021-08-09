@@ -280,12 +280,11 @@
         overflow: hidden;
         top: 2vh;
     }
-    .tech-slide{
+    /* .tech-slide{
         position: absolute;
-        bottom: 25vh;
-        right: 0;
-        display: none;
-    }
+        right: 50%;
+        bottom: 0;
+    } */
   .tech-content .tech-list{
       position: absolute;
       left: 0;
@@ -335,9 +334,6 @@
         .tech-contain .tech-content .tech-select-list{
             position: absolute;
             bottom: 20vh;
-        }
-        .tech-slide{
-            display: block;
         }
     }
 

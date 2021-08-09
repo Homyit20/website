@@ -42,9 +42,5 @@ router.beforeEach((to, from, next) => {
     } else {
       next()
     }
-
   }
 })
-window.onload = function(){
-  document.title = "HOMYIT STUDIO"
-}

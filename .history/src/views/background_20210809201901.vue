@@ -30,13 +30,8 @@
               现已成为学院这么多年来就业质量最高的团队!非专业方面,工作室偶尔会进行公费聚餐,
               还有唱 K ,桌游等娱乐项目。而且工作室有免费空调、冰箱,让你在炎炎夏日有个避暑的好去处。
               </P>
-              <div class="back-two-head">
-                <h1 class="head2">快来加入我们吧</h1>
-                <div class="back-head-box" @click="toJoin">
-                  <h2>JOIN US</h2>
-                </div>
-              </div>
-              <button class="btn" @click="handleClick">上一页</button>
+              <h1 class="head2">快来加入我们吧！&nbsp;JOIN&nbsp;&nbsp;US</h1>
+                <button class="btn" @click="handleClick">上一页</button>
             </div>
           </div>
         </transition>
@@ -66,11 +61,6 @@ export default {
     methods:{
       handleClick(){
         this.show=!this.show
-      },
-      toJoin(){
-        this.$router.push({
-          path : '/login/loginform'
-        })
       }
     }
 }
@@ -217,18 +207,6 @@ v-leave-to{
     opacity: 1;
   }
 
-  .back-two-head{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 90%;
-  }
-  .back-head-box{
-    padding: 0.3rem;
-    background-color: #65dff5;
-    color: #fff;
-    border-radius: 5rem;
-  }
   /* @media screen and (max-width : 1100px){
        .head1{
          font-size: 1rem;
@@ -331,6 +309,8 @@ v-leave-to{
        }
        .head2{
          font-size: 1.2rem;
+         margin-top: 0;
+         margin-bottom: 2vh;
        }
        .lead2{
          font-size: 0.8rem;
@@ -346,9 +326,6 @@ v-leave-to{
          margin-top:0.1rem ;
          font-size: 0.1vw;
          /* margin-bottom: 0.4rem; */
-       }
-       .back-head-box h2{
-         font-size: 1.1rem;
        }
    }
     @media screen and (min-width : 1500px){

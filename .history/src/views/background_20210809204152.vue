@@ -220,8 +220,8 @@ v-leave-to{
   .back-two-head{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 90%;
+    justify-content: space-between;
+    width: 65%;
   }
   .back-head-box{
     padding: 0.3rem;
@@ -331,6 +331,8 @@ v-leave-to{
        }
        .head2{
          font-size: 1.2rem;
+         margin-top: 0;
+         margin-bottom: 2vh;
        }
        .lead2{
          font-size: 0.8rem;
@@ -346,9 +348,6 @@ v-leave-to{
          margin-top:0.1rem ;
          font-size: 0.1vw;
          /* margin-bottom: 0.4rem; */
-       }
-       .back-head-box h2{
-         font-size: 1.1rem;
        }
    }
     @media screen and (min-width : 1500px){
