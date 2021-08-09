@@ -283,8 +283,6 @@
     .tech-slide{
         position: absolute;
         bottom: 25vh;
-        right: 0;
-        display: none;
     }
   .tech-content .tech-list{
       position: absolute;
@@ -335,9 +333,6 @@
         .tech-contain .tech-content .tech-select-list{
             position: absolute;
             bottom: 20vh;
-        }
-        .tech-slide{
-            display: block;
         }
     }
 

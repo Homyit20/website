@@ -56,8 +56,8 @@
                     </div>
                 </li>
               </ul>
+              <div class="tech-slide"><img src="../assets/techlogin/images/滑动.png"></div>
             </div>
-            <div class="tech-slide"><img src="../assets/techlogin/images/滑动.png"></div>
             <ul class="tech-select-list">
                 <li class="tech-select-circle tech-select-active" @click='scroll(0)'></li>
                 <li class="tech-select-circle" @click='scroll(1)'></li>
@@ -280,11 +280,10 @@
         overflow: hidden;
         top: 2vh;
     }
-    .tech-slide{
+    .tech-box .tech-slide{
         position: absolute;
-        bottom: 25vh;
-        right: 0;
-        display: none;
+        bottom: 0rem;
+        right: 50%;
     }
   .tech-content .tech-list{
       position: absolute;
@@ -335,9 +334,6 @@
         .tech-contain .tech-content .tech-select-list{
             position: absolute;
             bottom: 20vh;
-        }
-        .tech-slide{
-            display: block;
         }
     }
 
