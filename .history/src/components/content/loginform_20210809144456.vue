@@ -55,7 +55,7 @@ export default ({
             console.log(res.data)
             if(res.data.msg == 'success' || res.data.msg == '此学号已经报名'){
               this.$store.commit('judge');
-              alert(res.data.msg);
+              // alert(res.data.msg);
               this.$router.push({
                 path : '/login/contact'
               })
