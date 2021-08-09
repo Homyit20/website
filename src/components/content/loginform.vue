@@ -47,10 +47,6 @@ export default ({
        
       if(this.stuName != '' && this.stuClass != ''&& /^[\da-zA-Z]+@\w+\.\w+$/.test(this.email) && /^\d{12}$/.test(this.stuNum)){
         // console.log('成功执行logincommit')
-
-         this.$router.push({
-                path : '/login/contact'
-              })
         axios.post('http://localhost:8080/api/register',{
         'name' : this.stuName,
         'number' : this.stuNum,

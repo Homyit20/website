@@ -42,6 +42,7 @@ router.beforeEach((to, from, next) => {
     } else {
       next()
     }
+
   }
 })
 
@@ -49,3 +50,4 @@ router.beforeEach((to, from, next) => {
 router.afterEach((to) => {
   document.title = to.meta.title;
 })
+
