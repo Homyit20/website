@@ -9,7 +9,7 @@
             <div class="center-content">
               <h1 class="head1">宏奕工作室（Homyit Studio）</h1>
               <p class="lead1">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;宏奕工作室成立于2013年9月，
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;宏奕工作室成立于2013年9月，
               是在江西师范大学计算机信息工程学院各领导、老师
               的大力支持下迅速成长起来的学生自主研发的工作室。
               该工作室致力于Web开发，以社团的模式传承在12级
@@ -23,7 +23,7 @@
           <div v-else>
             <div class="center-content">
               <p class="lead2">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               专业方面,工作室主要以承接商业项目、开办技术培训参加专业竞赛、
               开发团队产品等,且就业质量非常高,宏奕的前辈们已成功挑战阿里巴巴
               、腾讯、百度三大巨头及字节跳动等知名互联网公司 HR ,博得 Offer ,
@@ -78,7 +78,7 @@ export default {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      text-align: center;
+      /* text-align: center; */
       padding: 0 2rem;
       position: absolute;
       top: 0;
@@ -97,6 +97,8 @@ export default {
   width: 14vw;
   animation: rotation 3s infinite ease-in-out;
 }
+
+/* 星球动画 */
 @keyframes rotation{
          0%{
            transform: rotate(-20deg);
@@ -107,6 +109,8 @@ export default {
            transform: rotate(-20deg);
          }
      }
+
+     
 .right-ast{
   width: 20vw;
   position: absolute;
@@ -117,29 +121,8 @@ export default {
   width: 10vw;
 }
 
-@media screen and (max-width: 500px) {
-  .left-star{
-    top: 6vh;
-  }
-  .background .center-content{
-    padding: 0;
-    width: 80vw;
-    height: 38vh;
-    padding: 0 1rem;
-  }
-  .background .center-content::after{
-    width: 80vw;
-    padding: 0;
-    height: 100%;
-  }
-  .left-star img{
-    width: 7rem;
-  }
-  .right-ast img{
-    width: 5rem;
-  }
-}
 
+/* 按钮动画 */
 .v-enter-from{
   opacity: 0;
 }
@@ -154,12 +137,13 @@ export default {
 v-leave-to{
   opacity: 0;
 }
+
+
 .center-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     position: relative;
     width: 45vw;
     height: 23rem;
@@ -183,7 +167,7 @@ v-leave-to{
     color: #65dff5;
     font-size: 2rem;
     margin-top: 3vh;
-    margin-bottom: 2vh;
+    margin-bottom: 3vh;
   }
   .lead1{
     font-size: 1.1rem;
@@ -212,7 +196,7 @@ v-leave-to{
     width: 6vw;
     /* padding-bottom: 1rem; */
     font-size: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     background-color: #fff;
     color:#000;
     border: 1px solid #65dff5;
@@ -223,7 +207,8 @@ v-leave-to{
     opacity: 1;
   }
 
-  @media screen and (max-width : 800px){
+  /* 媒体查询 */
+  @media screen and (max-width : 1100px){
        .head1{
          font-size: 1rem;
          margin-top: 0;
@@ -247,15 +232,62 @@ v-leave-to{
          margin-bottom: 0.1rem;
        }
        .btn{
-         width: 15vw;
-         margin-top:0.3rem ;
+         width: 10vw;
+         margin-top:2rem ;
          font-size: 0.1vw;
        }
    }
 
+  @media screen and (max-width : 800px){
+       .head1{
+         font-size: 1.1rem;
+         margin-top: 1.5rem;
+         margin-bottom: 1vh;
+       }
+       .lead1{
+         font-size: 0.9rem;
+         margin-left: 0;
+         margin-right: 0;
+       }
+       .head2{
+         font-size: 1.1rem;
+         margin-top: 0;
+         margin-bottom: 1vh;
+       }
+       .lead2{
+         font-size: 0.9rem;
+         margin-left: 0;
+         margin-right: 0;
+         margin-top: 0.1rem;
+         margin-bottom: 0.1rem;
+       }
+       .btn{
+         width: 10vw;
+         margin-top:1.6rem ;
+         font-size: 0.1vw;
+         margin-bottom: 0.5rem;
+       }
+   }
+
    @media screen and (max-width : 500px){
+
+      .left-star{
+        top: 6vh;
+      }
+      .background .center-content::after{
+        width: 80vw;
+        padding: 0;
+        height: 100%;
+      }
+      .left-star img{
+        width: 5rem;
+      }
+      .right-ast img{
+        width: 4rem;
+      }
        .background .center-content{
-         height: 17rem;
+         width: 80vw;
+         height: 19rem;
          padding-bottom: 0;
          bottom: 4rem;
          padding: 1rem;
@@ -292,8 +324,9 @@ v-leave-to{
        }
        .btn{
          width: 15vw;
-         margin-top:0.3rem ;
+         margin-top:0.1rem ;
          font-size: 0.1vw;
+         /* margin-bottom: 0.4rem; */
        }
    }
     @media screen and (min-width : 1500px){
