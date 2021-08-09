@@ -46,7 +46,7 @@ export default ({
     logincommit(){
        
       if(this.stuName != '' && this.stuClass != ''&& /^[\da-zA-Z]+@\w+\.\w+$/.test(this.email) && /^\d{12}$/.test(this.stuNum)){
-        console.log('成功执行logincommit')
+        // console.log('成功执行logincommit')
 
          this.$router.push({
                 path : '/login/contact'
@@ -58,7 +58,7 @@ export default ({
         'mail' : this.email,
         'introduction' : this.introduce
       }).then((res) => {
-            console.log(res.data)
+            // console.log(res.data)
             if(res.data.msg == 'success' || res.data.msg == '此学号已经报名'){
               this.$store.commit('judge');
               alert(res.data.msg);
@@ -71,9 +71,9 @@ export default ({
             }
           }).catch((err) => {
             // 失败要执行的函数
-            ()=>{}
-            console.log(123)
-            console.log(err.response);
+            ()=>{alert(err)}
+            // console.log(123)
+            // console.log(err.response);
           })
       }else{
         alert('请将信息填写完整')

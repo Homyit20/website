@@ -12,7 +12,6 @@ export default {
     name:'test',
     methods:{
         get(){
-            console.log(123)
             axios.get('http://localhost:8080/api/students').then(
                 res=>{console.log(res)},
                 err=>{console.log(err)}
