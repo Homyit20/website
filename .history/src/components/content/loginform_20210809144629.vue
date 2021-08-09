@@ -44,14 +44,8 @@ export default ({
   },
   methods :{
     logincommit(){
-       
       if(this.stuName != '' && this.stuClass != ''&& /^[\da-zA-Z]+@\w+\.\w+$/.test(this.email) && /^\d{12}$/.test(this.stuNum)){
-        console.log('成功执行logincommit')
-
-         this.$router.push({
-                path : '/login/contact'
-              })
-        axios.post('http://localhost:8080/api/register',{
+        axios.post('/api/register',{
         'name' : this.stuName,
         'number' : this.stuNum,
         'classs' : this.stuClass,
@@ -72,7 +66,6 @@ export default ({
           }).catch((err) => {
             // 失败要执行的函数
             ()=>{}
-            console.log(123)
             console.log(err.response);
           })
       }else{
