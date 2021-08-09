@@ -4,7 +4,7 @@
         <canvas id="canvas" class="enter_canvas">你的浏览器不支持canvas</canvas>
         <div class="enter_button_contain" style="z-index:1;">
           <div @click="change()" class="enter_button" style="color:white"></div>
-          <img @click="change()" src="https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/enter_宇航员.png" alt="宇航员" style="z-index:1" class="enter_img">
+          <img @click="change()" src="https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/enter_yu.png" alt="宇航员" style="z-index:1" class="enter_img">
         </div>
     </div>
 </template>
@@ -15,7 +15,7 @@ export default {
     name:'enter',
     methods:{
       change(){
-        console.log(1)
+        // console.log(1)
         this.$router.push('/home')
       }
     },
@@ -130,7 +130,7 @@ export default {
         width: 5vw;
         height: 5vw;
         left: calc(50% - 3vw);
-        top: 0;
+        top: -10vh;
         border-radius: 50%;
         border: 1px solid white;
         box-shadow: 0 0 10px 0 white;
@@ -168,6 +168,7 @@ export default {
         .enter_button{
           width: 7vh;
           height: 7vh;
+          top: -3vh;
         }
         .enter_button::after{
           width: 3vh;

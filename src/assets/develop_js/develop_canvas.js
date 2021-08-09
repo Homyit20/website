@@ -1,7 +1,7 @@
 export default{
     draw(elem,a=1){
         // let b = document.documentElement.clientWidth
-        if(document.documentElement.clientWidth<800){a = 0.6;console.log(a)}
+        if(document.documentElement.clientWidth<800){a = 0.6;}
         let canvas = elem
         let ctx = canvas.getContext('2d')
         canvas.width = 400*a
@@ -79,11 +79,8 @@ export default{
         
     },
     back(elem){
-        console.log(elem)
         elem.style.width=window.screen.width+'px'
-        // elem.style.width = '1000px'
         elem.style.height=window.screen.height+'px'
-        if(document.body.clientWidth<800){console.log(123);elem.style.width='1000px';}
-        // console.log(123,elem.style.height)
+        if(document.body.clientWidth<800){elem.style.width='1000px';}
     }
 }
