@@ -112,7 +112,7 @@
             if(techniquewidth >= 800){
                 this.techmove = 20;
             }else{
-                this.techmove = 3;
+                this.techmove = 4;
             }
 
             //改变圆圈的样式
@@ -146,7 +146,7 @@
                 if(techniquewidth >= 800){
                     this.techmove = 20;
                 }else{
-                    this.techmove = 3;
+                    this.techmove = 4;
                 }
             }
         },
@@ -307,7 +307,7 @@
 
     @media screen and (max-width : 500px) {
         .tech-box{
-          top: 8vh;
+          top: 6vh;
     }
         .after-details,
         .before-details,

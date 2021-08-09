@@ -44,7 +44,7 @@ export default ({
   methods :{
     logincommit(){
       if(this.stuName != '' && this.stuNum != '' && this.stuClass != '' &&this.email != '' && /^[\da-zA-Z]+@\w+\.\w+$/.test(this.email) && /^\d{12}$/.test(this.stuNum)){
-        axios.post('/api/register',{
+        axios.post('http://localhost:8080/api/register',{
         'name' : this.stuName,
         'number' : this.stuNum,
         'classs' : this.stuClass,
@@ -159,7 +159,7 @@ export default ({
     /* 响应式 */
     @media screen and (max-width : 500px){
        .login-content .login-join{
-         margin-top: 10vh;
+         margin-top: 6vh;
        }
       .login-content{
         margin-top : 2rem;

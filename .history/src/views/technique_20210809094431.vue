@@ -112,7 +112,7 @@
             if(techniquewidth >= 800){
                 this.techmove = 20;
             }else{
-                this.techmove = 3;
+                this.techmove = 4;
             }
 
             //改变圆圈的样式
@@ -146,7 +146,7 @@
                 if(techniquewidth >= 800){
                     this.techmove = 20;
                 }else{
-                    this.techmove = 3;
+                    this.techmove = 4;
                 }
             }
         },
@@ -307,7 +307,7 @@
 
     @media screen and (max-width : 500px) {
         .tech-box{
-          top: 8vh;
+          top: 6vh;
     }
         .after-details,
         .before-details,
@@ -442,15 +442,15 @@
         }
     }
         .tech-select-circle{
-          width: 0.7rem;
-          height: 0.7rem;
+          width: 0.8rem;
+          height: 0.8rem;
           border-radius: 50%;
           background-color: #fff;
           border: 1px solid #8da7a9;
         }
         .tech-select-active{
-           width: 1rem;
-           height: 1rem;
+           width: 1.1rem;
+           height: 1.1rem;
            border-radius: 50%;
            background-color: #65dff5;
            border: 1px solid #8da7a9;
