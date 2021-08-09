@@ -58,7 +58,7 @@ export default {
   name: "navbar",
   methods : {
     toHome(){
-      if(this.$route.path != '/home'){
+      if(this.$router.path != '/home'){
         this.$router.push({
           path : '/home'
         })

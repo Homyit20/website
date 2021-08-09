@@ -9,7 +9,7 @@
             <div class="center-content">
               <h1 class="head1">宏奕工作室（Homyit Studio）</h1>
               <p class="lead1">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;宏奕工作室成立于2013年9月，
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;宏奕工作室成立于2013年9月，
               是在江西师范大学计算机信息工程学院各领导、老师
               的大力支持下迅速成长起来的学生自主研发的工作室。
               该工作室致力于Web开发，以社团的模式传承在12级
@@ -23,20 +23,15 @@
           <div v-else>
             <div class="center-content">
               <p class="lead2">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               专业方面,工作室主要以承接商业项目、开办技术培训参加专业竞赛、
               开发团队产品等,且就业质量非常高,宏奕的前辈们已成功挑战阿里巴巴
               、腾讯、百度三大巨头及字节跳动等知名互联网公司 HR ,博得 Offer ,
               现已成为学院这么多年来就业质量最高的团队!非专业方面,工作室偶尔会进行公费聚餐,
               还有唱 K ,桌游等娱乐项目。而且工作室有免费空调、冰箱,让你在炎炎夏日有个避暑的好去处。
               </P>
-              <div class="back-two-head">
-                <h1 class="head2">快来加入我们吧</h1>
-                <div class="back-head-box" @click="toJoin">
-                  <h2>JOIN US</h2>
-                </div>
-              </div>
-              <button class="btn" @click="handleClick">上一页</button>
+              <h1 class="head2">快来加入我们吧！&nbsp;JOIN&nbsp;&nbsp;US</h1>
+                <button class="btn" @click="handleClick">上一页</button>
             </div>
           </div>
         </transition>
@@ -66,11 +61,6 @@ export default {
     methods:{
       handleClick(){
         this.show=!this.show
-      },
-      toJoin(){
-        this.$router.push({
-          path : '/login/loginform'
-        })
       }
     }
 }
@@ -88,7 +78,7 @@ export default {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      /* text-align: center; */
+      text-align: center;
       padding: 0 2rem;
       position: absolute;
       top: 0;
@@ -107,8 +97,6 @@ export default {
   width: 14vw;
   animation: rotation 3s infinite ease-in-out;
 }
-
-/* 星球动画 */
 @keyframes rotation{
          0%{
            transform: rotate(-20deg);
@@ -119,8 +107,6 @@ export default {
            transform: rotate(-20deg);
          }
      }
-
-     
 .right-ast{
   width: 20vw;
   position: absolute;
@@ -131,8 +117,29 @@ export default {
   width: 10vw;
 }
 
+@media screen and (max-width: 500px) {
+  .left-star{
+    top: 6vh;
+  }
+  .background .center-content{
+    padding: 0;
+    width: 80vw;
+    height: 38vh;
+    padding: 0 1rem;
+  }
+  .background .center-content::after{
+    width: 80vw;
+    padding: 0;
+    height: 100%;
+  }
+  .left-star img{
+    width: 7rem;
+  }
+  .right-ast img{
+    width: 5rem;
+  }
+}
 
-/* 按钮动画 */
 .v-enter-from{
   opacity: 0;
 }
@@ -147,15 +154,14 @@ export default {
 v-leave-to{
   opacity: 0;
 }
-
-
 .center-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     position: relative;
-    width: 36rem;
+    width: 38rem;
     height: 23rem;
     padding-bottom: 2.5vh;
     color: #fff;
@@ -166,7 +172,7 @@ v-leave-to{
     position: absolute;
     top: 0;
     left: 0;
-    width: 36rem;
+    width: 38rem;
     height: 100%;
     background: #fff;
     border-radius: 5px;
@@ -177,7 +183,7 @@ v-leave-to{
     color: #65dff5;
     font-size: 2rem;
     margin-top: 3vh;
-    margin-bottom: 3vh;
+    margin-bottom: 2vh;
   }
   .lead1{
     font-size: 1.1rem;
@@ -203,10 +209,10 @@ v-leave-to{
     text-shadow: 1px 1px 2px #000;
   }
   .btn{
-    width: 6rem;
+    width: 6vw;
     /* padding-bottom: 1rem; */
     font-size: 1.5rem;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     background-color: #fff;
     color:#000;
     border: 1px solid #65dff5;
@@ -217,52 +223,10 @@ v-leave-to{
     opacity: 1;
   }
 
-  .back-two-head{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 90%;
-  }
-  .back-head-box{
-    padding: 0.3rem;
-    background-color: #65dff5;
-    color: #fff;
-    border-radius: 5rem;
-  }
-  /* @media screen and (max-width : 1100px){
-       .head1{
-         font-size: 1rem;
-         margin-top: 0;
-         margin-bottom: 1vh;
-       }
-       .lead1{
-         font-size: 0.9rem;
-         margin-left: 0;
-         margin-right: 0;
-       }
-       .head2{
-         font-size: 1rem;
-         margin-top: 0;
-         margin-bottom: 1vh;
-       }
-       .lead2{
-         font-size: 0.9rem;
-         margin-left: 0;
-         margin-right: 0;
-         margin-top: 0.1rem;
-         margin-bottom: 0.1rem;
-       }
-       .btn{
-         width: 10vw;
-         margin-top:2rem ;
-         font-size: 0.1vw;
-       }
-   } */
-
   /* @media screen and (max-width : 800px){
        .head1{
-         font-size: 1.1rem;
-         margin-top: 1.5rem;
+         font-size: 1rem;
+         margin-top: 0;
          margin-bottom: 1vh;
        }
        .lead1{
@@ -271,7 +235,7 @@ v-leave-to{
          margin-right: 0;
        }
        .head2{
-         font-size: 1.1rem;
+         font-size: 1rem;
          margin-top: 0;
          margin-bottom: 1vh;
        }
@@ -283,38 +247,21 @@ v-leave-to{
          margin-bottom: 0.1rem;
        }
        .btn{
-         width: 10vw;
-         margin-top:1.6rem ;
+         width: 15vw;
+         margin-top:0.3rem ;
          font-size: 0.1vw;
-         margin-bottom: 0.5rem;
        }
    } */
 
    @media screen and (max-width : 500px){
-
-      .left-star{
-        top: 6vh;
-      }
-      .background .center-content::after{
-        width: 80vw;
-        padding: 0;
-        height: 100%;
-      }
-      .left-star img{
-        width: 5rem;
-      }
-      .right-ast img{
-        width: 4rem;
-      }
        .background .center-content{
-         width: 80vw;
-         height: 19rem;
+         height: 17rem;
          padding-bottom: 0;
          bottom: 4rem;
          padding: 1rem;
        }
        .head1{
-         font-size: 1.2rem;
+         font-size: 0.1rem;
          margin-top: 0;
          padding-top: 0;
          margin-top: 1vh;
@@ -322,7 +269,7 @@ v-leave-to{
          /* text-align: center; */
        }
        .lead1{
-         font-size: 0.8rem;
+         font-size: 0.1rem;
          margin-left: 0;
          margin-right: 0;
          margin-bottom: 2vh;
@@ -330,10 +277,12 @@ v-leave-to{
          letter-spacing: 0.2rem;
        }
        .head2{
-         font-size: 1.2rem;
+         font-size: 0.1rem;
+         margin-top: 0;
+         margin-bottom: 2vh;
        }
        .lead2{
-         font-size: 0.8rem;
+         font-size: 0.01rem;
          margin-left: 0;
          margin-right: 0;
          margin-top: 0.5rem;
@@ -343,12 +292,8 @@ v-leave-to{
        }
        .btn{
          width: 15vw;
-         margin-top:0.1rem ;
+         margin-top:0.3rem ;
          font-size: 0.1vw;
-         /* margin-bottom: 0.4rem; */
-       }
-       .back-head-box h2{
-         font-size: 1.1rem;
        }
    }
     @media screen and (min-width : 1500px){

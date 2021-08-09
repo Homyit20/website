@@ -32,8 +32,8 @@
               </P>
               <div class="back-two-head">
                 <h1 class="head2">快来加入我们吧</h1>
-                <div class="back-head-box" @click="toJoin">
-                  <h2>JOIN US</h2>
+                <div class="back-head-box">
+                  <h1 class="head2">JOIN US</h1>
                 </div>
               </div>
               <button class="btn" @click="handleClick">上一页</button>
@@ -66,11 +66,6 @@ export default {
     methods:{
       handleClick(){
         this.show=!this.show
-      },
-      toJoin(){
-        this.$router.push({
-          path : '/login/loginform'
-        })
       }
     }
 }
@@ -220,14 +215,8 @@ v-leave-to{
   .back-two-head{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 90%;
-  }
-  .back-head-box{
-    padding: 0.3rem;
-    background-color: #65dff5;
-    color: #fff;
-    border-radius: 5rem;
+    justify-content: space-between;
+    width: 60%;
   }
   /* @media screen and (max-width : 1100px){
        .head1{
@@ -331,6 +320,8 @@ v-leave-to{
        }
        .head2{
          font-size: 1.2rem;
+         margin-top: 0;
+         margin-bottom: 2vh;
        }
        .lead2{
          font-size: 0.8rem;
@@ -346,9 +337,6 @@ v-leave-to{
          margin-top:0.1rem ;
          font-size: 0.1vw;
          /* margin-bottom: 0.4rem; */
-       }
-       .back-head-box h2{
-         font-size: 1.1rem;
        }
    }
     @media screen and (min-width : 1500px){

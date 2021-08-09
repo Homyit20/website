@@ -45,5 +45,5 @@ router.beforeEach((to, from, next) => {
   }
 })
 window.onload = function(){
-  document.title = "HOMYIT STUDIO"
+  document.title = "homyit"
 }

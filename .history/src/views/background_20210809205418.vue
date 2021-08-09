@@ -221,7 +221,11 @@ v-leave-to{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 90%;
+    width: 80%;
+  }
+  .back-two-head h1{
+    display: flex;
+    align-items: center;
   }
   .back-head-box{
     padding: 0.3rem;
@@ -331,6 +335,8 @@ v-leave-to{
        }
        .head2{
          font-size: 1.2rem;
+         margin-top: 0;
+         margin-bottom: 2vh;
        }
        .lead2{
          font-size: 0.8rem;

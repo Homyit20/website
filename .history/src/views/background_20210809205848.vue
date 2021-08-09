@@ -221,7 +221,7 @@ v-leave-to{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 90%;
+    width: 80%;
   }
   .back-head-box{
     padding: 0.3rem;

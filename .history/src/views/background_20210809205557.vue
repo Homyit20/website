@@ -31,7 +31,7 @@
               还有唱 K ,桌游等娱乐项目。而且工作室有免费空调、冰箱,让你在炎炎夏日有个避暑的好去处。
               </P>
               <div class="back-two-head">
-                <h1 class="head2">快来加入我们吧</h1>
+                <div class="back-head2-box"><h1 class="head2">快来加入我们吧</h1></div>
                 <div class="back-head-box" @click="toJoin">
                   <h2>JOIN US</h2>
                 </div>
@@ -221,7 +221,12 @@ v-leave-to{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 90%;
+    width: 80%;
+  }
+  .back-two-head .back-head2-box{
+    height: 100%;
+    display: flex;
+    align-items: center;
   }
   .back-head-box{
     padding: 0.3rem;
@@ -331,6 +336,8 @@ v-leave-to{
        }
        .head2{
          font-size: 1.2rem;
+         margin-top: 0;
+         margin-bottom: 2vh;
        }
        .lead2{
          font-size: 0.8rem;
