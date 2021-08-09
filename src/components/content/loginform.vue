@@ -79,6 +79,15 @@ export default {
         /^\d{12}$/.test(this.stuNum)
       ) {
         // console.log('成功执行logincommit')
+<<<<<<< HEAD
+        axios.post('http://localhost:8080/api/register',{
+        'name' : this.stuName,
+        'number' : this.stuNum,
+        'classs' : this.stuClass,
+        'mail' : this.email,
+        'introduction' : this.introduce
+      }).then((res) => {
+=======
 
         this.$router.push({
           path: "/login/contact",
@@ -92,6 +101,7 @@ export default {
             introduction: this.introduce,
           })
           .then((res) => {
+>>>>>>> 4d57746059ba14e582676966d5d5aeb0744673fd
             // console.log(res.data)
             if (res.data.msg == "success" || res.data.msg == "此学号已经报名") {
               this.$store.commit("judge");

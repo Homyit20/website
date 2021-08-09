@@ -42,6 +42,7 @@ router.beforeEach((to, from, next) => {
     } else {
       next()
     }
+
   }
 })
 window.onload = function(){

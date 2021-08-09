@@ -1,10 +1,16 @@
 <template>
     <div id="develop">
         <NavBar></NavBar>
+        <img class="develop_logoimg" src="https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/develop_腾讯.png" alt="腾讯" style="display:none">
+        <img class="develop_logoimg" src="https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/develop_字节.png" alt="字节" style="display:none">
+        <img class="develop_logoimg" src="https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/develop_京东.png" alt="京东" style="display:none">
+        <img class="develop_logoimg" src="https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/develop_小米.png" alt="小米" style="display:none">
+        <img class="develop_logoimg" src="https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/develop_%E9%98%BF%E9%87%8C.png" alt="阿里" style="display:none">
+        <img class="develop_logoimg" src="https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/develop_滴滴.png" alt="滴滴" style="display:none">
         <div class="develop_back"></div>
         <div class = 'develop_txt_contain'>
             <div class="develop_txt_back"></div>
-            <p>宏奕工作室从2013年王宏凯创建，到现在，已经涌现处众多优秀的宏奕人,他们分布在全国各地，致力于WEB开发，他们入职阿里巴巴、腾讯、字节跳动等众多知名互联网公司，为互联网发展做出了许多贡献.</p>
+            <p>宏奕工作室从2013年王宏凯创建，到现在，已经涌现处众多优秀的宏奕人,他们分布在全国各地，致力于WEB开发，他们入职阿里巴巴、腾讯、字节跳动、小米、京东等众多知名互联网公司，在前端、后端、UI等方面有自己的建树，为互联网发展做出了许多贡献。</p>
         </div>
         <img src="https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/develop_宇航员.png" alt="Not Found" class="develop_yu">
         <!-- <img src="../assets/develop_imgs/develop_star.png" alt="Noe Found" class="develop_star"> -->
@@ -97,7 +103,7 @@
 #develop div p {
     width: 19vw;
     text-align: center;
-    letter-spacing: 0.8vw;
+    letter-spacing: 0.4vw;
     font-size: 1.1rem;
     color: white;
     line-height: 2.5vw;
@@ -111,6 +117,7 @@
 .develop_canvas{
     float: right;
     margin-right: 10vw;
+    transform: scale(0.5,0.5);
 }
 .develop_yu{
     position: absolute;
