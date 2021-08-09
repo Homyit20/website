@@ -112,7 +112,7 @@
             if(techniquewidth >= 800){
                 this.techmove = 20;
             }else{
-                this.techmove = 4;
+                this.techmove = 3;
             }
 
             //改变圆圈的样式
@@ -146,7 +146,7 @@
                 if(techniquewidth >= 800){
                     this.techmove = 20;
                 }else{
-                    this.techmove = 4;
+                    this.techmove = 3;
                 }
             }
         },
@@ -301,8 +301,7 @@
       text-align: center;
       color: #fff;
       font-size: 1.1rem;
-      letter-spacing: 0.2rem;
-      text-shadow: 1px 1px 2px #000;
+      letter-spacing: 0.5rem;
   }
 
     /* 移动端响应式 */
@@ -401,7 +400,7 @@
     /* 小圈圈 */
     .tech-content .tech-select-list{
         position: absolute;
-        bottom: 27vh;
+        bottom: 12rem;
         width: 5rem;
         display: flex;
         justify-content: space-between;
@@ -420,6 +419,10 @@
         }
         .tech-box .tech-text{
             width: 30rem;
+        }
+        .tech-content .tech-select-list{
+            position: absolute;
+            bottom: 22%;
         }
         .tech-list p {
             font-size: 1.3rem;

@@ -162,7 +162,7 @@ v-leave-to{
     text-align: center;
     position: relative;
     width: 45vw;
-    height: 23rem;
+    height: 20rem;
     padding-bottom: 2.5vh;
     color: #fff;
     z-index: 100;

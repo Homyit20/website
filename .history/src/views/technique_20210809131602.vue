@@ -112,7 +112,7 @@
             if(techniquewidth >= 800){
                 this.techmove = 20;
             }else{
-                this.techmove = 4;
+                this.techmove = 3;
             }
 
             //改变圆圈的样式
@@ -146,7 +146,7 @@
                 if(techniquewidth >= 800){
                     this.techmove = 20;
                 }else{
-                    this.techmove = 4;
+                    this.techmove = 3;
                 }
             }
         },
@@ -327,7 +327,7 @@
         }
         .tech-contain .tech-content .tech-select-list{
             position: absolute;
-            bottom: 20vh;
+            bottom: 27vh;
         }
     }
 
@@ -401,7 +401,7 @@
     /* 小圈圈 */
     .tech-content .tech-select-list{
         position: absolute;
-        bottom: 27vh;
+        bottom: 25vh;
         width: 5rem;
         display: flex;
         justify-content: space-between;

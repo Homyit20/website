@@ -162,7 +162,7 @@ v-leave-to{
     text-align: center;
     position: relative;
     width: 45vw;
-    height: 23rem;
+    height: 52vh;
     padding-bottom: 2.5vh;
     color: #fff;
     z-index: 100;
@@ -254,8 +254,8 @@ v-leave-to{
    }
 
    @media screen and (max-width : 500px){
-       .background .center-content{
-         height: 17rem;
+       .center-content{
+         height: 50vh;
          padding-bottom: 0;
          bottom: 4rem;
          padding: 1rem;
@@ -272,7 +272,6 @@ v-leave-to{
          font-size: 0.1rem;
          margin-left: 0;
          margin-right: 0;
-         margin-bottom: 2vh;
          width: 100%;
          letter-spacing: 0.2rem;
        }
@@ -285,7 +284,6 @@ v-leave-to{
          font-size: 0.01rem;
          margin-left: 0;
          margin-right: 0;
-         margin-top: 0.5rem;
          margin-bottom: 0.1rem;
          width: 100%;
          letter-spacing: 0.2rem;
