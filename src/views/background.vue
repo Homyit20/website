@@ -33,7 +33,7 @@
               <div class="back-two-head">
                 <h2 class="head2">快来加入我们吧!</h2>
                 <div class="back-head-box" @click="toJoin">
-                  <h2>JOIN US</h2>
+                  <h2 class="animate__animated animate__bounce">JOIN US</h2>
                 </div>
               </div>
               <button class="btn" @click="handleClick">上一页</button>
@@ -228,7 +228,10 @@ v-leave-to{
     background-color: #65dff5;
     color: #fff;
     border-radius: 2rem;
+    /* position: relative; */
+    /* transition: transform 300ms linear; */
   }
+
   /* @media screen and (max-width : 1100px){
        .head1{
          font-size: 1rem;
