@@ -11,6 +11,7 @@ module.exports={
     //     proxy:'http://localhost:5000'
     // }
     // 第二种方式
+<<<<<<< HEAD
     // devServer:{
     //     proxy:{
     //         '/api':{
@@ -22,6 +23,18 @@ module.exports={
     //         }
     //     }
     // }
+=======
+    devServer:{
+        proxy:{
+            '/api':{
+                target:'http://106.52.61.60:8081',
+                pathRewrite:{'^/api':''},
+                changeOrigin : true,
+                secure : false,
+            }
+        }
+    }
+>>>>>>> 90eda051fa2ff3f151d02fdc33eff2d9a6107865
 }
 
 

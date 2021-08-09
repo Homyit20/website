@@ -43,7 +43,7 @@ export default ({
   },
   methods :{
     logincommit(){
-      if(this.stuName != '' && this.stuNum != '' && this.stuClass != '' &&this.email != '' && /^[\da-zA-Z]+@\w+\.\w+$/.test(this.email) && /^\d{12}$/.test(this.stuNum)){
+      if(this.stuName != '' && this.stuClass != ''&& /^[\da-zA-Z]+@\w+\.\w+$/.test(this.email) && /^\d{12}$/.test(this.stuNum)){
         axios.post('/api/register',{
         'name' : this.stuName,
         'number' : this.stuNum,
