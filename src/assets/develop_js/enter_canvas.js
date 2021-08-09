@@ -182,7 +182,7 @@ export default{
       function playRains() {
           if(listen){
             listen=0
-            console.log('重新执行流星')
+            // console.log('重新执行流星')
             return
           }
           for (let i=0;i<rainCount;i++){
@@ -218,10 +218,10 @@ export default{
 
 }
     function theimg(img) {
-      if(document.body.clientWidth>800){img[0].width = document.body.clientWidth/2}
+      if(document.body.clientWidth>800){img[0].width = document.body.clientWidth/4}
       else{img[0].width=document.body.clientWidth;}
-      if(document.body.clientWidth<500){img[0].src='https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/%E5%AE%87%E8%88%AA%E5%91%98.png'}
-      else(img[0].src='https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/enter_宇航员.png')
+      if(document.body.clientWidth<500){img[0].src='https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/enter_yu_p.png'}
+      else(img[0].src='https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/宇航.png')
     }
     theimg(img)
     homyit(txt)

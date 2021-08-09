@@ -31,10 +31,10 @@
             canvas.back(document.getElementsByClassName('develop_back')[0])
             window.onresize=()=>{
                 if(document.body.clientWidth<800){
-                    console.log('small')
+                    // console.log('small')
                     canvas.draw(elem)
                 }else if(document.body.clientWidth>800){
-                    console.log(123123)
+                    // console.log(123123)
                     canvas.draw(elem)
                 }
                 // canvas.draw(elem)
