@@ -237,7 +237,7 @@ v-leave-to{
        }
    } */
 
-  /* @media screen and (max-width : 800px){
+  @media screen and (max-width : 800px){
        .head1{
          font-size: 1.1rem;
          margin-top: 1.5rem;
@@ -266,7 +266,7 @@ v-leave-to{
          font-size: 0.1vw;
          margin-bottom: 0.5rem;
        }
-   } */
+   }
 
    @media screen and (max-width : 500px){
 
