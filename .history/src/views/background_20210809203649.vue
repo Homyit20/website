@@ -32,8 +32,8 @@
               </P>
               <div class="back-two-head">
                 <h1 class="head2">快来加入我们吧</h1>
-                <div class="back-head-box" @click="toJoin">
-                  <h2>JOIN US</h2>
+                <div class="back-head-box">
+                  <h1 class="head2">JOIN US</h1>
                 </div>
               </div>
               <button class="btn" @click="handleClick">上一页</button>
@@ -66,11 +66,6 @@ export default {
     methods:{
       handleClick(){
         this.show=!this.show
-      },
-      toJoin(){
-        this.$router.push({
-          path : '/login/loginform'
-        })
       }
     }
 }
@@ -224,10 +219,8 @@ v-leave-to{
     width: 65%;
   }
   .back-head-box{
-    padding: 0.3rem;
+    padding: 1px;
     background-color: #65dff5;
-    color: #fff;
-    border-radius: 5rem;
   }
   /* @media screen and (max-width : 1100px){
        .head1{
