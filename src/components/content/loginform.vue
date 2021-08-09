@@ -43,28 +43,40 @@ export default ({
   },
   methods :{
     logincommit(){
+       
       if(this.stuName != '' && this.stuClass != ''&& /^[\da-zA-Z]+@\w+\.\w+$/.test(this.email) && /^\d{12}$/.test(this.stuNum)){
-        axios.post('/api/register',{
+        console.log('成功执行logincommit')
+
+         this.$router.push({
+                path : '/login/contact'
+              })
+        axios.post('http://localhost:8080/api/register',{
         'name' : this.stuName,
         'number' : this.stuNum,
         'classs' : this.stuClass,
         'mail' : this.email,
         'introduction' : this.introduce
       }).then((res) => {
+            alert('获得了返回数据')
+            console.log('你已经获得返回数据')
             console.log(res.data)
             if(res.data.msg == 'success' || res.data.msg == '此学号已经报名'){
-              this.$store.commit('judge');
+              // this.$store.commit('judge');
               // alert(res.data.msg);
-              this.$router.push({
-                path : '/login/contact'
-              })
+              
+             
             }else{
               // 失败要执行的函数
               ()=>{}
             }
-          }).catch((err) => {
+          },err=>{
+            console.log(1231233123123123)
+            console.log(err)
+          })
+          .catch((err) => {
             // 失败要执行的函数
             ()=>{}
+            console.log(123)
             console.log(err.response);
           })
       }else{

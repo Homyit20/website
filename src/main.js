@@ -21,6 +21,7 @@ new Vue({
 router.beforeEach((to, from, next) => {
   //路由导航
   if (to.meta.islogin) {
+
     if (store.state.success == 1) {
       next()
     } else {

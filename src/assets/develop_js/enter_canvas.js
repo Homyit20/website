@@ -22,7 +22,9 @@ export default{
           ctx.font = fontSize+"px "+fontFamily;
           ctx.fillStyle='red'
           ctx.fillText('HOMYIT',W/2,H/3)
-          let imgData = ctx.getImageData(0,0,W,H)
+          let imgData
+          if(ctx.getImageData(0,0,W,H)){imgData = ctx.getImageData(0,0,W,H)}
+          // let imgData = ctx.getImageData(0,0,W,H)
           ctx.clearRect(0,0,W,H)
           let gap
           if (W>800){gap=5}else{gap=1}

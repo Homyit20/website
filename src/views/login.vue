@@ -5,6 +5,7 @@
       <router-link to="/login/loginform"/>
       <router-link to="/login/contact" />
       <router-view/>
+
   </div>
 </template>
 
@@ -12,6 +13,12 @@
 import NavBar from '../components/common/nav.vue'
 export default {
   name : 'Login',
+  data(){
+    return {
+      LoginShow:false
+    }
+  },
+  
   components :{
     NavBar
   }
