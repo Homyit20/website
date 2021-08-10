@@ -5,15 +5,12 @@
       <div class="photo-content-img">
         <img src="../assets/techlogin/images/南墙.png" class="photo-animate-one our-photo" @click="changephoto(0)">
         <h2>初创南墙</h2>
-        <p>在12级创始人王宏凯及十余名长老成员共同努力下，宏奕工作室（Homyit Studio）于2013年9月成立了！我们工作室
-          本着对“有爱同行，踏实求新”的团队精神的追求，开拓创新、不断进取。致力于为学生提供一个专业的Web开发修炼圣地，培养出更多就业型人才。
-        </p>
+        <p></p>
       </div>
       <div class="photo-content-img">
         <img src="../assets/techlogin/images/新生培训.jpg" class="our-photo" @click="changephoto(1)">
         <h2>新生培训</h2>
-        <p>初来乍到，你们肯定很多人都对这一切都很陌生，觉得自己零基础，肯定学不会。不用担心，
-          20级学长学姐将会对21级新生集中开展培训工作，就算是零基础也可以跟着一起学习的噢！</p>
+        <p></p>
       </div>
       <div class="photo-content-img">
         <img src="../assets/techlogin/images/新生培训.jpg" class="our-photo" @click="changephoto(2)">
@@ -23,23 +20,17 @@
       <div class="photo-content-img">
         <img src="../assets/techlogin/images/工作环境.png" class="our-photo" @click="changephoto(3)">
         <h2>工作环境</h2>
-<<<<<<< HEAD
-        <p>工作室致力于打造舒适温馨的学习环境，24h空调、饮用水不间断供应，内设冰箱等实用设备，为成员解决自习室短缺等问题，营造踏实努力的学习氛围。
-          在这里，你有志同道合的好伙伴陪你一起学习，有什么问题也可以询问学长学姐！
-        </p>
-=======
-        <p>工作室成员每人拥有自己的工位，可供于学习，并且春夏秋冬，空调都在，不用担心热或者冷，还具备投影仪，显示屏，打印机等多种工具，让我们工作学习更方便</p>
->>>>>>> 5e8733e135b162ff68c86b2cee4fe8ff4d36caf0
+        <p>工作室成员每人拥有自己的工位，可供于学习，并且春夏秋冬，空调都在，不用担心热或者冷，还具备投影仪，放大台，打印机等多种工具，让我们工作学习更方便</p>
       </div>
       <div class="photo-content-img">
         <img src="../assets/techlogin/images/2020.jpg" class="our-photo" @click="changephoto(4)">
         <h2>新成员欢迎会</h2>
-        <p>经过培训,通过考核后，我们也会组织新成员欢迎会哟，因为宏奕不仅可以让我们学习进步，也能让我们一起玩耍，成为好朋友</p>
+        <p></p>
       </div>
       <div class="photo-content-img">
         <img src="../assets/techlogin/images/2021.jpg" @click="phototojoin()">
-        <h2>2021</h2>
-        <p>期待你们的到来，快来报名吧</p>
+        <h2>2021期待加入</h2>
+        <p>就是你们呀，快来报名吧</p>
       </div>
     </div>
   </div>
@@ -52,9 +43,6 @@
     methods:{
       changephoto(value){
         let ourphoto = document.getElementsByClassName('our-photo');
-        let photoh2 = document.getElementsByTagName('h2');
-        photoh2[value].style.color = '#65dff5';
-        photoh2[photobefore].style.color = '#fff';
         ourphoto[0].classList.remove('photo-animate-one');
         ourphoto[photobefore].classList.remove('photo-animate-one');
         ourphoto[value].classList.add('photo-animate-one');
@@ -84,12 +72,8 @@
   flex-wrap: wrap;
 }
 .photo-content-img{
-  width: 27rem;
   margin-top: 2rem;
   color: #fff;
-}
-.photo-content-img .active-photo{
-  color: #65dff5;
 }
 .photo-content-img img{
   border: 8px solid #fff;
@@ -121,18 +105,12 @@
     flex-direction: column;
     align-items: center;
  }
- .photo-content-img{
-   width: 23rem;
- }
    .photo-content-img img{
     width: 22rem;
     height: 12rem;
   }
 }
 @media screen and (min-width: 1500px){
-  .photo-content-img{
-    width: 36rem;
-  }
   .photo-content-img img{
     width: 35rem;
     height: 20rem;
