@@ -29,7 +29,7 @@
       <div class="photo-content-img">
         <img src="../assets/techlogin/images/2020.jpg" class="our-photo" @click="changephoto(4)">
         <h2>新成员欢迎会</h2>
-        <p>在你们经过多次培训，考核后，你们将正式加入宏奕这个大家庭，也许跟你同期的小伙伴你原来都不认识，但是当你们通过一起干饭，一起踏着风走回宿舍等方式熟悉起来后，这群原来不认识的人将会在宏奕一起追梦青春。</p>
+        <p>在你们经过多次培训，考核后，你们将正式加入宏奕这个大家庭，也许跟你同期的小伙伴你原来都不认识，但是当你们通过一起干饭，一起踏着风走回宿舍等方式熟悉起来后，这群原来不认识的人将会在宏奕一起追梦青春</p>
       </div>
       <div class="photo-content-img">
         <img src="../assets/techlogin/images/2021.png" @click="phototojoin()">

@@ -139,7 +139,7 @@
     #develop div p{
         width:54vw;
         text-indent: 3vw;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         letter-spacing: 0.1rem;
         line-height: 7vw;
        
