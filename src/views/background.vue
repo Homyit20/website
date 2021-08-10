@@ -467,7 +467,7 @@ v-leave-to{
          width: 5rem;
          height: 1.3rem;
          /* margin-top:0.1rem ; */
-         font-size: 0.1rem;
+         font-size: 1rem;
          /* margin-bottom: 0.4rem; */
          top: 17.5rem;
        }
