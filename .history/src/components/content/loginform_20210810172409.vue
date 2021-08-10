@@ -311,8 +311,7 @@ export default {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 1px;
-  animation: buttonanimate 3s;
-  animation-fill-mode: forwards;
+  animation: buttonanimate 2s 1 ease-in-out;
 }
 /* .login-button:hover {
   color: #262626;
@@ -327,8 +326,7 @@ export default {
   height: 1.8rem;
   background: transparent;
   border: 0px solid #65dff5;
-  animation: buttonafter 3s;
-  animation-fill-mode: forwards;
+  animation: buttonafter 2s 1 ease-in-out;
 }
 /* .login-button:hover:before {
   border: 1.2px solid #fff;
@@ -344,8 +342,7 @@ export default {
       background: #65dff5;
   }
   100%{
-    color: #262626;
-      background: #65dff5;
+
   }
 }
   @keyframes buttonafter {
@@ -357,10 +354,7 @@ export default {
         transition: 0.4s;
     }
     100%{
-        border: 1.2px solid #fff;
-        transform: scale(1.2, 1.4);
-        opacity: 0;
-        transition: 0.4s;
+
     }
   }
 

@@ -311,7 +311,7 @@ export default {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 1px;
-  animation: buttonanimate 3s;
+  animation: buttonanimate 2s backwards;
   animation-fill-mode: forwards;
 }
 /* .login-button:hover {
@@ -327,7 +327,7 @@ export default {
   height: 1.8rem;
   background: transparent;
   border: 0px solid #65dff5;
-  animation: buttonafter 3s;
+  animation: buttonafter 2s;
   animation-fill-mode: forwards;
 }
 /* .login-button:hover:before {
@@ -357,10 +357,7 @@ export default {
         transition: 0.4s;
     }
     100%{
-        border: 1.2px solid #fff;
-        transform: scale(1.2, 1.4);
-        opacity: 0;
-        transition: 0.4s;
+
     }
   }
 
