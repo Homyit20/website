@@ -17,7 +17,9 @@
       <div class="photo-content-img">
         <img src="../assets/techlogin/images/奖状台.png" class="our-photo" @click="changephoto(2)">
         <h2>奖状台</h2>
-        <p></p>
+        <p>从2013年9月工作室成立至今，我们的工作室成就也不少噢，江西省计算机作品赛、中国计算机设计大赛、软件服务外包等比赛
+          我们都荣获名次。现如今，我们的学长学姐们更是遍布各大知名互联网公司！
+        </p>
       </div>
       <div class="photo-content-img">
         <img src="../assets/techlogin/images/工作环境.png" class="our-photo" @click="changephoto(3)">
