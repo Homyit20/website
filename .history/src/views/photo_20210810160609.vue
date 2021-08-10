@@ -4,7 +4,7 @@
     <div class="photo-content">
       <div class="photo-content-img">
         <img src="../assets/techlogin/images/南墙.png" class="photo-animate-one our-photo" @click="changephoto(0)">
-        <h2 class="active-photo">初创南墙</h2>
+        <h2>初创南墙</h2>
         <p></p>
       </div>
       <div class="photo-content-img">
@@ -20,7 +20,7 @@
       <div class="photo-content-img">
         <img src="../assets/techlogin/images/工作环境.png" class="our-photo" @click="changephoto(3)">
         <h2>工作环境</h2>
-        <p>工作室成员每人拥有自己的工位，可供于学习，并且春夏秋冬，空调都在，不用担心热或者冷，还具备投影仪，显示屏，打印机等多种工具，让我们工作学习更方便</p>
+        <p>工作室成员每人拥有自己的工位，可供于学习，并且春夏秋冬，空调都在，不用担心热或者冷，还具备投影仪，放大台，打印机等多种工具，让我们工作学习更方便</p>
       </div>
       <div class="photo-content-img">
         <img src="../assets/techlogin/images/2020.jpg" class="our-photo" @click="changephoto(4)">
@@ -29,8 +29,8 @@
       </div>
       <div class="photo-content-img">
         <img src="../assets/techlogin/images/2021.jpg" @click="phototojoin()">
-        <h2>2021</h2>
-        <p>期待你们的到来，快来报名吧</p>
+        <h2>2021期待加入</h2>
+        <p>就是你们呀，快来报名吧</p>
       </div>
     </div>
   </div>
@@ -43,9 +43,6 @@
     methods:{
       changephoto(value){
         let ourphoto = document.getElementsByClassName('our-photo');
-        let photoh2 = document.getElementsByTagName('h2');
-        photoh2[value].style.color = '#65dff5';
-        photoh2[photobefore].style.color = '#fff';
         ourphoto[0].classList.remove('photo-animate-one');
         ourphoto[photobefore].classList.remove('photo-animate-one');
         ourphoto[value].classList.add('photo-animate-one');
@@ -79,9 +76,6 @@
   margin-top: 2rem;
   color: #fff;
 }
-.photo-content-img .active-photo{
-  color: #65dff5;
-}
 .photo-content-img img{
   border: 8px solid #fff;
   width: 26rem;
@@ -112,18 +106,12 @@
     flex-direction: column;
     align-items: center;
  }
- .photo-content-img{
-   width: 23rem;
- }
    .photo-content-img img{
     width: 22rem;
     height: 12rem;
   }
 }
 @media screen and (min-width: 1500px){
-  .photo-content-img{
-    width: 36rem;
-  }
   .photo-content-img img{
     width: 35rem;
     height: 20rem;

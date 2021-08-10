@@ -29,8 +29,8 @@
       </div>
       <div class="photo-content-img">
         <img src="../assets/techlogin/images/2021.jpg" @click="phototojoin()">
-        <h2>2021</h2>
-        <p>期待你们的到来，快来报名吧</p>
+        <h2>2021期待加入</h2>
+        <p>就是你们呀，快来报名吧</p>
       </div>
     </div>
   </div>

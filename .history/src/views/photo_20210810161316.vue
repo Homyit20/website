@@ -20,7 +20,7 @@
       <div class="photo-content-img">
         <img src="../assets/techlogin/images/工作环境.png" class="our-photo" @click="changephoto(3)">
         <h2>工作环境</h2>
-        <p>工作室成员每人拥有自己的工位，可供于学习，并且春夏秋冬，空调都在，不用担心热或者冷，还具备投影仪，显示屏，打印机等多种工具，让我们工作学习更方便</p>
+        <p>工作室成员每人拥有自己的工位，可供于学习，并且春夏秋冬，空调都在，不用担心热或者冷，还具备投影仪，放大台，打印机等多种工具，让我们工作学习更方便</p>
       </div>
       <div class="photo-content-img">
         <img src="../assets/techlogin/images/2020.jpg" class="our-photo" @click="changephoto(4)">
@@ -29,8 +29,8 @@
       </div>
       <div class="photo-content-img">
         <img src="../assets/techlogin/images/2021.jpg" @click="phototojoin()">
-        <h2>2021</h2>
-        <p>期待你们的到来，快来报名吧</p>
+        <h2>2021期待加入</h2>
+        <p>就是你们呀，快来报名吧</p>
       </div>
     </div>
   </div>
@@ -112,18 +112,12 @@
     flex-direction: column;
     align-items: center;
  }
- .photo-content-img{
-   width: 23rem;
- }
    .photo-content-img img{
     width: 22rem;
     height: 12rem;
   }
 }
 @media screen and (min-width: 1500px){
-  .photo-content-img{
-    width: 36rem;
-  }
   .photo-content-img img{
     width: 35rem;
     height: 20rem;
