@@ -8,7 +8,7 @@ import develop_zijie  from "../develop/develop_字节.png"
 import develop_xiaomi  from "../develop/develop_小米.png"
 export default{
     draw(elem,a=1*2){
-        if(document.documentElement.clientWidth<800){a = 0.6*2;}
+        if(document.documentElement.clientWidth<1000){a = 0.6*2;}
         let canvas = elem
         let ctx = canvas.getContext('2d')
         canvas.width = 400*a
