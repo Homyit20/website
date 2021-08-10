@@ -1,3 +1,5 @@
+import yu_a from '../enter/宇航.png'
+import yu_b from '../enter/enter_yu_p.png'
 export default{
   enter_canvas(txt,elem,div,img){
     let listen = 0
@@ -220,10 +222,10 @@ export default{
 
 }
     function theimg(img) {
+      if(document.body.clientWidth>500){img[0].src=yu_a;console.log(img[0],img[0].src)}
+      else{img[0].src=yu_b}
       if(document.body.clientWidth>800){img[0].width = document.body.clientWidth/4}
       else{img[0].width=document.body.clientWidth;}
-      if(document.body.clientWidth<500){img[0].src='https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/enter_yu_p.png'}
-      else(img[0].src='https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/宇航.png')
     }
     theimg(img)
     homyit(txt)

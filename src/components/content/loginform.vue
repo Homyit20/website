@@ -86,7 +86,6 @@ export default {
         'mail' : this.email,
         'introduction' : this.introduce
       }).then((res) => {
-
             // console.log(res.data)
             if (res.data.msg == "success" || res.data.msg == "此学号已经报名") {
               this.$store.commit("judge");
