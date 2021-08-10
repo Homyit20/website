@@ -204,7 +204,7 @@ export default {
 }
 
 /* 响应式 */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .login-content .login-join {
     margin-top: 10vh;
   }

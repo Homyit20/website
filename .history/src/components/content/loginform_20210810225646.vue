@@ -204,7 +204,7 @@ export default {
 }
 
 /* 响应式 */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
   .login-content .login-join {
     margin-top: 10vh;
   }
@@ -216,12 +216,12 @@ export default {
     flex-direction: column;
     flex-wrap: unwrap;
     align-items: center;
-    width: 19rem;
+    width: 220px;
     height: 15rem;
     margin-top: 2rem;
   }
   .login-form .login-main-form input[type="text"] {
-    width: 18rem;
+    width: 17rem;
     margin-bottom: 0;
   }
   .login-form .login-main-form textarea {
