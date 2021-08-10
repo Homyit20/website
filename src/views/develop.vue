@@ -1,18 +1,18 @@
 <template>
     <div id="develop">
         <NavBar></NavBar>
-        <img class="develop_logoimg" src="https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/develop_腾讯.png" alt="腾讯" style="display:none">
-        <img class="develop_logoimg" src="https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/develop_字节.png" alt="字节" style="display:none">
-        <img class="develop_logoimg" src="https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/develop_京东.png" alt="京东" style="display:none">
-        <img class="develop_logoimg" src="https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/develop_小米.png" alt="小米" style="display:none">
-        <img class="develop_logoimg" src="https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/develop_%E9%98%BF%E9%87%8C.png" alt="阿里" style="display:none">
-        <img class="develop_logoimg" src="https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/develop_滴滴.png" alt="滴滴" style="display:none">
+        <img class="develop_logoimg" src="../assets/develop/develop_腾讯.png" alt="腾讯" style="display:none">
+        <img class="develop_logoimg" src="../assets/develop/develop_字节.png" alt="字节" style="display:none">
+        <img class="develop_logoimg" src="../assets/develop/develop_京东.png" alt="京东" style="display:none">
+        <img class="develop_logoimg" src="../assets/develop/develop_小米.png" alt="小米" style="display:none">
+        <img class="develop_logoimg" src="../assets/develop/develop_阿里.png" alt="阿里" style="display:none">
+        <img class="develop_logoimg" src="../assets/develop/develop_滴滴.png" alt="滴滴" style="display:none">
         <div class="develop_back"></div>
         <div class = 'develop_txt_contain'>
             <div class="develop_txt_back"></div>
             <p>宏奕工作室从2013年王宏凯创建，到现在，已经涌现处众多优秀的宏奕人,他们分布在全国各地，致力于WEB开发，他们入职阿里巴巴、腾讯、字节跳动、小米、京东等众多知名互联网公司，在前端、后端、UI等方面有自己的建树，为互联网发展做出了许多贡献。</p>
         </div>
-        <img src="https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/develop_宇航员.png" alt="Not Found" class="develop_yu">
+        <img src="../assets/develop/develop_宇航员.png" alt="Not Found" class="develop_yu">
         <!-- <img src="../assets/develop_imgs/develop_star.png" alt="Noe Found" class="develop_star"> -->
         <canvas id="canvas" class="develop_canvas">你的浏览器不支持canvas，请升级你的浏览器</canvas>
     </div>
@@ -78,7 +78,7 @@
     height: 100%;
     bottom: 0;
     right: 0;
-    background-image: url("https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/develop_背景.png");
+    background-image: url("../assets/develop/develop_背景.png");
     background-size:100% 100%;
     /* border: 3px solid red; */
     z-index: -1;

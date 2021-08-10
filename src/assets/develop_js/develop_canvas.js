@@ -1,3 +1,5 @@
+import develop_track from "../develop/develop_轨道.png";
+import develop_homyit from "../develop/develop_logo.png"
 export default{
     draw(elem,a=1*2){
         // let b = document.documentElement.clientWidth
@@ -23,8 +25,8 @@ export default{
        
         
         //下面初始化logo数据 
-        let track = getelem('https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/develop_轨道.png')
-        let homyit = getelem('https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/develop_logo.png')
+        let track = getelem(develop_track)
+        let homyit = getelem(develop_homyit)
         // let ali = getelem('https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/develop_%E9%98%BF%E9%87%8C.png')
         // let didi = getelem('https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/develop_滴滴.png')
         // let jingdong = getelem('https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/develop_京东.png')
