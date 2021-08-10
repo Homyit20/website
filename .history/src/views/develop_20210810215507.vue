@@ -167,11 +167,11 @@ export default {
   height: 100%;
   color: #4d4d4d;
   font-size: 1.4rem;
-  border-radius: 1rem;
+  border-radius: 2px;
   text-decoration: none;
   letter-spacing: 0px;
   background-color: #65dff5;
-  animation: developnice 1.5s infinite ease-in-out;
+  animation: developnice 1s infinite;
 }
 .develop_txt_wonder:hover {
   color: black;
@@ -203,9 +203,6 @@ export default {
     font-size: 0.8rem;
     letter-spacing: 0.1rem;
     line-height: 7vw;
-  }
-  .develop_txt_wonder{
-      font-size: 1.1rem;
   }
 }
 @keyframes develop_show {

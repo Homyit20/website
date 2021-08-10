@@ -171,7 +171,7 @@ export default {
   text-decoration: none;
   letter-spacing: 0px;
   background-color: #65dff5;
-  animation: developnice 1.5s infinite ease-in-out;
+  animation: developnice 1s infinite ease-in-out;
 }
 .develop_txt_wonder:hover {
   color: black;
