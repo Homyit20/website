@@ -295,7 +295,6 @@ export default {
   color: #fff;
   padding-left: 1rem;
   resize: none;
-  padding-top: 0.5rem;
 }
 .login-button {
   display: flex;
@@ -312,7 +311,7 @@ export default {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 1px;
-  animation: buttonanimate 3s ease-in-out;
+  animation: buttonanimate 4s ease-in-out;
   animation-fill-mode: forwards;
 }
 /* .login-button:hover {
@@ -328,7 +327,7 @@ export default {
   height: 1.8rem;
   background: transparent;
   border: 0px solid #65dff5;
-  animation: buttonafter 3s ease-in-out;
+  animation: buttonafter 4s ease-in-out;
   animation-fill-mode: forwards;
 }
 /* .login-button:hover:before {

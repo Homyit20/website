@@ -64,11 +64,13 @@
                 <li class="tech-select-circle" @click='scroll(2)'></li>
             </ul>
         </div>
+        <Footer></Footer>
     </div>
 </template>
 
 <script>
   import NavBar from '../components/common/nav.vue'
+  import Footer from '../components/common/footer.vue'
   let before = 0;
   let after = 0;
   let techtime = null;
@@ -86,7 +88,8 @@
         }
     },
     components : {
-        NavBar
+        NavBar,
+        Footer
     },
     //挂载变量以便对象使用
     created(){

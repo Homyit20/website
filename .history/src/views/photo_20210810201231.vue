@@ -12,14 +12,12 @@
         <img src="../assets/techlogin/images/新生培训.png" class="our-photo" @click="changephoto(1)">
         <h2>新生培训</h2>
         <p>初来乍到，你们肯定很多人都对这一切都很陌生，觉得自己零基础，肯定学不会。不用担心，
-          20级学长学姐将会对21级新生集中开展培训工作，就算是零基础也可以学的好的噢！有基础的也可以更上一层楼哟！</p>
+          20级学长学姐将会对21级新生集中开展培训工作，就算是零基础也可以跟着一起学习的噢！有基础的也可以来更上一层楼呦</p>
       </div>
       <div class="photo-content-img">
         <img src="../assets/techlogin/images/奖状台.png" class="our-photo" @click="changephoto(2)">
         <h2>奖状台</h2>
-        <p>从2013年9月工作室成立至今，我们的工作室成就也不少噢，江西省计算机作品赛、中国计算机设计大赛、软件服务外包等比赛
-          我们都荣获名次。现如今，我们的学长学姐们更是遍布各大知名互联网公司！
-        </p>
+        <p></p>
       </div>
       <div class="photo-content-img">
         <img src="../assets/techlogin/images/工作环境.png" class="our-photo" @click="changephoto(3)">
