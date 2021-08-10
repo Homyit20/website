@@ -55,7 +55,7 @@
   @media screen and (max-width: 500px){
     .footer{
       position: absolute;
-      top: 92vh;
+      top: 90vh;
       background-color: #000;
     }
     .footer-content-one p{
