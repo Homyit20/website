@@ -79,29 +79,29 @@ export default {
         this.stuNum != ""
       ) {
         if(/^[\da-zA-Z]+@\w+\.\w+$/.test(this.email) && /^\d{12}$/.test(this.stuNum)){
-          axios.post('http://localhost:8080/api/register',{
-          'name' : this.stuName,
-          'number' : this.stuNum,
-          'classs' : this.stuClass,
-          'mail' : this.email,
-          'introduction' : this.introduce
-        }).then((res) => {
+axios.post('http://localhost:8080/api/register',{
+        'name' : this.stuName,
+        'number' : this.stuNum,
+        'classs' : this.stuClass,
+        'mail' : this.email,
+        'introduction' : this.introduce
+      }).then((res) => {
             // console.log(res.data)
-              if (res.data.msg == "success" || res.data.msg == "此学号已经报名") {
-                this.$store.commit("judge");
-                alert(res.data.msg);
-                this.$router.push({
-                  path: "/login/contact",
-                });
-              } else {
-               // 失败要执行的函数
-                () => {alert(res.data.msg)};
-              }
-            })
-            .catch((err) => {
+            if (res.data.msg == "success" || res.data.msg == "此学号已经报名") {
+              this.$store.commit("judge");
+              alert(res.data.msg);
+              this.$router.push({
+                path: "/login/contact",
+              });
+            } else {
               // 失败要执行的函数
-              () => {
-                alert(err);
+              () => {};
+            }
+          })
+          .catch((err) => {
+            // 失败要执行的函数
+            () => {
+              alert(err);
             };
             // console.log(123)
             // console.log(err.response);
@@ -294,7 +294,6 @@ export default {
   height: 6rem;
   color: #fff;
   padding-left: 1rem;
-  resize: none;
 }
 .login-button {
   display: flex;

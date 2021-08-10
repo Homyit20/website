@@ -71,7 +71,7 @@
 }
 .photo-content{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 .photo-content-img{

@@ -28,7 +28,7 @@
         <p>经过培训,通过考核后，我们也会组织新成员欢迎会哟，因为宏奕不仅可以让我们学习进步，也能让我们一起玩耍，成为好朋友</p>
       </div>
       <div class="photo-content-img">
-        <img src="../assets/techlogin/images/2021.png" @click="phototojoin()">
+        <img src="../assets/techlogin/images/2021.jpg" @click="phototojoin()">
         <h2>2021</h2>
         <p>期待你们的到来，快来报名吧</p>
       </div>
@@ -62,6 +62,7 @@
 
 <style>
 .photos-back{
+  position: absolute;
   width: 100vw;
   background-color: #000;
   display: flex;
@@ -71,22 +72,16 @@
 }
 .photo-content{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 .photo-content-img{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 27rem;
   margin-top: 2rem;
   color: #fff;
 }
 .photo-content-img .active-photo{
   color: #65dff5;
-}
-.photo-content-img p{
-  box-shadow: 1px 1px 3px #000;
 }
 .photo-content-img img{
   border: 8px solid #fff;
@@ -128,10 +123,10 @@
 }
 @media screen and (min-width: 1500px){
   .photo-content-img{
-    width: 35rem;
+    width: 36rem;
   }
   .photo-content-img img{
-    width: 34rem;
+    width: 35rem;
     height: 20rem;
   }
 }

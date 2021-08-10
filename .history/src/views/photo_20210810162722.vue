@@ -28,7 +28,7 @@
         <p>经过培训,通过考核后，我们也会组织新成员欢迎会哟，因为宏奕不仅可以让我们学习进步，也能让我们一起玩耍，成为好朋友</p>
       </div>
       <div class="photo-content-img">
-        <img src="../assets/techlogin/images/2021.png" @click="phototojoin()">
+        <img src="../assets/techlogin/images/2021.jpg" @click="phototojoin()">
         <h2>2021</h2>
         <p>期待你们的到来，快来报名吧</p>
       </div>
@@ -71,7 +71,7 @@
 }
 .photo-content{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 .photo-content-img{

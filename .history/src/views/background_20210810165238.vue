@@ -418,7 +418,6 @@ v-leave-to{
         width: 80vw;
         padding: 0;
         height: 100%;
-        bottom: 0;
       }
       .left-star img{
         width: 5rem;
@@ -430,7 +429,7 @@ v-leave-to{
          width: 80vw;
          height: 20rem;
          padding-bottom: 0;
-         bottom: 0;
+         bottom: 4vh;
          padding: 1rem;
        }
        .head1{
