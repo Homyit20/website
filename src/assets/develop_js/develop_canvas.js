@@ -14,14 +14,6 @@ export default{
         canvas.width = 400*a
         canvas.height = 400*a
 
-        // 验证能不能用
-        // ctx.fillStyle='#fff'        
-        // ctx.fillRect(10,10,100,100)
-         // let track = getelem('https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/develop_轨道.png')
-        // setTimeout(()=>{
-        //     ctx.drawImage(track,10,10)
-        // },1000)
-
         // 先封装几个函数方便后面使用
         // function paint(image,x,y,width=false,height=false){ctx.save();image.onload=()=>{width===false?image.onload=ctx.drawImage(image,x,y):image.onload=ctx.drawImage(image,x,y,width,height)}}
         function getelem(src){let name = new Image();name.src=src;return name}

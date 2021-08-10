@@ -23,13 +23,7 @@
       <div class="photo-content-img">
         <img src="../assets/techlogin/images/工作环境.png" class="our-photo" @click="changephoto(3)">
         <h2>工作环境</h2>
-<<<<<<< HEAD
-        <p>工作室致力于打造舒适温馨的学习环境，24h空调、饮用水不间断供应，内设冰箱等实用设备，为成员解决自习室短缺等问题，营造踏实努力的学习氛围。
-          在这里，你有志同道合的好伙伴陪你一起学习，有什么问题也可以询问学长学姐！
-        </p>
-=======
         <p>工作室成员每人拥有自己的工位，可供于学习，并且春夏秋冬，空调都在，不用担心热或者冷，还具备投影仪，显示屏，打印机等多种工具，让我们工作学习更方便</p>
->>>>>>> 5e8733e135b162ff68c86b2cee4fe8ff4d36caf0
       </div>
       <div class="photo-content-img">
         <img src="../assets/techlogin/images/2020.jpg" class="our-photo" @click="changephoto(4)">

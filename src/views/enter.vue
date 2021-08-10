@@ -176,7 +176,7 @@ export default {
         .enter_button::after{
           width: 3vh;
           height: 3vh;
-          left: 1.5vh;
+          left: 1.7vh;
           top: 1vh;
         }
       }
