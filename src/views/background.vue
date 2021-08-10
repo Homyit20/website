@@ -202,7 +202,7 @@ v-leave-to{
   }
   .lead2{
     margin-bottom: 2vh;
-    margin-top: 5vh;
+    /* margin-top: 0; */
     font-size: 1.1rem;
     margin-left: 1vw;
     margin-right: 1vw;
@@ -472,6 +472,10 @@ v-leave-to{
        }
        .back-head-box h2{
          font-size: 1rem;
+       }
+       .shepi{
+         height: 20rem;
+         bottom: 3rem;
        }
    }
     @media screen and (min-width : 1500px){
