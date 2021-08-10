@@ -81,7 +81,7 @@
   height: 15rem;
   object-fit: cover;
 }
-  .photo-content-img .photo-animate-one{
+  .photo-animate-one{
     border: 8px solid #65dff5;
     animation: photoone 2s infinite ease-in-out;
   }
