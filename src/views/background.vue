@@ -430,7 +430,7 @@ v-leave-to{
       }
        .background .center-content{
          width: 80vw;
-         height: 20rem;
+         height: 19rem;
          padding-bottom: 0;
          bottom: 0;
          padding: 1rem;
@@ -464,17 +464,17 @@ v-leave-to{
          letter-spacing: 0.2rem;
        }
        .btn{
-         width: 15vw;
+         width: 5rem;
          /* margin-top:0.1rem ; */
-         font-size: 0.1vw;
+         font-size: 0.1rem;
          /* margin-bottom: 0.4rem; */
-         top: 18rem;
+         top: 17.5rem;
        }
        .back-head-box h2{
          font-size: 1rem;
        }
        .shepi{
-         height: 20rem;
+         height: 19rem;
          bottom: 3rem;
        }
    }
