@@ -22,7 +22,7 @@
               踏实求新”的侠客情怀，致力于为学生提供一个专业的Web
               开发修炼圣地,培养出更多就业型人才。
               </P>
-              <button class="btn" @click="handleClick">下一页</button>
+              <button class="btn" @click="handleClick">FLIP</button>
             </div>
           </div>
           <div v-else>
@@ -41,7 +41,7 @@
                   <h2 class="animate__animated animate__bounce">JOIN US</h2>
                 </div>
               </div>
-              <button class="btn" @click="handleClick">上一页</button>
+              <button class="btn" @click="handleClick">FLIP</button>
             </div>
           </div>
         </transition>
@@ -189,6 +189,7 @@ v-leave-to{
     font-size: 1.1rem;
     margin-left: 1.5vw;
     margin-right: 1.5vw;
+    margin-bottom: 4vh;
     width: 80%;
     letter-spacing: 0.2rem;
     text-shadow: 1px 1px 2px #000;
@@ -217,6 +218,7 @@ v-leave-to{
     color:#000;
     border: 1px solid #65dff5;
     border-radius: 5%;
+    /* position: relative; */
   }
   .btn:hover{
     background-color: #65dff5;
@@ -410,7 +412,7 @@ v-leave-to{
    @media screen and (max-width : 500px){
 
       .left-star{
-        top: 6vh;
+        top: 10vh;
       }
       .background .center-content::after{
         width: 80vw;
@@ -425,9 +427,9 @@ v-leave-to{
       }
        .background .center-content{
          width: 80vw;
-         height: 19rem;
+         height: 20rem;
          padding-bottom: 0;
-         bottom: 4rem;
+         bottom: 0rem;
          padding: 1rem;
        }
        .head1{
@@ -454,7 +456,7 @@ v-leave-to{
          margin-left: 0;
          margin-right: 0;
          margin-top: 0.5rem;
-         margin-bottom: 0.1rem;
+         margin-bottom: 0.3rem;
          width: 100%;
          letter-spacing: 0.2rem;
        }
