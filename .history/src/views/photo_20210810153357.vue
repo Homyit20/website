@@ -81,7 +81,7 @@
   height: 15rem;
   object-fit: cover;
 }
-  .photo-content-img .photo-animate-one{
+  .photo-animate-one{
     border: 8px solid #65dff5;
     animation: photoone 2s infinite ease-in-out;
   }
@@ -99,7 +99,7 @@
 }
 
 
-@media screen and (max-width : 800px){
+@media screen and (max-width : 500px){
   .photo-content{
     display: flex;
     flex-direction: column;
@@ -113,7 +113,7 @@
 @media screen and (min-width: 1500px){
   .photo-content-img img{
     width: 35rem;
-    height: 20rem;
+    height: 18rem;
   }
 }
 </style>

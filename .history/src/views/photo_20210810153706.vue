@@ -82,7 +82,7 @@
   object-fit: cover;
 }
   .photo-content-img .photo-animate-one{
-    border: 8px solid #65dff5;
+    border: 8px solid #fff;
     animation: photoone 2s infinite ease-in-out;
   }
 /* 动画 */

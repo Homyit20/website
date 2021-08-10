@@ -81,8 +81,8 @@
   height: 15rem;
   object-fit: cover;
 }
-  .photo-content-img .photo-animate-one{
-    border: 8px solid #65dff5;
+  .photo-animate-one{
+    box-shadow: 2px 2px 5px #65dff5;
     animation: photoone 2s infinite ease-in-out;
   }
 /* 动画 */
