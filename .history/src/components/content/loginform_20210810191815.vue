@@ -381,7 +381,7 @@ export default {
     border-radius: 4px;
   }
   .login-main-form textarea {
-    width: 19rem;
+    width: 17.5rem;
     height: 6.5rem;
     border-radius: 5px;
   }

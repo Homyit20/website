@@ -431,13 +431,10 @@
             top: 4rem;
         }
         .tech-box .tech-text{
-            width: 32rem;
+            width: 30rem;
         }
         .tech-list p {
-            font-size: 1.5rem;
-        }
-        .tech-people{
-            width: 18rem;
+            font-size: 1.3rem;
         }
         .tech-select-list .tech-select-circle{
            width: 1rem;

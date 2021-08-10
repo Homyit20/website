@@ -99,7 +99,7 @@
 #develop div p {
     width: 19vw;
     text-align: center;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.4vw;
     font-size: 1.1rem;
     color: white;
     line-height: 2.5vw;

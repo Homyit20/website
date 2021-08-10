@@ -436,9 +436,6 @@
         .tech-list p {
             font-size: 1.5rem;
         }
-        .tech-people{
-            width: 18rem;
-        }
         .tech-select-list .tech-select-circle{
            width: 1rem;
            height: 1rem;
