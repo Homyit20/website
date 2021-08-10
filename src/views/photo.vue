@@ -4,34 +4,37 @@
     <div class="photo-content">
       <div class="photo-content-img">
         <img src="../assets/techlogin/images/南墙.png" class="photo-animate-one our-photo" @click="changephoto(0)">
-        <h2>初创南墙</h2>
-        <p>在12级创始人王宏凯及十余名长老成员共同努力下，宏奕工作室（Homyit Studio）于2013年9月成立了！我们工作室
-          本着对“有爱同行，踏实求新”的团队精神的追求，开拓创新、不断进取。致力于为学生提供一个专业的Web开发修炼圣地，培养出更多就业型人才。
+        <h2 class="active-photo">南墙初创</h2>
+        <p>在12级创始人王宏凯及十余名长老成员共同努力下，宏奕工作室（Homyit Studio）于2013年9月成立了！创立者们带着对“有爱同行，踏实求新”的团队精神的追求，设计南墙，引领领宏奕人开拓创新、不断进取。
         </p>
       </div>
       <div class="photo-content-img">
-        <img src="../assets/techlogin/images/新生培训.jpg" class="our-photo" @click="changephoto(1)">
+        <img src="../assets/techlogin/images/新生培训.png" class="our-photo" @click="changephoto(1)">
         <h2>新生培训</h2>
         <p>初来乍到，你们肯定很多人都对这一切都很陌生，觉得自己零基础，肯定学不会。不用担心，
-          20级学长学姐将会对21级新生集中开展培训工作，就算是零基础也可以跟着一起学习的噢！</p>
+          20级学长学姐将会对21级新生集中开展培训工作，就算是零基础也可以学的好的噢！有基础的也可以更上一层楼哟！</p>
       </div>
       <div class="photo-content-img">
-        <img src="../assets/techlogin/images/新生培训.jpg" class="our-photo" @click="changephoto(2)">
+        <img src="../assets/techlogin/images/奖状台.png" class="our-photo" @click="changephoto(2)">
         <h2>奖状台</h2>
-        <p></p>
+        <p>从2013年9月工作室成立至今，我们的工作室成就也不少噢，江西省计算机作品赛、中国计算机设计大赛、软件服务外包等比赛
+          我们都荣获名次。现如今，我们的学长学姐们更是遍布各大知名互联网公司！
+        </p>
       </div>
       <div class="photo-content-img">
         <img src="../assets/techlogin/images/工作环境.png" class="our-photo" @click="changephoto(3)">
         <h2>工作环境</h2>
-        <p>工作室成员每人拥有自己的工位，可供于学习，并且春夏秋冬，空调都在，不用担心热或者冷，还具备投影仪，显示屏，打印机等多种工具，让我们工作学习更方便</p>
+        <p>工作室致力于打造舒适温馨的学习环境，24h空调、饮用水不间断供应，内设冰箱等实用设备，为成员解决自习室短缺等问题，营造踏实努力的学习氛围。
+          在这里，你有志同道合的好伙伴陪你一起学习，有什么问题也可以询问学长学姐！
+        </p>
       </div>
       <div class="photo-content-img">
         <img src="../assets/techlogin/images/2020.jpg" class="our-photo" @click="changephoto(4)">
         <h2>新成员欢迎会</h2>
-        <p>经过培训,通过考核后，我们也会组织新成员欢迎会哟，因为宏奕不仅可以让我们学习进步，也能让我们一起玩耍，成为好朋友</p>
+        <p>在你们经过多次培训，考核后，你们将正式加入宏奕这个大家庭，也许跟你同期的小伙伴你原来都不认识，但是当你们通过一起干饭，一起踏着风走回宿舍等方式熟悉起来后，这群原来不认识的人将会在宏奕一起追梦青春。</p>
       </div>
       <div class="photo-content-img">
-        <img src="../assets/techlogin/images/2021.jpg" @click="phototojoin()">
+        <img src="../assets/techlogin/images/2021.png" @click="phototojoin()">
         <h2>2021</h2>
         <p>期待你们的到来，快来报名吧</p>
       </div>
@@ -74,16 +77,27 @@
 }
 .photo-content{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 .photo-content-img{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 27rem;
   margin-top: 2rem;
   color: #fff;
 }
 .photo-content-img .active-photo{
   color: #65dff5;
+}
+.photo-content-img h2{
+  margin-top: 1rem;
+}
+.photo-content-img p{
+  box-shadow: 1px 1px 3px #000;
+  letter-spacing: 0.1rem;
+  margin-top: 0.5rem;
 }
 .photo-content-img img{
   border: 8px solid #fff;
@@ -125,10 +139,10 @@
 }
 @media screen and (min-width: 1500px){
   .photo-content-img{
-    width: 36rem;
+    width: 35rem;
   }
   .photo-content-img img{
-    width: 35rem;
+    width: 34rem;
     height: 20rem;
   }
 }

@@ -202,7 +202,7 @@ v-leave-to{
   }
   .lead2{
     margin-bottom: 2vh;
-    margin-top: 5vh;
+    /* margin-top: 0; */
     font-size: 1.1rem;
     margin-left: 1vw;
     margin-right: 1vw;
@@ -220,7 +220,7 @@ v-leave-to{
     border: 1px solid #65dff5;
     border-radius: 5%;
     position: absolute;
-    top: 23rem;
+    top: 22.5rem;
   }
   .btn:hover{
     background-color: #65dff5;
@@ -306,20 +306,20 @@ v-leave-to{
      position: relative;
      overflow: hidden;
    }
-   .shepi:hover span:nth-child(1){
+  .shepi:hover  span:nth-child(1){
   animation: animate1 3s linear infinite;
   display: block
 }
-.shepi:hover span:nth-child(2){
+  .shepi:hover span:nth-child(2){
   animation: animate2 3s linear infinite;
   animation-delay: 1.5s;
   display: block
 }
-.shepi:hover span:nth-child(3){
+  .shepi:hover span:nth-child(3){
   animation: animate3 3s linear infinite;
   display: block
 }
-.shepi:hover span:nth-child(4){
+  .shepi:hover span:nth-child(4){
   animation: animate4 3s linear infinite;
   animation-delay: 1.5s;
   display: block
@@ -420,6 +420,7 @@ v-leave-to{
         width: 80vw;
         padding: 0;
         height: 100%;
+        bottom: 0;
       }
       .left-star img{
         width: 5rem;
@@ -429,9 +430,9 @@ v-leave-to{
       }
        .background .center-content{
          width: 80vw;
-         height: 20rem;
+         height: 19rem;
          padding-bottom: 0;
-         bottom: 0rem;
+         bottom: 0;
          padding: 1rem;
        }
        .head1{
@@ -458,19 +459,24 @@ v-leave-to{
          margin-left: 0;
          margin-right: 0;
          margin-top: 0.5rem;
-         margin-bottom: 0.3rem;
+         margin-bottom: 0.2rem;
          width: 100%;
          letter-spacing: 0.2rem;
        }
        .btn{
-         width: 15vw;
+         width: 5rem;
+         height: 1.3rem;
          /* margin-top:0.1rem ; */
-         font-size: 0.1vw;
+         font-size: 1rem;
          /* margin-bottom: 0.4rem; */
-         top: 18rem;
+         top: 17.5rem;
        }
        .back-head-box h2{
          font-size: 1rem;
+       }
+       .shepi{
+         height: 19rem;
+         bottom: 3rem;
        }
    }
     @media screen and (min-width : 1500px){
