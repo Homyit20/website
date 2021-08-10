@@ -73,11 +73,6 @@
   let after = 0;
   let techtime = null;
   let touchvalue = 0;
-
-  //禁止下拉刷新
-  document.body.addEventListener('touchmove', function(e){
-      e.preventDefault();
-  }, {passive : false})
   export default {
     name : 'Technique',
     data(){
