@@ -21,10 +21,10 @@
       </div>
       <div class="photo-content-img">
         <img src="../assets/techlogin/images/2020.jpg" class="our-photo" @click="changephoto(4)">
-        <h2>新成员欢迎会</h2>
+        <h1>新成员欢迎会</h1>
       </div>
       <div class="photo-content-img">
-        <img src="../assets/techlogin/images/2021.jpg" @click="phototojoin()">
+        <img src="../assets/techlogin/images/2021.jpg" class="our-photo" @click="changephoto(5)">
         <h2>2021期待加入</h2>
         <p>就是你们呀，快来报名吧</p>
       </div>
@@ -39,16 +39,10 @@
     methods:{
       changephoto(value){
         let ourphoto = document.getElementsByClassName('our-photo');
-        ourphoto[0].classList.remove('photo-animate-one');
         ourphoto[photobefore].classList.remove('photo-animate-one');
         ourphoto[value].classList.add('photo-animate-one');
         photobefore = value;
-      },
-      phototojoin(){
-      this.$router.push({
-        path : '/login/loginform'
-      })
-    }
+      }
     }
   }
 </script>
@@ -66,6 +60,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 95%;
 }
 .photo-content-img{
   margin-top: 2rem;

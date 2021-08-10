@@ -43,12 +43,12 @@
         ourphoto[photobefore].classList.remove('photo-animate-one');
         ourphoto[value].classList.add('photo-animate-one');
         photobefore = value;
-      },
-      phototojoin(){
+      }
+    },
+    phototojoin(){
       this.$router.push({
         path : '/login/loginform'
       })
-    }
     }
   }
 </script>
