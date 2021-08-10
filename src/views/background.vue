@@ -4,6 +4,11 @@
     <link href="https://cdn.jsdelivr.net/npm/animate.css@3.5.1" rel="stylesheet" type="text/css">
     <div class="big-background">
       <div class="background">
+        <div class="shepi">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         <transition mode="out-in">
           <div v-if="show">
             <div class="center-content">
@@ -40,6 +45,7 @@
             </div>
           </div>
         </transition>
+          </div>
         <div class="left-star">
           <img src="../assets/background/star.png">
         </div>
@@ -169,7 +175,7 @@ v-leave-to{
     width: 40rem;
     height: 100%;
     background: #fff;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     opacity: 0.3;
     z-index: -10;
   }
@@ -292,6 +298,114 @@ v-leave-to{
          margin-bottom: 0.5rem;
        }
    } */
+   .shepi{
+     position: relative;
+     overflow: hidden;
+   }
+   .shepi:hover span:nth-child(1){
+  animation: animate1 3s linear infinite;
+  display: block
+}
+.shepi:hover span:nth-child(2){
+  animation: animate2 3s linear infinite;
+  animation-delay: 1.5s;
+  display: block
+}
+.shepi:hover span:nth-child(3){
+  animation: animate3 3s linear infinite;
+  display: block
+}
+.shepi:hover span:nth-child(4){
+  animation: animate4 3s linear infinite;
+  animation-delay: 1.5s;
+  display: block
+}
+  .shepi span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right,transparent,silver);
+    display: none;
+    /* animation: animate1 3s linear infinite; */
+    /* animation-delay: 0s; */
+        }
+        .shepi span:nth-child(2){
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 1px;
+            height: 100%;
+            background: linear-gradient(to bottom,transparent,silver);
+            display: none;
+            /* animation: animate2 3s linear infinite; */
+            /* animation-delay: 1.5s; */
+        }   
+        .shepi span:nth-child(3){
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(to left,transparent,silver);
+            display: none;
+            /* animation: animate3 3s linear infinite; */
+            /* animation-delay: 0s; */
+        }  
+        .shepi span:nth-child(4){
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 1px;
+            height: 100%;
+            background: linear-gradient(to top,transparent,silver);
+            display: none;
+            /* animation: animate4 3s linear infinite; */
+            /* animation-delay: 1.5s; */
+        }
+
+@keyframes animate1 {
+            0%{
+                transform: translateX(-100%);
+            }
+            100%{
+                transform:translateX(100%)
+            }
+        }
+        @keyframes animate2 {
+            0%{
+                transform: translateY(-100%);
+            }
+            100%{
+                transform:translateY(100%)
+            }
+        }
+        @keyframes animate3 {
+            0%{
+                transform: translateX(100%);
+            }
+            100%{
+                transform:translateX(-100%)
+            }
+        }
+        @keyframes animate4 {
+            0%{
+                transform: translateY(100%);
+            }
+            100%{
+                transform:translateY(-100%)
+            }
+        }
+        @keyframes homebutton {
+          0%{
+            background-color: white;
+          }
+          100%{
+            background-color: #65dff5 ;
+          }
+        }
+
 
    @media screen and (max-width : 500px){
 

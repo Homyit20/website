@@ -9,6 +9,10 @@
       class="animate__animated animate__fadeInDown"
       @click="go()"
     >
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
       Fly to Homyit
     </button>
   </div>
@@ -46,8 +50,10 @@ export default {
   font-size: 4.7rem;
 }
 #home-btn {
+  position: relative;
   margin: 10%;
   width: 35%;
+  padding: 1%;
   color: #444343;
   font-size: 1.4rem;
   font-weight: 700;
@@ -56,9 +62,14 @@ export default {
   opacity: 0.6;
   border-radius: 5px;
 }
+
+
 #home-btn:hover {
   background-color: #65dff5;
+  box-shadow: 0 0 10px 0 #65dff5;
+  color: white;
 }
+
 @media screen and (max-width: 500px) {
   #home-welcome {
     text-align: center;
@@ -83,4 +94,5 @@ export default {
     border-radius: 5px;
   }
 }
+
 </style>

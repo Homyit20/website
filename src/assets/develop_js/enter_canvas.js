@@ -220,10 +220,17 @@ export default{
 
 }
     function theimg(img) {
+      console.log(img[0].src)
+      img[0].src="./enter_yu_p.png"
+      // if(document.body.clientWidth>500){img[0].src="http://localhost:8080/img/%E5%AE%87%E8%88%AA.a0e078d9.png";console.log(img[0],img[0].src)}
+      // if(document.body.clientWidth>500){img[0].src="enter_yu_p.png";console.log(img[0],img[0].src)}
       if(document.body.clientWidth>800){img[0].width = document.body.clientWidth/4}
       else{img[0].width=document.body.clientWidth;}
-      if(document.body.clientWidth<500){img[0].src='https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/enter_yu_p.png'}
-      else(img[0].src='https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/宇航.png')
+      
+      // else{img[0].src="../enter/宇航.png"}
+      // else{img[0].src="W:\网页\宏奕\new\form git\website\src\assets\enter\enter_yu_p.png" ;console.log(img[0].src)}
+      // if(document.body.clientWidth<500){img[0].src="../enter/enter_yu_p.png"}
+      // else{img[0].src="../enter/宇航.png"}
     }
     theimg(img)
     homyit(txt)
