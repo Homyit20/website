@@ -4,15 +4,10 @@
     <div class="photo-content">
       <div class="photo-content-img">
         <img src="../assets/techlogin/images/南墙.png" class="photo-animate-one our-photo" @click="changephoto(0)">
-<<<<<<< HEAD
         <h2>初创南墙</h2>
         <p>在12级创始人王宏凯及十余名长老成员共同努力下，宏奕工作室（Homyit Studio）于2013年9月成立了！我们工作室
           本着对“有爱同行，踏实求新”的团队精神的追求，开拓创新、不断进取。致力于为学生提供一个专业的Web开发修炼圣地，培养出更多就业型人才。
         </p>
-=======
-        <h2 class="active-photo">初创南墙</h2>
-        <p></p>
->>>>>>> 5e8733e135b162ff68c86b2cee4fe8ff4d36caf0
       </div>
       <div class="photo-content-img">
         <img src="../assets/techlogin/images/新生培训.jpg" class="our-photo" @click="changephoto(1)">
