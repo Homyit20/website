@@ -220,7 +220,7 @@ v-leave-to{
     border: 1px solid #65dff5;
     border-radius: 5%;
     position: absolute;
-    top: 23rem;
+    top: 22.5rem;
   }
   .btn:hover{
     background-color: #65dff5;
@@ -459,12 +459,13 @@ v-leave-to{
          margin-left: 0;
          margin-right: 0;
          margin-top: 0.5rem;
-         margin-bottom: 0.3rem;
+         margin-bottom: 0.2rem;
          width: 100%;
          letter-spacing: 0.2rem;
        }
        .btn{
          width: 5rem;
+         height: 1.3rem;
          /* margin-top:0.1rem ; */
          font-size: 0.1rem;
          /* margin-bottom: 0.4rem; */
