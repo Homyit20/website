@@ -4,7 +4,7 @@
     <div class="photo-content">
       <div class="photo-content-img">
         <img src="../assets/techlogin/images/南墙.png" class="photo-animate-one our-photo" @click="changephoto(0)">
-        <h2 class="active-photo">南墙初创</h2>
+        <h2 class="active-photo">初创南墙</h2>
         <p>在12级创始人王宏凯及十余名长老成员共同努力下，宏奕工作室（Homyit Studio）于2013年9月成立了！创立者们带着对“有爱同行，踏实求新”的团队精神的追求，设计南墙，引领领宏奕人开拓创新、不断进取。
         </p>
       </div>
@@ -95,7 +95,6 @@
 .photo-content-img p{
   box-shadow: 1px 1px 3px #000;
   letter-spacing: 0.1rem;
-  margin-top: 0.5rem;
 }
 .photo-content-img img{
   border: 8px solid #fff;
