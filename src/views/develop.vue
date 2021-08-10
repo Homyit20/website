@@ -61,11 +61,12 @@
     width: 100%;
     height: 100%;
     min-height: 500px;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-around;
+    
 }
 .develop_back{
     position: absolute;
@@ -110,7 +111,7 @@
     opacity: 1;
 }
 .develop_canvas{
-    float: right;
+    /* float: right; */
     margin-right: 0vw;
     transform: scale(0.5,0.5);
 }
