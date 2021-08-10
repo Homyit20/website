@@ -213,7 +213,7 @@ export default {
     flex-direction: column;
     flex-wrap: unwrap;
     align-items: center;
-    width: 220px;
+    width: 200px;
     height: 15rem;
     margin-top: 2rem;
   }

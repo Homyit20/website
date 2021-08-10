@@ -36,12 +36,11 @@ export default {
     }
     @media screen and (max-width : 500px) {
       .login-contain{
-        position: relative;
         height: 100vh;
         overflow: hidden;
       }
       .login-background{
-        height: 850px;
+        height: 750px;
       }
     }
 </style>

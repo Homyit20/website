@@ -41,7 +41,7 @@ export default {
         overflow: hidden;
       }
       .login-background{
-        height: 850px;
+        height: 750px;
       }
     }
 </style>

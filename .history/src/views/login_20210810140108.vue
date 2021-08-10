@@ -35,13 +35,12 @@ export default {
         z-index: -100;
     }
     @media screen and (max-width : 500px) {
-      .login-contain{
-        position: relative;
-        height: 100vh;
+      .login-content{
         overflow: hidden;
+        height: 100vh;
       }
       .login-background{
-        height: 850px;
+        height: 750px;
       }
     }
 </style>
