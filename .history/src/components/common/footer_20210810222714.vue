@@ -1,6 +1,7 @@
 <template>
   <div class="footer">
     <div class="footer-content-one">
+      <p>工作室地址：江西省南昌市紫阳大道99号 先骕楼4区</p>
       <p>学校地址： 【瑶湖校区】江西省南昌市紫阳大道99号 邮政编码: 330022</p>
       <p>@Copyright 江西师范大学(jiangxi Normal Unversity)宏奕工作室 ICP备案编号:<a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">赣ICP备18002790号</a></p>
     </div>

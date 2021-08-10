@@ -331,7 +331,6 @@ export default {
   border: 0px solid #65dff5;
   animation: buttonafter 3s ease-in-out;
   animation-fill-mode: forwards;
-  animation-delay: 1s;
 }
 /* .login-button:hover:before {
   border: 1.2px solid #fff;

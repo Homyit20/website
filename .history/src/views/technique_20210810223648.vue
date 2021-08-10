@@ -279,7 +279,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-    touch-action:pan-y ;
+       touch-action:pan-y ;
     }
 
     /* 介绍部分 */

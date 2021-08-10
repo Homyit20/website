@@ -159,10 +159,6 @@
         //移动端手指滑动效果制作
         touchstartdeal(e){
             let techniqueul = document.getElementsByClassName('tech-list')[0];
-            let techniquecontain = document.getElementsByClassName('tech-contain')[0];
-            techniquecontain.addEventListener('touchmove', function(e){
-                e.preventDefault();
-                }, {passive : false});
             //啥叫第一个touches?
             let touchstart = e.targetTouches[0];
             this.touchstartX = touchstart.clientX;
@@ -187,6 +183,7 @@
            //需要判断是否事件可以被取消
             if(this.touchdirection == 0 && event.cancelable){
                 event.preventDefault();
+                console.log(1);
                 techniqueul.style.left = -techniquewidth*touchvalue + 'px';
                 //默认事件是滚动
             }
@@ -279,7 +276,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-    touch-action:pan-y ;
     }
 
     /* 介绍部分 */
