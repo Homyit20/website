@@ -311,7 +311,7 @@ export default {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 1px;
-  animation: buttonanimate 3s;
+  animation: buttonanimate 2s backwards;
   animation-fill-mode: forwards;
 }
 /* .login-button:hover {
@@ -327,7 +327,7 @@ export default {
   height: 1.8rem;
   background: transparent;
   border: 0px solid #65dff5;
-  animation: buttonafter 3s;
+  animation: buttonafter 2s;
   animation-fill-mode: forwards;
 }
 /* .login-button:hover:before {
@@ -357,31 +357,31 @@ export default {
         transition: 0.4s;
     }
     100%{
-        border: 1.2px solid #fff;
-        transform: scale(1.2, 1.4);
-        opacity: 0;
-        transition: 0.4s;
+
     }
   }
 
 /* 当屏幕大于1500px时 */
 @media screen and (min-width: 1500px) {
+  html {
+    font-size: 16px;
+  }
   .login-form .login-main-form {
     width: 46rem;
     height: 11rem;
     margin-top: 6rem;
   }
   .login-form .login-input {
-    width: 19rem;
+    width: 17.5rem;
     height: 3rem;
   }
   .login-form .login-main-form input[type="text"] {
-    width: 19rem;
+    width: 17.5rem;
     height: 3rem;
     border-radius: 4px;
   }
   .login-main-form textarea {
-    width: 19rem;
+    width: 17.5rem;
     height: 6.5rem;
     border-radius: 5px;
   }

@@ -437,7 +437,7 @@
             font-size: 1.5rem;
         }
         .tech-people{
-            width: 18rem;
+            width: 20rem;
         }
         .tech-select-list .tech-select-circle{
            width: 1rem;

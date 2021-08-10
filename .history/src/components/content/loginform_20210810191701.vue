@@ -372,16 +372,16 @@ export default {
     margin-top: 6rem;
   }
   .login-form .login-input {
-    width: 19rem;
+    width: 17.5rem;
     height: 3rem;
   }
   .login-form .login-main-form input[type="text"] {
-    width: 19rem;
+    width: 22rem;
     height: 3rem;
     border-radius: 4px;
   }
   .login-main-form textarea {
-    width: 19rem;
+    width: 17.5rem;
     height: 6.5rem;
     border-radius: 5px;
   }

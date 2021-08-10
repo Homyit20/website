@@ -40,8 +40,12 @@
     <div class="develop_back"></div>
     <div class="develop_txt_contain">
       <div class="develop_txt_back"></div>
-      <p>
-        宏奕工作室从2013年王宏凯创建，到现在，已经涌现处众多优秀的宏奕人,他们分布在全国各地，致力于WEB开发，他们入职阿里巴巴、腾讯、字节跳动、小米、京东等众多知名互联网公司，在前端、后端、UI等方面有自己的建树，为互联网发展做出了许多贡献。
+      <p class="develop_txt_p">
+        宏奕工作室2013年王宏凯创建，已留下许多<router-link
+          to="/photo"
+          class="nav-link-class"
+          ><span class="develop_txt_wonder">美好瞬间</span></router-link
+        >，同时也涌现出众多优秀的宏奕人,他们分布在全国各地，致力于WEB开发。他们入职阿里巴巴、腾讯、字节跳动、小米、京东等众多知名互联网公司，在前端、后端、UI等方面有自己的建树，为互联网发展做出了许多贡献。
       </p>
     </div>
     <img
@@ -96,11 +100,11 @@ export default {
   width: 100%;
   height: 100%;
   min-height: 500px;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 .develop_back {
   position: absolute;
@@ -132,7 +136,7 @@ export default {
 #develop div p {
   width: 19vw;
   text-align: center;
-  letter-spacing: 0.4vw;
+  letter-spacing: 0.2rem;
   font-size: 1.1rem;
   color: white;
   line-height: 2.5vw;
@@ -144,7 +148,7 @@ export default {
   opacity: 1;
 }
 .develop_canvas {
-  float: right;
+  /* float: right; */
   margin-right: 0vw;
   transform: scale(0.5, 0.5);
 }
@@ -157,6 +161,19 @@ export default {
 }
 .develop_logoimg {
   position: absolute;
+}
+.develop_txt_wonder {
+  width: 100%;
+  height: 100%;
+  color: #4d4d4d;
+  font-size: 1.4rem;
+  border-radius: 2px;
+  text-decoration: none;
+  letter-spacing: 0px;
+  background-color: #65dff5;
+}
+.develop_txt_wonder:hover {
+  color: black;
 }
 
 @media screen and (min-width: 1500px) {
@@ -173,18 +190,9 @@ export default {
   #develop div p {
     width: 54vw;
     text-indent: 3vw;
-    font-size: 0.9rem;
-    letter-spacing: 0.2rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
     line-height: 7vw;
-  }
-  .develop_txt_a {
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: #65dff5;
-    opacity: 0.85;
-    letter-spacing: 5px;
-    cursor: pointer;
-    text-decoration: none;
   }
 }
 @keyframes develop_show {

@@ -157,7 +157,6 @@ v-leave-to{
 
 .center-content{
     display: flex;
-    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -190,7 +189,7 @@ v-leave-to{
     font-size: 1.1rem;
     margin-left: 1.5vw;
     margin-right: 1.5vw;
-    margin-bottom: 3rem;
+    margin-bottom: 4vh;
     width: 80%;
     letter-spacing: 0.2rem;
     text-shadow: 1px 1px 2px #000;
@@ -214,13 +213,12 @@ v-leave-to{
     width: 6rem;
     /* padding-bottom: 1rem; */
     font-size: 1.5rem;
-    /* margin-top: 1.5rem; */
+    margin-top: 1.5rem;
     background-color: #fff;
     color:#000;
     border: 1px solid #65dff5;
     border-radius: 5%;
-    position: absolute;
-    top: 23rem;
+    /* position: relative; */
   }
   .btn:hover{
     background-color: #65dff5;
@@ -306,20 +304,20 @@ v-leave-to{
      position: relative;
      overflow: hidden;
    }
-  .shepi:hover  span:nth-child(1){
+   .shepi:hover span:nth-child(1){
   animation: animate1 3s linear infinite;
   display: block
 }
-  .shepi:hover span:nth-child(2){
+.shepi:hover span:nth-child(2){
   animation: animate2 3s linear infinite;
   animation-delay: 1.5s;
   display: block
 }
-  .shepi:hover span:nth-child(3){
+.shepi:hover span:nth-child(3){
   animation: animate3 3s linear infinite;
   display: block
 }
-  .shepi:hover span:nth-child(4){
+.shepi:hover span:nth-child(4){
   animation: animate4 3s linear infinite;
   animation-delay: 1.5s;
   display: block
@@ -420,7 +418,6 @@ v-leave-to{
         width: 80vw;
         padding: 0;
         height: 100%;
-        bottom: 0;
       }
       .left-star img{
         width: 5rem;
@@ -432,7 +429,7 @@ v-leave-to{
          width: 80vw;
          height: 20rem;
          padding-bottom: 0;
-         bottom: 0;
+         bottom: 10vh;
          padding: 1rem;
        }
        .head1{
@@ -465,10 +462,9 @@ v-leave-to{
        }
        .btn{
          width: 15vw;
-         /* margin-top:0.1rem ; */
+         margin-top:0.1rem ;
          font-size: 0.1vw;
          /* margin-bottom: 0.4rem; */
-         top: 18rem;
        }
        .back-head-box h2{
          font-size: 1rem;

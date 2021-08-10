@@ -366,22 +366,25 @@ export default {
 
 /* 当屏幕大于1500px时 */
 @media screen and (min-width: 1500px) {
+  html {
+    font-size: 16px;
+  }
   .login-form .login-main-form {
     width: 46rem;
     height: 11rem;
     margin-top: 6rem;
   }
   .login-form .login-input {
-    width: 19rem;
+    width: 17.5rem;
     height: 3rem;
   }
   .login-form .login-main-form input[type="text"] {
-    width: 19rem;
+    width: 17.5rem;
     height: 3rem;
     border-radius: 4px;
   }
   .login-main-form textarea {
-    width: 19rem;
+    width: 17.5rem;
     height: 6.5rem;
     border-radius: 5px;
   }

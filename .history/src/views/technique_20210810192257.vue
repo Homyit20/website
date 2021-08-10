@@ -436,7 +436,7 @@
         .tech-list p {
             font-size: 1.5rem;
         }
-        .tech-people{
+        .tech-content .tech-box .tech-list img{
             width: 18rem;
         }
         .tech-select-list .tech-select-circle{

@@ -306,20 +306,20 @@ v-leave-to{
      position: relative;
      overflow: hidden;
    }
-  .shepi:hover  span:nth-child(1){
+span:nth-child(1){
   animation: animate1 3s linear infinite;
   display: block
 }
-  .shepi:hover span:nth-child(2){
+span:nth-child(2){
   animation: animate2 3s linear infinite;
   animation-delay: 1.5s;
   display: block
 }
-  .shepi:hover span:nth-child(3){
+span:nth-child(3){
   animation: animate3 3s linear infinite;
   display: block
 }
-  .shepi:hover span:nth-child(4){
+span:nth-child(4){
   animation: animate4 3s linear infinite;
   animation-delay: 1.5s;
   display: block

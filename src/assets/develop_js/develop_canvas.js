@@ -1,8 +1,13 @@
 import develop_track from "../develop/develop_轨道.png";
 import develop_homyit from "../develop/develop_logo.png"
+import develop_ali  from "../develop/develop_阿里.png"
+import develop_didi  from "../develop/develop_滴滴.png"
+import develop_jingdong  from "../develop/develop_京东.png"
+import develop_tengxun from "../develop/develop_腾讯.png"
+import develop_zijie  from "../develop/develop_字节.png"
+import develop_xiaomi  from "../develop/develop_小米.png"
 export default{
     draw(elem,a=1*2){
-        // let b = document.documentElement.clientWidth
         if(document.documentElement.clientWidth<800){a = 0.6*2;}
         let canvas = elem
         let ctx = canvas.getContext('2d')
@@ -27,19 +32,19 @@ export default{
         //下面初始化logo数据 
         let track = getelem(develop_track)
         let homyit = getelem(develop_homyit)
-        // let ali = getelem('https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/develop_%E9%98%BF%E9%87%8C.png')
-        // let didi = getelem('https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/develop_滴滴.png')
-        // let jingdong = getelem('https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/develop_京东.png')
-        // let tengxun = getelem('https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/develop_腾讯.png')
-        // let xiaomi = getelem('https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/develop_小米.png')
-        // let zijie = getelem('https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/develop_字节.png')
-        let imgcollection = document.getElementsByClassName('develop_logoimg')
-        let ali = imgcollection[4]
-        let didi = imgcollection[5]
-        let jingdong = imgcollection[2]
-        let tengxun = imgcollection[0]
-        let xiaomi = imgcollection[3]
-        let zijie = imgcollection[1]
+        let ali = getelem(develop_ali)
+        let didi = getelem(develop_didi)
+        let jingdong = getelem(develop_jingdong)
+        let tengxun = getelem(develop_tengxun)
+        let xiaomi = getelem(develop_xiaomi)
+        let zijie = getelem(develop_zijie)
+        // let imgcollection = document.getElementsByClassName('develop_logoimg')
+        // let ali = imgcollection[4]
+        // let didi = imgcollection[5]
+        // let jingdong = imgcollection[2]
+        // let tengxun = imgcollection[0]
+        // let xiaomi = imgcollection[3]
+        // let zijie = imgcollection[1]
         let tengxun_x=-22*a//-150
         let tengxun_y=-22*a//-175
         let zijie_x=-37.5*a//30 2.25

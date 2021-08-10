@@ -79,29 +79,29 @@ export default {
         this.stuNum != ""
       ) {
         if(/^[\da-zA-Z]+@\w+\.\w+$/.test(this.email) && /^\d{12}$/.test(this.stuNum)){
-          axios.post('http://localhost:8080/api/register',{
-          'name' : this.stuName,
-          'number' : this.stuNum,
-          'classs' : this.stuClass,
-          'mail' : this.email,
-          'introduction' : this.introduce
-        }).then((res) => {
+axios.post('http://localhost:8080/api/register',{
+        'name' : this.stuName,
+        'number' : this.stuNum,
+        'classs' : this.stuClass,
+        'mail' : this.email,
+        'introduction' : this.introduce
+      }).then((res) => {
             // console.log(res.data)
-              if (res.data.msg == "success" || res.data.msg == "此学号已经报名") {
-                this.$store.commit("judge");
-                alert(res.data.msg);
-                this.$router.push({
-                  path: "/login/contact",
-                });
-              } else {
-               // 失败要执行的函数
-                () => {alert(res.data.msg)};
-              }
-            })
-            .catch((err) => {
+            if (res.data.msg == "success" || res.data.msg == "此学号已经报名") {
+              this.$store.commit("judge");
+              alert(res.data.msg);
+              this.$router.push({
+                path: "/login/contact",
+              });
+            } else {
               // 失败要执行的函数
-              () => {
-                alert(err);
+              () => {};
+            }
+          })
+          .catch((err) => {
+            // 失败要执行的函数
+            () => {
+              alert(err);
             };
             // console.log(123)
             // console.log(err.response);
@@ -294,7 +294,6 @@ export default {
   height: 6rem;
   color: #fff;
   padding-left: 1rem;
-  resize: none;
 }
 .login-button {
   display: flex;
@@ -311,13 +310,11 @@ export default {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 1px;
-  animation: buttonanimate 3s;
-  animation-fill-mode: forwards;
 }
-/* .login-button:hover {
+.login-button:hover {
   color: #262626;
   background: #65dff5;
-} */
+}
 .login-button:before {
   content: "";
   position: absolute;
@@ -327,61 +324,35 @@ export default {
   height: 1.8rem;
   background: transparent;
   border: 0px solid #65dff5;
-  animation: buttonafter 3s;
-  animation-fill-mode: forwards;
 }
-/* .login-button:hover:before {
+.login-button:hover:before {
   border: 1.2px solid #fff;
   transform: scale(1.2, 1.4);
   opacity: 0;
   transition: 0.4s;
-} */
-
-@keyframes buttonanimate{
-  0%{}
-  50%{
-      color: #262626;
-      background: #65dff5;
-  }
-  100%{
-    color: #262626;
-      background: #65dff5;
-  }
 }
-  @keyframes buttonafter {
-    0%{}
-    50%{
-        border: 1.2px solid #fff;
-        transform: scale(1.2, 1.4);
-        opacity: 0;
-        transition: 0.4s;
-    }
-    100%{
-        border: 1.2px solid #fff;
-        transform: scale(1.2, 1.4);
-        opacity: 0;
-        transition: 0.4s;
-    }
-  }
 
 /* 当屏幕大于1500px时 */
 @media screen and (min-width: 1500px) {
+  html {
+    font-size: 16px;
+  }
   .login-form .login-main-form {
     width: 46rem;
     height: 11rem;
     margin-top: 6rem;
   }
   .login-form .login-input {
-    width: 19rem;
+    width: 17.5rem;
     height: 3rem;
   }
   .login-form .login-main-form input[type="text"] {
-    width: 19rem;
+    width: 17.5rem;
     height: 3rem;
     border-radius: 4px;
   }
   .login-main-form textarea {
-    width: 19rem;
+    width: 17.5rem;
     height: 6.5rem;
     border-radius: 5px;
   }
