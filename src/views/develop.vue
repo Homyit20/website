@@ -88,7 +88,7 @@
     /* border: 3px solid red; */
     width: 22vw;
     height: auto;
-    left: 5vw;
+    left: 10vw;
     /* transform: translate(15vw,8vw); */
 
 }
@@ -116,7 +116,7 @@
 }
 .develop_canvas{
     float: right;
-    margin-right: 10vw;
+    margin-right: 0vw;
     transform: scale(0.5,0.5);
 }
 .develop_yu{
@@ -135,7 +135,7 @@
     .develop_txt_contain{
         width: 60vw;
         left: 0;
-        top: 8vh;
+        top: 10vh;
     }
     #develop div p{
         width:54vw;
