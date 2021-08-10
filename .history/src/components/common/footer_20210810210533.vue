@@ -19,7 +19,7 @@
 
 <style>
   .footer{
-    position: absolute;
+    position: fixed;
     top: 100vh;
     display: flex;
     justify-content: center;

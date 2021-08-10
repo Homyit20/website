@@ -19,8 +19,6 @@
 
 <style>
   .footer{
-    position: absolute;
-    top: 100vh;
     display: flex;
     justify-content: center;
     width: 100vw;
@@ -38,25 +36,23 @@
     text-decoration: none;
   }
 
-  .footer-content-two{
+    .footer-content-two{
+      display: none;
     color: #000;
     margin: 1rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .footer-content-two p{
-    display: none;
-  }
   .footer-content-two a{
     color: #000;
     text-decoration: none;
   }
   @media screen and (max-width: 500px){
-    .footer-content-one p{
+    .footer-content-one{
       display: none;
     }
-    .footer-content-two p{
+    .footer-content-two{
       display: block;
     }
   }

@@ -295,7 +295,7 @@ export default {
   color: #fff;
   padding-left: 1rem;
   resize: none;
-  padding-top: 0.5rem;
+  padding-top: 1rem;
 }
 .login-button {
   display: flex;
