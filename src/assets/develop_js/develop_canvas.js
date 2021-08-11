@@ -28,13 +28,6 @@ export default{
         let tengxun = getelem(develop_tengxun)
         let xiaomi = getelem(develop_xiaomi)
         let zijie = getelem(develop_zijie)
-        // let imgcollection = document.getElementsByClassName('develop_logoimg')
-        // let ali = imgcollection[4]
-        // let didi = imgcollection[5]
-        // let jingdong = imgcollection[2]
-        // let tengxun = imgcollection[0]
-        // let xiaomi = imgcollection[3]
-        // let zijie = imgcollection[1]
         let tengxun_x=-22*a//-150
         let tengxun_y=-22*a//-175
         let zijie_x=-37.5*a//30 2.25
