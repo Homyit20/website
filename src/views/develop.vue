@@ -76,6 +76,10 @@ export default {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .develop_back {
@@ -95,7 +99,6 @@ export default {
   width: 22vw;
   height: auto;
   left: 10vw;
-  /* transform: translate(15vw,8vw); */
 }
 .develop_txt_back {
   position: absolute;
