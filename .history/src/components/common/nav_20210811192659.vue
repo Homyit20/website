@@ -164,16 +164,13 @@ export default {
 .nav-join-class{
   box-shadow: 1px 1px 8px #fff;
 }
-@media screen and (min-width: 1300px){
+@media screen and (min-width: 1500px){
    .nav-logo img{
      width: 3rem;
      height: 3rem;
    }
-   .nav .nav-list{
-     width: 40rem;
-   }
   .nav .nav-list .nav-list-ul{
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 }
 </style>

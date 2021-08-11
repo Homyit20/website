@@ -169,9 +169,6 @@ export default {
      width: 3rem;
      height: 3rem;
    }
-   .nav .nav-list{
-     width: 40rem;
-   }
   .nav .nav-list .nav-list-ul{
     font-size: 1.7rem;
   }
