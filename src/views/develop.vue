@@ -22,7 +22,6 @@
       alt="Not Found"
       class="develop_yu"
     />
-    
   </div>
 </template>
 
@@ -58,9 +57,9 @@ export default {
   position: absolute;
   width: 100%;
   height: 100%;
-    display: -webkit-box; 
-  display: -moz-box;       
-  display: -ms-flexbox; 
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   justify-content: space-around;
@@ -119,7 +118,6 @@ export default {
   position: absolute;
 }
 .develop_txt_wonder {
-  width: 100%;
   height: 100%;
   color: #4d4d4d;
   font-size: 1.4rem;
@@ -133,13 +131,13 @@ export default {
   color: black;
 }
 @keyframes developnice {
-    0%{}
-    50%{
-        box-shadow: 1px 1px 5px #fff;
-    }
-    100%{
-
-    }
+  0% {
+  }
+  50% {
+    box-shadow: 1px 1px 5px #fff;
+  }
+  100% {
+  }
 }
 
 @media screen and (min-width: 1500px) {
@@ -148,7 +146,7 @@ export default {
   }
 }
 @media only screen and (max-width: 500px) {
-  .develop_content{
+  .develop_content {
     flex-wrap: wrap;
   }
   .develop_txt_contain {
@@ -163,8 +161,8 @@ export default {
     letter-spacing: 0.1rem;
     line-height: 7vw;
   }
-  .develop_txt_wonder{
-      font-size: 1.1rem;
+  .develop_txt_wonder {
+    font-size: 1.1rem;
   }
 }
 @keyframes develop_show {

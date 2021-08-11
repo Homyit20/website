@@ -287,7 +287,7 @@
     .tech-box{
         position: relative;
         width: 100vw;
-        height: 32rem;
+        min-height: 30rem;
         overflow: hidden;
         top: 2vh;
     }

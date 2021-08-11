@@ -254,11 +254,11 @@ export default {
   }
   .login-form .login-input{
     left: 0;
-    min-width: 15.5rem;
-    min-height: 3rem;
+    width: 15.5rem;
+    height: 3rem;
   }
   .login-form .login-main-form input[type="text"] {
-    min-width: 15.5rem;
+    width: 15.5rem;
     margin-bottom: 0;
   }
   .login-form .login-main-form textarea {

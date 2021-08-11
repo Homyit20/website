@@ -235,13 +235,8 @@ export default {
     margin-top: 2rem;
   }
   .login-form .login-main-form {
-    position: relative;
     display: flex;
-    -webkit-display: flex;
-    -moz-display: flex;
-    -ms-display: flex;
-    -o-display: flex;
-    display: flex;
+    flex-direction: column;
     -webkit-flex-direction: column;
     -moz-flex-direction: column;
     -ms-flex-direction: column;
@@ -249,16 +244,15 @@ export default {
     flex-direction: column;
     align-items: center;
     width: 15.5rem;
-    min-height: 200px;
+    height: 15rem;
     margin-top: 2rem;
   }
-  .login-form .login-input{
-    left: 0;
-    min-width: 15.5rem;
-    min-height: 3rem;
+  .login-form .login-input {
+    width: 15.5rem;
+    height: 3rem;
   }
   .login-form .login-main-form input[type="text"] {
-    min-width: 15.5rem;
+    width: 15.5rem;
     margin-bottom: 0;
   }
   .login-form .login-main-form textarea {
@@ -266,7 +260,6 @@ export default {
   }
   .login-form .login-button {
     margin-top: 15vh;
-    min-height: 23px;
   }
 }
 
@@ -395,16 +388,16 @@ export default {
     margin-top: 6rem;
   }
   .login-form .login-input {
-    width: 20rem;
+    width: 19rem;
     height: 3rem;
   }
   .login-form .login-main-form input[type="text"] {
-    width: 20rem;
+    width: 19rem;
     height: 3rem;
     border-radius: 4px;
   }
   .login-main-form textarea {
-    width: 20rem;
+    width: 19rem;
     height: 6.5rem;
     border-radius: 5px;
   }

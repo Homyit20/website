@@ -255,7 +255,7 @@ export default {
   .login-form .login-input{
     left: 0;
     min-width: 15.5rem;
-    min-height: 3rem;
+    height: 3rem;
   }
   .login-form .login-main-form input[type="text"] {
     min-width: 15.5rem;

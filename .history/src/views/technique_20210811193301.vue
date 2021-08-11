@@ -287,7 +287,7 @@
     .tech-box{
         position: relative;
         width: 100vw;
-        height: 32rem;
+        min-height: 30rem;
         overflow: hidden;
         top: 2vh;
     }
@@ -440,7 +440,7 @@
             width: 32rem;
         }
         .tech-list p {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
         }
         .tech-box .tech-list .tech-people{
             width: 20rem;
