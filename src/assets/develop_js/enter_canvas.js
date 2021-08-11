@@ -28,7 +28,7 @@ export default{
           if(ctx.getImageData(0,0,W,H)){imgData = ctx.getImageData(0,0,W,H)}
           ctx.clearRect(0,0,W,H)
           let gap
-          if (W>800){gap=5}else{gap=1}
+          if (W>800){gap=5}else{gap=2}
           for(let x=0;x<imgData.width;x+=gap){
               for(let y=0;y<imgData.height;y+=gap){
                   let i = (y*imgData.width+x)*4;

@@ -6,7 +6,7 @@
     <div class="develop_txt_contain">
       <div class="develop_txt_back"></div>
       <p class="develop_txt_p">
-        宏奕工作室2013年王宏凯创建，已留下许多<router-link
+        宏奕工作室自2013年王宏凯创建，到现在的2021年，已留下许多<router-link
           to="/photo"
           class="nav-link-class"
           ><span class="develop_txt_wonder">美好瞬间</span></router-link
@@ -42,11 +42,7 @@ export default {
     canvas.draw(elem);
     canvas.back(document.getElementsByClassName("develop_back")[0]);
     window.onresize = () => {
-      if (document.body.clientWidth < 800) {
         canvas.draw(elem);
-      } else if (document.body.clientWidth > 800) {
-        canvas.draw(elem);
-      }
     };
   },
 };
@@ -58,16 +54,6 @@ export default {
   margin: 0;
   padding: 0;
 }
-/* #develop{} */
-  /* position: absolute;
-  width: 100%;
-  height: 100%;
-  min-height: 500px; */
-  /* overflow: hidden; */
-  /* display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap; */
 .develop_content{
   position: absolute;
   width: 100%;
@@ -79,11 +65,6 @@ export default {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  -o-flex-wrap: wrap;
-  flex-wrap: wrap; */
 }
 .develop_back {
   position: absolute;
@@ -93,12 +74,10 @@ export default {
   right: 0;
   background-image: url("../assets/develop/develop_背景.png");
   background-size: 100% 100%;
-  /* border: 3px solid red; */
   z-index: -1;
 }
 .develop_txt_contain {
   position: relative;
-  /* border: 3px solid red; */
   width: 22vw;
   height: auto;
   left: 10vw;
@@ -126,7 +105,6 @@ export default {
   opacity: 1;
 }
 .develop_canvas {
-  /* float: right; */
   margin-right: 0vw;
   transform: scale(0.5, 0.5);
 }
