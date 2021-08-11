@@ -43,13 +43,10 @@ export default {
     canvas.back(document.getElementsByClassName("develop_back")[0]);
     window.onresize = () => {
       if (document.body.clientWidth < 800) {
-        // console.log('small')
         canvas.draw(elem);
       } else if (document.body.clientWidth > 800) {
-        // console.log(123123)
         canvas.draw(elem);
       }
-      // canvas.draw(elem)
     };
   },
 };
@@ -79,6 +76,7 @@ export default {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 .develop_back {
   position: absolute;

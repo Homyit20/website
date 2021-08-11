@@ -2,11 +2,8 @@
     <div class='enter_contain'>
         <canvas id="Meteor" class="enter_canvas"></canvas>
         <canvas id="canvas" class="enter_canvas">你的浏览器不支持canvas</canvas>
-        <!-- <div class="enter_button_contain" style="z-index:1;"> -->
           <div @click="change()" class="enter_button"></div>
           <img @click="change()" src="" alt="宇航员" style="z-index:1" class="enter_img">
-        <!-- </div> -->
-        <!-- <img src="../assets/enter/宇航.png" alt="12312312323"> -->
     </div>
 </template>
 
@@ -22,16 +19,12 @@ export default {
     },
     mounted(){
         let img = document.getElementsByTagName('img')
-      //   if(document.body.clientWidth>800){img[0].width = document.body.clientWidth/2}
-      // else{img[0].width=document.body.clientWidth}
         // 画流星
         let elem = document.getElementById('Meteor')
         let div = document.getElementsByClassName('enter_contain')[0]
         // 画文字
         let txt=document.getElementById('canvas')
-        // let changecolor=document.getElementsByClassName('star')
         canvas.enter_canvas(txt,elem,div,img)
-        // canvas.changecolor(changecolor)
 }
 }
 </script>
