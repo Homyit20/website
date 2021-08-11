@@ -1,43 +1,8 @@
 <template>
   <div id="develop">
     <NavBar></NavBar>
-    <img
-      class="develop_logoimg"
-      src="../assets/develop/develop_腾讯.png"
-      alt="腾讯"
-      style="display: none"
-    />
-    <img
-      class="develop_logoimg"
-      src="../assets/develop/develop_字节.png"
-      alt="字节"
-      style="display: none"
-    />
-    <img
-      class="develop_logoimg"
-      src="../assets/develop/develop_京东.png"
-      alt="京东"
-      style="display: none"
-    />
-    <img
-      class="develop_logoimg"
-      src="../assets/develop/develop_小米.png"
-      alt="小米"
-      style="display: none"
-    />
-    <img
-      class="develop_logoimg"
-      src="../assets/develop/develop_阿里.png"
-      alt="阿里"
-      style="display: none"
-    />
-    <img
-      class="develop_logoimg"
-      src="../assets/develop/develop_滴滴.png"
-      alt="滴滴"
-      style="display: none"
-    />
     <div class="develop_back"></div>
+    <div class="develop_content">
     <div class="develop_txt_contain">
       <div class="develop_txt_back"></div>
       <p class="develop_txt_p">
@@ -48,15 +13,16 @@
         >，同时也涌现出众多优秀的宏奕人,他们分布在全国各地，致力于WEB开发。他们入职阿里巴巴、腾讯、字节跳动、小米、京东等众多知名互联网公司，在前端、后端、UI等方面有自己的建树，为互联网发展做出了许多贡献。
       </p>
     </div>
+    <canvas id="canvas" class="develop_canvas"
+      >你的浏览器不支持canvas，请升级你的浏览器</canvas
+    >
+    </div>
     <img
       src="../assets/develop/develop_宇航员.png"
       alt="Not Found"
       class="develop_yu"
     />
-    <!-- <img src="../assets/develop_imgs/develop_star.png" alt="Noe Found" class="develop_star"> -->
-    <canvas id="canvas" class="develop_canvas"
-      >你的浏览器不支持canvas，请升级你的浏览器</canvas
-    >
+    
   </div>
 </template>
 
@@ -96,15 +62,23 @@ export default {
   padding: 0;
 }
 #develop {
+  /* position: absolute;
+  width: 100%;
+  height: 100%;
+  min-height: 500px; */
+  /* overflow: hidden; */
+  /* display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; */
+}
+.develop_content{
   position: absolute;
   width: 100%;
   height: 100%;
-  min-height: 500px;
-  /* overflow: hidden; */
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
 }
 .develop_back {
   position: absolute;
