@@ -8,27 +8,17 @@ import develop_zijie  from "../develop/develop_字节.png"
 import develop_xiaomi  from "../develop/develop_小米.png"
 export default{
     draw(elem,a=1*2){
-        if(document.documentElement.clientWidth<800){a = 0.6*2;}
+        // 先设置a的数值
+        if(document.documentElement.clientWidth<1000){a = 0.6*2;}
         let canvas = elem
         let ctx = canvas.getContext('2d')
         canvas.width = 400*a
         canvas.height = 400*a
 
-        // 验证能不能用
-        // ctx.fillStyle='#fff'        
-        // ctx.fillRect(10,10,100,100)
-         // let track = getelem('https://img-1306126172.cos.ap-nanjing.myqcloud.com/img/develop_轨道.png')
-        // setTimeout(()=>{
-        //     ctx.drawImage(track,10,10)
-        // },1000)
-
         // 先封装几个函数方便后面使用
         // function paint(image,x,y,width=false,height=false){ctx.save();image.onload=()=>{width===false?image.onload=ctx.drawImage(image,x,y):image.onload=ctx.drawImage(image,x,y,width,height)}}
         function getelem(src){let name = new Image();name.src=src;return name}
-        // function line(startX,startY,endX,endY){ctx.beginPath();ctx.moveTo(startX,startY);ctx.lineTo(endX,endY),ctx.stroke()}
-        // function random(x = 10){return Math.floor(Math.random()*x)}
        
-        
         //下面初始化logo数据 
         let track = getelem(develop_track)
         let homyit = getelem(develop_homyit)
