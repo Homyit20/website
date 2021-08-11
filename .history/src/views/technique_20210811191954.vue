@@ -287,7 +287,7 @@
     .tech-box{
         position: relative;
         width: 100vw;
-        height: 32rem;
+        min-height: 30rem;
         overflow: hidden;
         top: 2vh;
     }
@@ -340,7 +340,7 @@
         .tech-list p {
             font-size: 0.9rem;
         }
-        .tech-box .tech-list .tech-people{
+        .tech-people{
             width: 10rem;
         }
         .tech-contain .tech-content .tech-select-list{
@@ -366,7 +366,7 @@
       /* background-color: green; */
   }
   .after-details .tech-after-people img{
-      width: 15rem;
+      max-width: 18rem;
       animation: animate 2s infinite ease-in-out;
   }
 
@@ -385,7 +385,7 @@
       /* background-color: green; */
     }
     .before-details .tech-before-people img{
-      width: 15rem;
+      max-width: 15rem;
       animation: animate 2s infinite ease-in-out;
     }
 
@@ -402,7 +402,7 @@
       /* background-color: green; */
     }
     .ui-details .tech-ui-people img{
-      width: 15rem;
+      max-width: 15rem;
       animation: animate 2s infinite ease-in-out;
     }
 
@@ -432,9 +432,9 @@
         padding: 0;
     }
     /* 当屏幕大于1500px时 */
-    @media screen and (min-width : 1300px){
+    @media screen and (min-width : 1500px){
        .tech-box{
-            top: 15vh;
+            top: 12vh;
         }
         .tech-box .tech-text{
             width: 32rem;
@@ -443,7 +443,7 @@
             font-size: 1.5rem;
         }
         .tech-box .tech-list .tech-people{
-            width: 20rem;
+            width: 18rem;
         }
         .tech-select-list .tech-select-circle{
            width: 1rem;

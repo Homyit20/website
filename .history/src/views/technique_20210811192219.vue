@@ -287,7 +287,7 @@
     .tech-box{
         position: relative;
         width: 100vw;
-        height: 32rem;
+        min-height: 30rem;
         overflow: hidden;
         top: 2vh;
     }
@@ -432,9 +432,9 @@
         padding: 0;
     }
     /* 当屏幕大于1500px时 */
-    @media screen and (min-width : 1300px){
+    @media screen and (min-width : 1500px){
        .tech-box{
-            top: 15vh;
+            top: 12vh;
         }
         .tech-box .tech-text{
             width: 32rem;
@@ -443,7 +443,7 @@
             font-size: 1.5rem;
         }
         .tech-box .tech-list .tech-people{
-            width: 20rem;
+            width: 18rem;
         }
         .tech-select-list .tech-select-circle{
            width: 1rem;
