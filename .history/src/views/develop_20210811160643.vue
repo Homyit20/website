@@ -79,11 +79,11 @@ export default {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* -webkit-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   -o-flex-wrap: wrap;
-  flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 .develop_back {
   position: absolute;
@@ -170,9 +170,6 @@ export default {
   }
 }
 @media only screen and (max-width: 500px) {
-  .develop_content{
-    flex-wrap: wrap;
-  }
   .develop_txt_contain {
     width: 60vw;
     left: 0;
