@@ -141,6 +141,8 @@ export default {
 }
 .develop_txt_wonder {
   height: 100%;
+  border: 1px solid transparent;
+  outline: none;
   color: #4d4d4d;
   font-size: 1.4rem;
   border-radius: 1rem;
