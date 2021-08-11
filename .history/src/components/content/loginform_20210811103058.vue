@@ -203,6 +203,38 @@ export default {
   margin-top: 3rem;
 }
 
+/* 响应式 */
+@media screen and (max-width: 600px) {
+  .login-content .login-join {
+    margin-top: 10vh;
+  }
+  .login-content {
+    margin-top: 2rem;
+  }
+  .login-form .login-main-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 16rem;
+    height: 15rem;
+    margin-top: 2rem;
+  }
+  .login-form .login-input {
+    width: 16rem;
+    height: 3rem;
+  }
+  .login-form .login-main-form input[type="text"] {
+    width: 16rem;
+    margin-bottom: 0;
+  }
+  .login-form .login-main-form textarea {
+    display: none;
+  }
+  .login-form .login-button {
+    margin-top: 15vh;
+  }
+}
 
 .login-input {
   position: relative;
@@ -225,44 +257,6 @@ export default {
   width: 15rem;
   height: 2.3rem;
 }
-
-/* 响应式 */
-@media screen and (max-width: 720px) {
-  .login-content .login-join {
-    margin-top: 10vh;
-  }
-  .login-content {
-    margin-top: 2rem;
-  }
-  .login-form .login-main-form {
-    display: flex;
-    flex-direction: column;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-flex-direction: column;
-    flex-direction: column;
-    align-items: center;
-    width: 15.5rem;
-    height: 15rem;
-    margin-top: 2rem;
-  }
-  .login-form .login-input {
-    width: 15.5rem;
-    height: 3rem;
-  }
-  .login-form .login-main-form input[type="text"] {
-    width: 15.5rem;
-    margin-bottom: 0;
-  }
-  .login-form .login-main-form textarea {
-    display: none;
-  }
-  .login-form .login-button {
-    margin-top: 15vh;
-  }
-}
-
 
 /* 表单验证样式 */
 .login-vaild::after {
@@ -317,7 +311,7 @@ export default {
   border: 1px solid #fff;
   border-radius: 2px;
   width: 8rem;
-  height: 1.7rem;
+  height: 1.8rem;
   margin-top: 7rem;
   color: #fff;
   text-transform: uppercase;

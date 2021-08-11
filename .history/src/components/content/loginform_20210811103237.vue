@@ -227,7 +227,7 @@ export default {
 }
 
 /* 响应式 */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 600px) {
   .login-content .login-join {
     margin-top: 10vh;
   }
@@ -237,22 +237,18 @@ export default {
   .login-form .login-main-form {
     display: flex;
     flex-direction: column;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-flex-direction: column;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    width: 15.5rem;
+    width: 16rem;
     height: 15rem;
     margin-top: 2rem;
   }
   .login-form .login-input {
-    width: 15.5rem;
+    width: 16rem;
     height: 3rem;
   }
   .login-form .login-main-form input[type="text"] {
-    width: 15.5rem;
+    width: 16rem;
     margin-bottom: 0;
   }
   .login-form .login-main-form textarea {

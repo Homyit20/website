@@ -237,11 +237,6 @@ export default {
   .login-form .login-main-form {
     display: flex;
     flex-direction: column;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-flex-direction: column;
-    flex-direction: column;
     align-items: center;
     width: 15.5rem;
     height: 15rem;

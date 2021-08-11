@@ -227,7 +227,7 @@ export default {
 }
 
 /* 响应式 */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 600px) {
   .login-content .login-join {
     margin-top: 10vh;
   }
@@ -237,11 +237,7 @@ export default {
   .login-form .login-main-form {
     display: flex;
     flex-direction: column;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-flex-direction: column;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     width: 15.5rem;
     height: 15rem;
