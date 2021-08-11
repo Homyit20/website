@@ -26,7 +26,6 @@ export default{
           ctx.fillText('HOMYIT',W/2,H/3)
           let imgData
           if(ctx.getImageData(0,0,W,H)){imgData = ctx.getImageData(0,0,W,H)}
-          // let imgData = ctx.getImageData(0,0,W,H)
           ctx.clearRect(0,0,W,H)
           let gap
           if (W>800){gap=5}else{gap=1}
@@ -38,8 +37,6 @@ export default{
                   // Dot是下面写的构造函数,此时构造的nowX还是0
                   var dot = new Dot(x, y);
                   dotList.push(dot);
-                  // console.log(dotlist)此时获得的nowX变化了是因为后面的draw引起的
-                  // debugger
                   }
                           
               }
@@ -222,7 +219,7 @@ export default{
 
 }
     function theimg(img) {
-      if(document.body.clientWidth>500){img[0].src=yu_a;console.log(img[0],img[0].src)}
+      if(document.body.clientWidth>500){img[0].src=yu_a}
       else{img[0].src=yu_b}
       if(document.body.clientWidth>800){img[0].width = document.body.clientWidth/4}
       else{img[0].width=document.body.clientWidth;}

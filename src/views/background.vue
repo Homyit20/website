@@ -94,7 +94,6 @@ export default {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      /* text-align: center; */
       padding: 0 2rem;
       position: absolute;
       top: 0;
@@ -198,11 +197,9 @@ v-leave-to{
   .head2{
     color: #65dff5;
     font-size: 2rem;
-    /* margin-bottom: 2vh; */
   }
   .lead2{
     margin-bottom: 2vh;
-    /* margin-top: 0; */
     font-size: 1.1rem;
     margin-left: 1vw;
     margin-right: 1vw;
@@ -212,9 +209,7 @@ v-leave-to{
   }
   .btn{
     width: 6rem;
-    /* padding-bottom: 1rem; */
     font-size: 1.5rem;
-    /* margin-top: 1.5rem; */
     background-color: #fff;
     color:#000;
     border: 1px solid #65dff5;
@@ -238,70 +233,7 @@ v-leave-to{
     background-color: #65dff5;
     color: #fff;
     border-radius: 2rem;
-    /* position: relative; */
-    /* transition: transform 300ms linear; */
   }
-
-  /* @media screen and (max-width : 1100px){
-       .head1{
-         font-size: 1rem;
-         margin-top: 0;
-         margin-bottom: 1vh;
-       }
-       .lead1{
-         font-size: 0.9rem;
-         margin-left: 0;
-         margin-right: 0;
-       }
-       .head2{
-         font-size: 1rem;
-         margin-top: 0;
-         margin-bottom: 1vh;
-       }
-       .lead2{
-         font-size: 0.9rem;
-         margin-left: 0;
-         margin-right: 0;
-         margin-top: 0.1rem;
-         margin-bottom: 0.1rem;
-       }
-       .btn{
-         width: 10vw;
-         margin-top:2rem ;
-         font-size: 0.1vw;
-       }
-   } */
-
-  /* @media screen and (max-width : 800px){
-       .head1{
-         font-size: 1.1rem;
-         margin-top: 1.5rem;
-         margin-bottom: 1vh;
-       }
-       .lead1{
-         font-size: 0.9rem;
-         margin-left: 0;
-         margin-right: 0;
-       }
-       .head2{
-         font-size: 1.1rem;
-         margin-top: 0;
-         margin-bottom: 1vh;
-       }
-       .lead2{
-         font-size: 0.9rem;
-         margin-left: 0;
-         margin-right: 0;
-         margin-top: 0.1rem;
-         margin-bottom: 0.1rem;
-       }
-       .btn{
-         width: 10vw;
-         margin-top:1.6rem ;
-         font-size: 0.1vw;
-         margin-bottom: 0.5rem;
-       }
-   } */
    .shepi{
      position: relative;
      overflow: hidden;
@@ -332,42 +264,34 @@ v-leave-to{
     height: 1px;
     background: linear-gradient(to right,transparent,silver);
     display: none;
-    /* animation: animate1 3s linear infinite; */
-    /* animation-delay: 0s; */
-        }
-        .shepi span:nth-child(2){
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 1px;
-            height: 100%;
-            background: linear-gradient(to bottom,transparent,silver);
-            display: none;
-            /* animation: animate2 3s linear infinite; */
-            /* animation-delay: 1.5s; */
-        }   
-        .shepi span:nth-child(3){
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 100%;
-            height: 1px;
-            background: linear-gradient(to left,transparent,silver);
-            display: none;
-            /* animation: animate3 3s linear infinite; */
-            /* animation-delay: 0s; */
-        }  
-        .shepi span:nth-child(4){
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 1px;
-            height: 100%;
-            background: linear-gradient(to top,transparent,silver);
-            display: none;
-            /* animation: animate4 3s linear infinite; */
-            /* animation-delay: 1.5s; */
-        }
+  }
+  .shepi span:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to bottom,transparent,silver);
+    display: none;
+  }   
+  .shepi span:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to left,transparent,silver);
+    display: none;
+  }  
+  .shepi span:nth-child(4){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to top,transparent,silver);
+    display: none;
+  }
 
 @keyframes animate1 {
             0%{
@@ -466,9 +390,7 @@ v-leave-to{
        .btn{
          width: 5rem;
          height: 1.3rem;
-         /* margin-top:0.1rem ; */
          font-size: 1rem;
-         /* margin-bottom: 0.4rem; */
          top: 17.5rem;
        }
        .back-head-box h2{
