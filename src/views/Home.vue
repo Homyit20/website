@@ -51,7 +51,7 @@ export default {
     this.screenWidth = document.body.clientWidth;
     this.screenHeight = document.body.clientHeight;
     if (this.screenWidth < 500) {
-      console.log(this.screenWidth);
+      // console.log(this.screenWidth);
       this.flag = true;
     }
   },

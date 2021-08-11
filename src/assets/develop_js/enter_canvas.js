@@ -222,7 +222,7 @@ export default{
 
 }
     function theimg(img) {
-      if(document.body.clientWidth>500){img[0].src=yu_a;console.log(img[0],img[0].src)}
+      if(document.body.clientWidth>500){img[0].src=yu_a}
       else{img[0].src=yu_b}
       if(document.body.clientWidth>800){img[0].width = document.body.clientWidth/4}
       else{img[0].width=document.body.clientWidth;}

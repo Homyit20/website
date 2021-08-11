@@ -22,13 +22,11 @@ export default {
     },
     mounted(){
         let img = document.getElementsByTagName('img')
-        console.log(img)
       //   if(document.body.clientWidth>800){img[0].width = document.body.clientWidth/2}
       // else{img[0].width=document.body.clientWidth}
         // 画流星
         let elem = document.getElementById('Meteor')
         let div = document.getElementsByClassName('enter_contain')[0]
-        // console.log(131312,document.getElementsByClassName('enter_contain')[0])
         // 画文字
         let txt=document.getElementById('canvas')
         // let changecolor=document.getElementsByClassName('star')
