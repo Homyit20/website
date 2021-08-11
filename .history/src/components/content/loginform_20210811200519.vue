@@ -78,46 +78,36 @@ export default {
         this.email != "" &&
         this.stuNum != ""
       ) {
-        if (
-          /^[\da-zA-Z]+@\w+\.\w+$/.test(this.email) &&
-          /^\d{12}$/.test(this.stuNum)
-        ) {
-          axios
-            .post("http://localhost:8080/api/register", {
-              name: this.stuName,
-              number: this.stuNum,
-              classs: this.stuClass,
-              mail: this.email,
-              introduction: this.introduce,
-            })
-            .then((res) => {
-              // console.log(res.data)
-              if (
-                res.data.msg == "success" ||
-                res.data.msg == "此学号已经报名"
-              ) {
+        if(/^[\da-zA-Z]+@\w+\.\w+$/.test(this.email) && /^\d{12}$/.test(this.stuNum)){
+          axios.post('http://localhost:8080/api/register',{
+          'name' : this.stuName,
+          'number' : this.stuNum,
+          'classs' : this.stuClass,
+          'mail' : this.email,
+          'introduction' : this.introduce
+        }).then((res) => {
+            // console.log(res.data)
+              if (res.data.msg == "success" || res.data.msg == "此学号已经报名") {
                 this.$store.commit("judge");
                 alert(res.data.msg);
                 this.$router.push({
                   path: "/login/contact",
                 });
               } else {
-                // 失败要执行的函数
-                () => {
-                  alert(res.data.msg);
-                };
+               // 失败要执行的函数
+                () => {alert(res.data.msg)};
               }
             })
             .catch((err) => {
               // 失败要执行的函数
               () => {
                 alert(err);
-              };
-              // console.log(123)
-              // console.log(err.response);
-            });
-        } else {
-          alert("学号/邮箱填写错误");
+            };
+            // console.log(123)
+            // console.log(err.response);
+          })
+        }else{
+          alert("学号/邮箱填写错误")
         }
         // console.log('成功执行logincommit')
       } else {
@@ -213,6 +203,7 @@ export default {
   margin-top: 3rem;
 }
 
+
 .login-input {
   position: relative;
   width: 15rem;
@@ -246,11 +237,7 @@ export default {
   .login-form .login-main-form {
     position: relative;
     display: flex;
-    -webkit-display: flex;
-    -moz-display: flex;
-    -ms-display: flex;
-    -o-display: flex;
-    display: flex;
+    flex-direction: column;
     -webkit-flex-direction: column;
     -moz-flex-direction: column;
     -ms-flex-direction: column;
@@ -258,16 +245,16 @@ export default {
     flex-direction: column;
     align-items: center;
     width: 15.5rem;
-    min-height: 200px;
+    height: 15rem;
     margin-top: 2rem;
   }
   .login-form .login-input {
     left: 0;
-    min-width: 15.5rem;
-    min-height: 3rem;
+    width: 15.5rem;
+    height: 3rem;
   }
   .login-form .login-main-form input[type="text"] {
-    min-width: 15.5rem;
+    width: 15.5rem;
     margin-bottom: 0;
   }
   .login-form .login-main-form textarea {
@@ -275,9 +262,9 @@ export default {
   }
   .login-form .login-button {
     margin-top: 15vh;
-    min-height: 23px;
   }
 }
+
 
 /* 表单验证样式 */
 .login-vaild::after {
@@ -365,38 +352,36 @@ export default {
   transition: 0.4s;
 } */
 
-@keyframes buttonanimate {
-  0% {
+@keyframes buttonanimate{
+  0%{}
+  50%{
+      color: #262626;
+      background: #65dff5;
   }
-  50% {
+  100%{
     color: #262626;
-    background: #65dff5;
-  }
-  100% {
-    color: #262626;
-    background: #65dff5;
+      background: #65dff5;
   }
 }
-@keyframes buttonafter {
-  0% {
+  @keyframes buttonafter {
+    0%{}
+    50%{
+        border: 1.2px solid #fff;
+        transform: scale(1.2, 1.4);
+        opacity: 0;
+        transition: 0.4s;
+    }
+    100%{
+        border: 1.2px solid #fff;
+        transform: scale(1.2, 1.4);
+        opacity: 0;
+        transition: 0.4s;
+    }
   }
-  50% {
-    border: 1.2px solid #fff;
-    transform: scale(1.2, 1.4);
-    opacity: 0;
-    transition: 0.4s;
-  }
-  100% {
-    border: 1.2px solid #fff;
-    transform: scale(1.2, 1.4);
-    opacity: 0;
-    transition: 0.4s;
-  }
-}
 
 /* 当屏幕大于1500px时 */
 @media screen and (min-width: 1300px) {
-  .login-join {
+  .login-join{
     margin-top: 12vh;
   }
   .login-form .login-main-form {
