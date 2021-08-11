@@ -79,7 +79,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 .photo-content-img{
   display: flex;
