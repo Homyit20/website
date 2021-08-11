@@ -3,26 +3,25 @@
     <NavBar></NavBar>
     <div class="develop_back"></div>
     <div class="develop_content">
-    <div class="develop_txt_contain">
-      <div class="develop_txt_back"></div>
-      <p class="develop_txt_p">
-        宏奕工作室2013年王宏凯创建，已留下许多<router-link
-          to="/photo"
-          class="nav-link-class"
-          ><span class="develop_txt_wonder">美好瞬间</span></router-link
-        >，同时也涌现出众多优秀的宏奕人,他们分布在全国各地，致力于WEB开发。他们入职阿里巴巴、腾讯、字节跳动、小米、京东等众多知名互联网公司，在前端、后端、UI等方面有自己的建树，为互联网发展做出了许多贡献。
-      </p>
-    </div>
-    <canvas id="canvas" class="develop_canvas"
-      >你的浏览器不支持canvas，请升级你的浏览器</canvas
-    >
+      <div class="develop_txt_contain">
+        <div class="develop_txt_back"></div>
+        <p class="develop_txt_p">
+          宏奕工作室2013年王宏凯创建，已留下许多<router-link
+            to="/photo"
+            class="nav-link-class"
+            ><button class="develop_txt_wonder">美好瞬间</button></router-link
+          >，同时也涌现出众多优秀的宏奕人,他们分布在全国各地，致力于WEB开发。他们入职阿里巴巴、腾讯、字节跳动、小米、京东等众多知名互联网公司，在前端、后端、UI等方面有自己的建树，为互联网发展做出了许多贡献。
+        </p>
+      </div>
+      <canvas id="canvas" class="develop_canvas"
+        >你的浏览器不支持canvas，请升级你的浏览器</canvas
+      >
     </div>
     <img
       src="../assets/develop/develop_宇航员.png"
       alt="Not Found"
       class="develop_yu"
     />
-    
   </div>
 </template>
 
@@ -59,22 +58,22 @@ export default {
   padding: 0;
 }
 /* #develop{} */
-  /* position: absolute;
+/* position: absolute;
   width: 100%;
   height: 100%;
   min-height: 500px; */
-  /* overflow: hidden; */
-  /* display: flex;
+/* overflow: hidden; */
+/* display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap; */
-.develop_content{
+.develop_content {
   position: absolute;
   width: 100%;
   height: 100%;
-    display: -webkit-box; 
-  display: -moz-box;       
-  display: -ms-flexbox; 
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   justify-content: space-around;
@@ -141,7 +140,6 @@ export default {
   position: absolute;
 }
 .develop_txt_wonder {
-  width: 100%;
   height: 100%;
   color: #4d4d4d;
   font-size: 1.4rem;
@@ -155,13 +153,13 @@ export default {
   color: black;
 }
 @keyframes developnice {
-    0%{}
-    50%{
-        box-shadow: 1px 1px 5px #fff;
-    }
-    100%{
-
-    }
+  0% {
+  }
+  50% {
+    box-shadow: 1px 1px 5px #fff;
+  }
+  100% {
+  }
 }
 
 @media screen and (min-width: 1500px) {
@@ -170,7 +168,7 @@ export default {
   }
 }
 @media only screen and (max-width: 500px) {
-  .develop_content{
+  .develop_content {
     flex-wrap: wrap;
   }
   .develop_txt_contain {
@@ -185,8 +183,8 @@ export default {
     letter-spacing: 0.1rem;
     line-height: 7vw;
   }
-  .develop_txt_wonder{
-      font-size: 1.1rem;
+  .develop_txt_wonder {
+    font-size: 1.1rem;
   }
 }
 @keyframes develop_show {
