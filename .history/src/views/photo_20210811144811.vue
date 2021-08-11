@@ -50,7 +50,7 @@
       changephoto(value){
         let ourphoto = document.getElementsByClassName('our-photo');
         let photoh2 = document.getElementsByTagName('h2');
-        photoh2[0].style.color = '#fff';
+        // photoh2[0].style.color = '#fff';
         photoh2[value].style.color = '#65dff5';
         photoh2[photobefore].style.color = '#fff';
         ourphoto[0].classList.remove('photo-animate-one');
