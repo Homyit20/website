@@ -10,7 +10,7 @@
           to="/photo"
           class="nav-link-class"
           ><span class="develop_txt_wonder">美好瞬间</span></router-link
-        >，同时也涌现出众多优秀的宏奕人,他们分布在全国各地，致力于WEB开发。他们入职阿里巴巴、腾讯、字节跳动、小米、京东等众多知名互联网公司，在前端、后端、UI等方面有自己的建树，为互联网发展做出了许多贡献。
+        >，同时也涌现出众多优秀的宏奕人，他们分布在全国各地，致力于WEB开发。他们入职阿里巴巴、腾讯、字节跳动、小米、京东等众多知名互联网公司，在前端、后端、UI等方面有自己的建树，为互联网发展做出了许多贡献。
       </p>
     </div>
     <canvas id="canvas" class="develop_canvas"
