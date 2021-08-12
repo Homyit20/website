@@ -36,7 +36,7 @@
               工作室内还有免费空调、冰箱，让你在炎炎夏日有个避暑的好去处！
               </P>
               <div class="back-two-head">
-                <h2 class="head2">所以，快来加入我们吧!</h2>
+                <h2 class="head2">快来加入我们吧!</h2>
                 <div class="back-head-box" @click="toJoin">
                   <h2 class="animate__animated animate__bounce">JOIN US</h2>
                 </div>
