@@ -9,7 +9,7 @@
             <div class="tech-after-text tech-text">
               <h1>后端</h1>
               <p>
-                后端开发的重点在于算法设计、数据结构、后端开发通常也需要根据业务场景进行不同语言的选择，在具体的功能实现部分可以采用Java、Python或者PHP等编程语言来实现。我们主要以Java语言为主，感兴趣的可以咨询学长学姐哦，宏奕期待你的到来。
+                后端开发的重点在于算法设计、数据结构、后端开发通常也需要根据业务场景进行不同语言的选择，在具体的功能实现部分可以采用Java、Python或者PHP等编程语言来实现。 我们主要以Java语言为主，感兴趣的可以咨询学长学姐哦， 宏奕期待你的到来。
               </p>
             </div>
             <div class="tech-after-people">
@@ -329,7 +329,7 @@ export default {
 .tech-list p {
   padding-top: 1.5rem;
   text-indent: 2rem;
-  text-align: center;
+  text-align: left;
   color: #fff;
   font-size: 1.1rem;
   letter-spacing: 0.2rem;
