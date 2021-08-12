@@ -1,10 +1,10 @@
 <template>
-  <div class="photos-back">
+  <div class="photos-back" @scroll="photoloading()">
     <h1>PHOTO STORY</h1>
     <div class="photo-content">
       <div class="photo-content-img">
         <img
-          src="../assets/techlogin/images/南墙.png"
+          data-src="../assets/techlogin/images/南墙.png"
           class="photo-animate-one our-photo"
           @click="changephoto(0)"
         />
@@ -15,7 +15,7 @@
       </div>
       <div class="photo-content-img">
         <img
-          src="../assets/techlogin/images/新生培训.png"
+          data-src="../assets/techlogin/images/新生培训.png"
           class="our-photo"
           @click="changephoto(1)"
         />
@@ -26,7 +26,7 @@
       </div>
       <div class="photo-content-img">
         <img
-          src="../assets/techlogin/images/奖状台.png"
+          data-src="../assets/techlogin/images/奖状台.png"
           class="our-photo"
           @click="changephoto(2)"
         />
@@ -37,7 +37,7 @@
       </div>
       <div class="photo-content-img">
         <img
-          src="../assets/techlogin/images/工作环境.png"
+          data-src="../assets/techlogin/images/工作环境.png"
           class="our-photo"
           @click="changephoto(3)"
         />
@@ -48,7 +48,7 @@
       </div>
       <div class="photo-content-img">
         <img
-          src="../assets/techlogin/images/2020.jpg"
+          data-src="../assets/techlogin/images/2020.jpg"
           class="our-photo"
           @click="changephoto(4)"
         />
@@ -58,7 +58,7 @@
         </p>
       </div>
       <div class="photo-content-img">
-        <img src="../assets/techlogin/images/2021.png" class="our-photo"  @click="phototojoin()" />
+        <img data-src="../assets/techlogin/images/2021.png" class="our-photo"  @click="phototojoin()" />
         <h2>2021</h2>
         <p>期待你们的到来，快来报名吧</p>
       </div>
@@ -72,27 +72,7 @@
 let photobefore = 0;
 export default {
   name: "photo",
-  // created(){
-  //   this.photodata = {
-  //     photoimages : null
-  //   }
-  // },
-  // mounted(){
-  //   window.addEventListener('scroll', this.photoscroll);
-  //   this.photoimages = document.getElementsByClassName('our-photo');
-  // },
   methods: {
-    // photoscroll(){
-    //   console.log(this.photoimages);
-    //   this.photoimages.forEach(photoimage => {
-    //     let photoimagetop = photoimage.getBoundingClientRect().top;
-    //     if(photoimagetop < window.innerHeight){
-    //       let photodatasrc = photoimage.getAttribute('data-src');
-    //       photoimage.setAttribute('src', photodatasrc);
-    //       console.log(photoimage.getAttribute('src'))
-    //     }
-    //   })
-    // },
     changephoto(value) {
       let ourphoto = document.getElementsByClassName("our-photo");
       let photoh2 = document.getElementsByTagName("h2");
@@ -109,6 +89,18 @@ export default {
         path: "/login/loginform",
       });
     },
+    photoloading(){
+      const photoimages = document.querySelectorAll('our-photo');
+      console.log(photoimages)
+      photoimages.forEach(photoimage => {
+      let photoimagetop = photoimage.getBoundingClientRect().top;
+      if(photoimagetop < window.innerHeight){
+      const photodatasrc = photoimage.getAttribute('data-src');
+      photoimage.setAttribute('src', photodatasrc)
+      console.log(photodatasrc)
+    }
+})
+    }
   },
 };
 </script>

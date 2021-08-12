@@ -68,31 +68,22 @@
 
 <script>
 // 图片懒加载
+// const photoimages = document.getElementsByClassName('our-photo');
+// window.addEventListener('scroll', () => {
+//   photoimages.forEach(photoimage => {
+//     let photoimagetop = photoimage.getBoundingClientRect().top;
+//     if(photoimagetop < window.innerHeight){
+//       const photodatasrc = photoimage.getAttribute('data-src');
+//       photoimage.setAttribute('src', photodatasrc)
+//       console.log(photodatasrc)
+//     }
+//   })
+// })
 
 let photobefore = 0;
 export default {
   name: "photo",
-  // created(){
-  //   this.photodata = {
-  //     photoimages : null
-  //   }
-  // },
-  // mounted(){
-  //   window.addEventListener('scroll', this.photoscroll);
-  //   this.photoimages = document.getElementsByClassName('our-photo');
-  // },
   methods: {
-    // photoscroll(){
-    //   console.log(this.photoimages);
-    //   this.photoimages.forEach(photoimage => {
-    //     let photoimagetop = photoimage.getBoundingClientRect().top;
-    //     if(photoimagetop < window.innerHeight){
-    //       let photodatasrc = photoimage.getAttribute('data-src');
-    //       photoimage.setAttribute('src', photodatasrc);
-    //       console.log(photoimage.getAttribute('src'))
-    //     }
-    //   })
-    // },
     changephoto(value) {
       let ourphoto = document.getElementsByClassName("our-photo");
       let photoh2 = document.getElementsByTagName("h2");

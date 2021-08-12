@@ -4,7 +4,7 @@
     <div class="photo-content">
       <div class="photo-content-img">
         <img
-          src="../assets/techlogin/images/南墙.png"
+          data-src="../assets/techlogin/images/南墙.png"
           class="photo-animate-one our-photo"
           @click="changephoto(0)"
         />
