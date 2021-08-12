@@ -401,21 +401,21 @@ export default {
   }
   .login-form .login-main-form {
     width: 46rem;
-    height: 13rem;
+    height: 14rem;
     margin-top: 6rem;
   }
   .login-form .login-input {
-    width: 21rem;
-    height: 3.5rem;
+    width: 20rem;
+    height: 4rem;
   }
   .login-form .login-main-form input[type="text"] {
-    width: 21rem;
-    height: 3.5rem;
+    width: 20rem;
+    height: 4rem;
     border-radius: 4px;
   }
   .login-main-form textarea {
-    width: 21rem;
-    height: 8rem;
+    width: 20rem;
+    height: 6.5rem;
     border-radius: 5px;
   }
   .login-button {

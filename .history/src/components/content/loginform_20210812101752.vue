@@ -405,17 +405,17 @@ export default {
     margin-top: 6rem;
   }
   .login-form .login-input {
-    width: 21rem;
+    width: 20rem;
     height: 3.5rem;
   }
   .login-form .login-main-form input[type="text"] {
-    width: 21rem;
+    width: 20rem;
     height: 3.5rem;
     border-radius: 4px;
   }
   .login-main-form textarea {
-    width: 21rem;
-    height: 8rem;
+    width: 20rem;
+    height: 6.5rem;
     border-radius: 5px;
   }
   .login-button {

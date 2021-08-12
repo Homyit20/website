@@ -303,8 +303,8 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  touch-action: none;
-  /* 系统默认菜单被禁用 */
+  justify-content: center;
+  touch-action: pan-y;
 }
 
 /* 介绍部分 */
@@ -315,7 +315,6 @@ export default {
   height: 32rem;
   overflow: hidden;
   top: 2vh;
-  touch-action: none;
 }
 .tech-slide {
   position: absolute;
@@ -457,9 +456,9 @@ export default {
 }
 /* 当屏幕大于1500px时 */
 @media screen and (min-width: 1300px) {
-  .tech-box {
+  /* .tech-box {
     top: 15vh;
-  }
+  } */
   .tech-box .tech-text {
     width: 32rem;
   }

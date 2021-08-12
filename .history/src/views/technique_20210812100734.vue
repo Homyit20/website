@@ -304,7 +304,6 @@ export default {
   flex-direction: column;
   align-items: center;
   touch-action: none;
-  /* 系统默认菜单被禁用 */
 }
 
 /* 介绍部分 */
@@ -315,7 +314,6 @@ export default {
   height: 32rem;
   overflow: hidden;
   top: 2vh;
-  touch-action: none;
 }
 .tech-slide {
   position: absolute;

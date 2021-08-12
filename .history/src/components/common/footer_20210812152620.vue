@@ -38,4 +38,27 @@ export default {
   color: #fff;
   text-decoration: none;
 }
+
+/* .footer-content-two {
+  color: #fff;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-content-two p {
+  display: none;
+}
+.footer-content-two a {
+  color: #fff;
+  text-decoration: none;
+}
+@media screen and (max-width: 500px) {
+  .footer-content-one p {
+    display: none;
+  }
+  .footer-content-two p {
+    display: block;
+  }
+} */
 </style>

@@ -315,7 +315,7 @@ export default {
   height: 32rem;
   overflow: hidden;
   top: 2vh;
-  touch-action: none;
+    touch-action: none;
 }
 .tech-slide {
   position: absolute;
