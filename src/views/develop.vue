@@ -9,7 +9,7 @@
         宏奕工作室自2013年王宏凯创建，到现在的2021年，已留下许多<router-link
           to="/photo"
           class="nav-link-class"
-          ><span class="develop_txt_wonder">美好瞬间</span></router-link
+          ><button class="develop_txt_wonder">美好瞬间</button></router-link
         >，同时也涌现出众多优秀的宏奕人，他们分布在全国各地，致力于WEB开发。他们入职阿里巴巴、腾讯、字节跳动、小米、京东等众多知名互联网公司，在前端、后端、UI等方面有自己的建树，为互联网发展做出了许多贡献。
       </p>
     </div>
@@ -119,10 +119,11 @@ export default {
 }
 .develop_txt_wonder {
   height: 100%;
-  border: 1px solid transparent;
+  padding: 3px;
+  border: none;
   outline: none;
   color: #4d4d4d;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   border-radius: 1rem;
   text-decoration: none;
   letter-spacing: 0px;
