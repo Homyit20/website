@@ -61,9 +61,12 @@ export default {
   width: 15rem;
 }
 /* 层级要看权重？？？ */
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1300px) {
   .login-contact .login-contact-details img {
     width: 17rem;
 }
+  .login-contact .login-contact-details{
+    margin-bottom: 12rem;
+  }
 }
 </style>
