@@ -62,8 +62,8 @@ export default {
 }
 /* 层级要看权重？？？ */
 @media screen and (min-width: 1500px) {
-  html {
-    font-size: 18px;
-  }
+  .login-contact .login-contact-details img {
+    width: 17rem;
+}
 }
 </style>
