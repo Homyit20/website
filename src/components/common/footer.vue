@@ -3,9 +3,9 @@
     <div class="footer-content-one">
       <p>
         ICP备案编号:<a
-          href="https://beian.miit.gov.cn/#/Integrated/index"
+          href="https://beian.miit.gov.cn/"
           target="_blank"
-          >赣ICP备18002790号</a
+          >赣ICP备2021002498号-2</a
         >
       </p>
     </div>
